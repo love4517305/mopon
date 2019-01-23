@@ -1,0 +1,2691 @@
+//随机数字
+@function parse-random($value) {
+  @return round(random() * $value);
+}
+$randomId-one: parse-random(1000000);
+
+$active-user: '/common/images/icons/active-user.png?v=#{$randomId-one}';
+$active-user-sprite: 29px 34px;
+$add: '/common/images/icons/add.png?v=#{$randomId-one}';
+$add-sprite: 12px 12px;
+$adticket: '/common/images/icons/adticket.png?v=#{$randomId-one}';
+$adticket-sprite: 25px 22px;
+$advertising: '/common/images/icons/advertising.png?v=#{$randomId-one}';
+$advertising-sprite: 24px 24px;
+$alarm-radio-checked: '/common/images/icons/alarm-radio-checked.png?v=#{$randomId-one}';
+$alarm-radio-checked-sprite: 16px 16px;
+$alarm-radio-unchecked: '/common/images/icons/alarm-radio-unchecked.png?v=#{$randomId-one}';
+$alarm-radio-unchecked-sprite: 16px 16px;
+$app: '/common/images/icons/app.png?v=#{$randomId-one}';
+$app-sprite: 21px 24px;
+$arrow-right: '/common/images/icons/arrow-right.png?v=#{$randomId-one}';
+$arrow-right-sprite: 11px 11px;
+$asc-order: '/common/images/icons/asc-order.png?v=#{$randomId-one}';
+$asc-order-sprite: 13px 14px;
+$back: '/common/images/icons/back.png?v=#{$randomId-one}';
+$back-sprite: 9px 15px;
+$bannerAd: '/common/images/icons/bannerAd.png?v=#{$randomId-one}';
+$bannerAd-sprite: 59px 59px;
+$barrier-hover: '/common/images/icons/barrier-hover.png?v=#{$randomId-one}';
+$barrier-hover-sprite: 20px 18px;
+$barrier-select: '/common/images/icons/barrier-select.png?v=#{$randomId-one}';
+$barrier-select-sprite: 20px 18px;
+$barrier: '/common/images/icons/barrier.png?v=#{$randomId-one}';
+$barrier-sprite: 20px 18px;
+$base: '/common/images/icons/base.png?v=#{$randomId-one}';
+$base-sprite: 25px 25px;
+$batch-upload-hover: '/common/images/icons/batch-upload-hover.png?v=#{$randomId-one}';
+$batch-upload-hover-sprite: 20px 18px;
+$batch-upload-select: '/common/images/icons/batch-upload-select.png?v=#{$randomId-one}';
+$batch-upload-select-sprite: 20px 18px;
+$batch-upload: '/common/images/icons/batch-upload.png?v=#{$randomId-one}';
+$batch-upload-sprite: 20px 18px;
+$battery: '/common/images/icons/battery.png?v=#{$randomId-one}';
+$battery-sprite: 22px 9px;
+$big-right: '/common/images/icons/big-right.png?v=#{$randomId-one}';
+$big-right-sprite: 48px 48px;
+$big-wind: '/common/images/icons/big-wind.png?v=#{$randomId-one}';
+$big-wind-sprite: 19px 19px;
+$bulb: '/common/images/icons/bulb.png?v=#{$randomId-one}';
+$bulb-sprite: 18px 18px;
+$calendar-icon-lf: '/common/images/icons/calendar-icon-lf.png?v=#{$randomId-one}';
+$calendar-icon-lf-sprite: 6px 14px;
+$calendar-icon-rt: '/common/images/icons/calendar-icon-rt.png?v=#{$randomId-one}';
+$calendar-icon-rt-sprite: 6px 14px;
+$cancel-check-hover: '/common/images/icons/cancel-check-hover.png?v=#{$randomId-one}';
+$cancel-check-hover-sprite: 16px 19px;
+$cancel-check-select: '/common/images/icons/cancel-check-select.png?v=#{$randomId-one}';
+$cancel-check-select-sprite: 16px 19px;
+$cancel-check: '/common/images/icons/cancel-check.png?v=#{$randomId-one}';
+$cancel-check-sprite: 16px 19px;
+$card: '/common/images/icons/card.png?v=#{$randomId-one}';
+$card-sprite: 22px 18px;
+$change-hover: '/common/images/icons/change-hover.png?v=#{$randomId-one}';
+$change-hover-sprite: 17px 18px;
+$change-select: '/common/images/icons/change-select.png?v=#{$randomId-one}';
+$change-select-sprite: 17px 18px;
+$change: '/common/images/icons/change.png?v=#{$randomId-one}';
+$change-sprite: 17px 18px;
+$charts: '/common/images/icons/charts.png?v=#{$randomId-one}';
+$charts-sprite: 25px 24px;
+$chat-hover: '/common/images/icons/chat-hover.png?v=#{$randomId-one}';
+$chat-hover-sprite: 22px 22px;
+$chat: '/common/images/icons/chat.png?v=#{$randomId-one}';
+$chat-sprite: 22px 22px;
+$check-hover: '/common/images/icons/check-hover.png?v=#{$randomId-one}';
+$check-hover-sprite: 17px 18px;
+$check-select: '/common/images/icons/check-select.png?v=#{$randomId-one}';
+$check-select-sprite: 17px 18px;
+$check: '/common/images/icons/check.png?v=#{$randomId-one}';
+$check-sprite: 17px 18px;
+$chenxing: '/common/images/icons/chenxing.png?v=#{$randomId-one}';
+$chenxing-sprite: 70px 70px;
+$circle-selected: '/common/images/icons/circle-selected.png?v=#{$randomId-one}';
+$circle-selected-sprite: 17px 17px;
+$circle: '/common/images/icons/circle.png?v=#{$randomId-one}';
+$circle-sprite: 17px 17px;
+$classification: '/common/images/icons/classification.png?v=#{$randomId-one}';
+$classification-sprite: 59px 59px;
+$clear: '/common/images/icons/clear.png?v=#{$randomId-one}';
+$clear-sprite: 15px 15px;
+$clear_2: '/common/images/icons/clear_2.png?v=#{$randomId-one}';
+$clear_2-sprite: 15px 14px;
+$close: '/common/images/icons/close.png?v=#{$randomId-one}';
+$close-sprite: 15px 14px;
+$close_lg: '/common/images/icons/close_lg.png?v=#{$randomId-one}';
+$close_lg-sprite: 30px 30px;
+$close_lg_hover: '/common/images/icons/close_lg_hover.png?v=#{$randomId-one}';
+$close_lg_hover-sprite: 30px 30px;
+$cloudlet-frame-logo: '/common/images/icons/cloudlet-frame-logo.png?v=#{$randomId-one}';
+$cloudlet-frame-logo-sprite: 167px 52px;
+$cloudlet-full-screen: '/common/images/icons/cloudlet-full-screen.png?v=#{$randomId-one}';
+$cloudlet-full-screen-sprite: 28px 28px;
+$cloudlet-reset-screen: '/common/images/icons/cloudlet-reset-screen.png?v=#{$randomId-one}';
+$cloudlet-reset-screen-sprite: 35px 33px;
+$cloudletlogin-logo: '/common/images/icons/cloudletlogin-logo.png?v=#{$randomId-one}';
+$cloudletlogin-logo-sprite: 232px 75px;
+$cloudmy-frame-logo: '/common/images/icons/cloudmy-frame-logo.png?v=#{$randomId-one}';
+$cloudmy-frame-logo-sprite: 155px 32px;
+$cmts: '/common/images/icons/cmts.png?v=#{$randomId-one}';
+$cmts-sprite: 70px 70px;
+$co: '/common/images/icons/co.png?v=#{$randomId-one}';
+$co-sprite: 25px 23px;
+$color: '/common/images/icons/color.png?v=#{$randomId-one}';
+$color-sprite: 20px 19px;
+$comment: '/common/images/icons/comment.png?v=#{$randomId-one}';
+$comment-sprite: 14px 14px;
+$compass: '/common/images/icons/compass.png?v=#{$randomId-one}';
+$compass-sprite: 23px 23px;
+$config-hover: '/common/images/icons/config-hover.png?v=#{$randomId-one}';
+$config-hover-sprite: 16px 18px;
+$config-select: '/common/images/icons/config-select.png?v=#{$randomId-one}';
+$config-select-sprite: 16px 18px;
+$config: '/common/images/icons/config.png?v=#{$randomId-one}';
+$config-sprite: 16px 18px;
+$content: '/common/images/icons/content.png?v=#{$randomId-one}';
+$content-sprite: 27px 24px;
+$control: '/common/images/icons/control.png?v=#{$randomId-one}';
+$control-sprite: 24px 24px;
+$cool-disabled: '/common/images/icons/cool-disabled.png?v=#{$randomId-one}';
+$cool-disabled-sprite: 38px 39px;
+$cool: '/common/images/icons/cool.png?v=#{$randomId-one}';
+$cool-sprite: 38px 39px;
+$copy-add-hover: '/common/images/icons/copy-add-hover.png?v=#{$randomId-one}';
+$copy-add-hover-sprite: 17px 17px;
+$copy-add-select: '/common/images/icons/copy-add-select.png?v=#{$randomId-one}';
+$copy-add-select-sprite: 17px 17px;
+$copy-add: '/common/images/icons/copy-add.png?v=#{$randomId-one}';
+$copy-add-sprite: 17px 17px;
+$copy-select: '/common/images/icons/copy-select.png?v=#{$randomId-one}';
+$copy-select-sprite: 16px 16px;
+$copy: '/common/images/icons/copy.png?v=#{$randomId-one}';
+$copy-sprite: 16px 16px;
+$create-hover: '/common/images/icons/create-hover.png?v=#{$randomId-one}';
+$create-hover-sprite: 15px 15px;
+$create-select: '/common/images/icons/create-select.png?v=#{$randomId-one}';
+$create-select-sprite: 15px 15px;
+$create: '/common/images/icons/create.png?v=#{$randomId-one}';
+$create-sprite: 15px 15px;
+$date: '/common/images/icons/date.png?v=#{$randomId-one}';
+$date-sprite: 14px 14px;
+$del-hover: '/common/images/icons/del-hover.png?v=#{$randomId-one}';
+$del-hover-sprite: 16px 17px;
+$del-select: '/common/images/icons/del-select.png?v=#{$randomId-one}';
+$del-select-sprite: 16px 17px;
+$del: '/common/images/icons/del.png?v=#{$randomId-one}';
+$del-sprite: 16px 17px;
+$derivatives: '/common/images/icons/derivatives.png?v=#{$randomId-one}';
+$derivatives-sprite: 26px 24px;
+$desc-order: '/common/images/icons/desc-order.png?v=#{$randomId-one}';
+$desc-order-sprite: 13px 14px;
+$dialog-err: '/common/images/icons/dialog-err.png?v=#{$randomId-one}';
+$dialog-err-sprite: 31px 31px;
+$dialog-suc: '/common/images/icons/dialog-suc.png?v=#{$randomId-one}';
+$dialog-suc-sprite: 31px 31px;
+$dingdan: '/common/images/icons/dingdan.png?v=#{$randomId-one}';
+$dingdan-sprite: 21px 23px;
+$dingxin: '/common/images/icons/dingxin.png?v=#{$randomId-one}';
+$dingxin-sprite: 70px 70px;
+$down: '/common/images/icons/down.png?v=#{$randomId-one}';
+$down-sprite: 11px 6px;
+$edit-hover: '/common/images/icons/edit-hover.png?v=#{$randomId-one}';
+$edit-hover-sprite: 16px 17px;
+$edit-select: '/common/images/icons/edit-select.png?v=#{$randomId-one}';
+$edit-select-sprite: 16px 17px;
+$edit: '/common/images/icons/edit.png?v=#{$randomId-one}';
+$edit-sprite: 16px 17px;
+$electric: '/common/images/icons/electric.png?v=#{$randomId-one}';
+$electric-sprite: 31px 34px;
+$ellipse: '/common/images/icons/ellipse.png?v=#{$randomId-one}';
+$ellipse-sprite: 30px 7px;
+$else_yingjian: '/common/images/icons/else_yingjian.png?v=#{$randomId-one}';
+$else_yingjian-sprite: 70px 70px;
+$emerchant: '/common/images/icons/emerchant.png?v=#{$randomId-one}';
+$emerchant-sprite: 26px 25px;
+$error: '/common/images/icons/error.png?v=#{$randomId-one}';
+$error-sprite: 17px 17px;
+$exit: '/common/images/icons/exit.png?v=#{$randomId-one}';
+$exit-sprite: 18px 18px;
+$export-hover: '/common/images/icons/export-hover.png?v=#{$randomId-one}';
+$export-hover-sprite: 15px 17px;
+$export-select: '/common/images/icons/export-select.png?v=#{$randomId-one}';
+$export-select-sprite: 15px 17px;
+$export: '/common/images/icons/export.png?v=#{$randomId-one}';
+$export-sprite: 15px 17px;
+$fans: '/common/images/icons/fans.png?v=#{$randomId-one}';
+$fans-sprite: 42px 33px;
+$feedback-hover: '/common/images/icons/feedback-hover.png?v=#{$randomId-one}';
+$feedback-hover-sprite: 18px 18px;
+$feedback: '/common/images/icons/feedback.png?v=#{$randomId-one}';
+$feedback-sprite: 18px 18px;
+$film: '/common/images/icons/film.png?v=#{$randomId-one}';
+$film-sprite: 30px 30px;
+$first-page-hover: '/common/images/icons/first-page-hover.png?v=#{$randomId-one}';
+$first-page-hover-sprite: 8px 10px;
+$first-page: '/common/images/icons/first-page.png?v=#{$randomId-one}';
+$first-page-sprite: 8px 10px;
+$flow: '/common/images/icons/flow.png?v=#{$randomId-one}';
+$flow-sprite: 29px 18px;
+$fold: '/common/images/icons/fold.png?v=#{$randomId-one}';
+$fold-sprite: 15px 13px;
+$folder: '/common/images/icons/folder.png?v=#{$randomId-one}';
+$folder-sprite: 16px 15px;
+$frame-logo: '/common/images/icons/frame-logo.png?v=#{$randomId-one}';
+$frame-logo-sprite: 141px 52px;
+$frame-topNav-more: '/common/images/icons/frame-topNav-more.png?v=#{$randomId-one}';
+$frame-topNav-more-sprite: 574px 74px;
+$freely-login-logo: '/common/images/icons/freely-login-logo.png?v=#{$randomId-one}';
+$freely-login-logo-sprite: 336px 98px;
+$freely-logo: '/common/images/icons/freely-logo.png?v=#{$randomId-one}';
+$freely-logo-sprite: 172px 50px;
+$full-screen: '/common/images/icons/full-screen.png?v=#{$randomId-one}';
+$full-screen-sprite: 28px 28px;
+$get-on-hover: '/common/images/icons/get-on-hover.png?v=#{$randomId-one}';
+$get-on-hover-sprite: 18px 18px;
+$get-on-select: '/common/images/icons/get-on-select.png?v=#{$randomId-one}';
+$get-on-select-sprite: 18px 18px;
+$get-on: '/common/images/icons/get-on.png?v=#{$randomId-one}';
+$get-on-sprite: 18px 18px;
+$ghq: '/common/images/icons/ghq.png?v=#{$randomId-one}';
+$ghq-sprite: 24px 27px;
+$good: '/common/images/icons/good.png?v=#{$randomId-one}';
+$good-sprite: 26px 22px;
+$goodList: '/common/images/icons/goodList.png?v=#{$randomId-one}';
+$goodList-sprite: 59px 59px;
+$goodPurchase: '/common/images/icons/goodPurchase.png?v=#{$randomId-one}';
+$goodPurchase-sprite: 59px 59px;
+$goto-hover: '/common/images/icons/goto-hover.png?v=#{$randomId-one}';
+$goto-hover-sprite: 18px 14px;
+$goto: '/common/images/icons/goto.png?v=#{$randomId-one}';
+$goto-sprite: 18px 14px;
+$grid-checkbox-checked-disabled: '/common/images/icons/grid-checkbox-checked-disabled.png?v=#{$randomId-one}';
+$grid-checkbox-checked-disabled-sprite: 15px 15px;
+$grid-checkbox-checked: '/common/images/icons/grid-checkbox-checked.png?v=#{$randomId-one}';
+$grid-checkbox-checked-sprite: 15px 15px;
+$grid-checkbox-disabled: '/common/images/icons/grid-checkbox-disabled.png?v=#{$randomId-one}';
+$grid-checkbox-disabled-sprite: 15px 15px;
+$grid-checkbox-incomplete-disabled: '/common/images/icons/grid-checkbox-incomplete-disabled.png?v=#{$randomId-one}';
+$grid-checkbox-incomplete-disabled-sprite: 15px 15px;
+$grid-checkbox-incomplete: '/common/images/icons/grid-checkbox-incomplete.png?v=#{$randomId-one}';
+$grid-checkbox-incomplete-sprite: 15px 15px;
+$grid-checkbox: '/common/images/icons/grid-checkbox.png?v=#{$randomId-one}';
+$grid-checkbox-sprite: 15px 15px;
+$grid-radio-checked-disabled: '/common/images/icons/grid-radio-checked-disabled.png?v=#{$randomId-one}';
+$grid-radio-checked-disabled-sprite: 15px 15px;
+$grid-radio-checked: '/common/images/icons/grid-radio-checked.png?v=#{$randomId-one}';
+$grid-radio-checked-sprite: 15px 15px;
+$grid-radio-disabled: '/common/images/icons/grid-radio-disabled.png?v=#{$randomId-one}';
+$grid-radio-disabled-sprite: 15px 15px;
+$grid-radio: '/common/images/icons/grid-radio.png?v=#{$randomId-one}';
+$grid-radio-sprite: 15px 15px;
+$help-hover: '/common/images/icons/help-hover.png?v=#{$randomId-one}';
+$help-hover-sprite: 20px 20px;
+$help: '/common/images/icons/help.png?v=#{$randomId-one}';
+$help-sprite: 20px 20px;
+$help_2-hover: '/common/images/icons/help_2-hover.png?v=#{$randomId-one}';
+$help_2-hover-sprite: 20px 20px;
+$help_2: '/common/images/icons/help_2.png?v=#{$randomId-one}';
+$help_2-sprite: 20px 20px;
+$hfh: '/common/images/icons/hfh.png?v=#{$randomId-one}';
+$hfh-sprite: 70px 70px;
+$hln: '/common/images/icons/hln.png?v=#{$randomId-one}';
+$hln-sprite: 70px 70px;
+$hot-disabled: '/common/images/icons/hot-disabled.png?v=#{$randomId-one}';
+$hot-disabled-sprite: 38px 39px;
+$hot: '/common/images/icons/hot.png?v=#{$randomId-one}';
+$hot-sprite: 38px 39px;
+$hq-key: '/common/images/icons/hq-key.png?v=#{$randomId-one}';
+$hq-key-sprite: 25px 25px;
+$hq-locker: '/common/images/icons/hq-locker.png?v=#{$randomId-one}';
+$hq-locker-sprite: 20px 28px;
+$hq-login-logo: '/common/images/icons/hq-login-logo.png?v=#{$randomId-one}';
+$hq-login-logo-sprite: 199px 141px;
+$hq-logo: '/common/images/icons/hq-logo.png?v=#{$randomId-one}';
+$hq-logo-sprite: 146px 54px;
+$hq-user: '/common/images/icons/hq-user.png?v=#{$randomId-one}';
+$hq-user-sprite: 23px 24px;
+$hq: '/common/images/icons/hq.png?v=#{$randomId-one}';
+$hq-sprite: 21px 21px;
+$hqsession: '/common/images/icons/hqsession.png?v=#{$randomId-one}';
+$hqsession-sprite: 23px 24px;
+$huiyuan: '/common/images/icons/huiyuan.png?v=#{$randomId-one}';
+$huiyuan-sprite: 35px 36px;
+$input-search: '/common/images/icons/input-search.png?v=#{$randomId-one}';
+$input-search-sprite: 16px 16px;
+$input-shangla: '/common/images/icons/input-shangla.png?v=#{$randomId-one}';
+$input-shangla-sprite: 10px 5px;
+$input-xiala: '/common/images/icons/input-xiala.png?v=#{$randomId-one}';
+$input-xiala-sprite: 10px 5px;
+$install-deploy-hover: '/common/images/icons/install-deploy-hover.png?v=#{$randomId-one}';
+$install-deploy-hover-sprite: 17px 17px;
+$install-deploy-select: '/common/images/icons/install-deploy-select.png?v=#{$randomId-one}';
+$install-deploy-select-sprite: 17px 17px;
+$install-deploy: '/common/images/icons/install-deploy.png?v=#{$randomId-one}';
+$install-deploy-sprite: 17px 17px;
+$issued-hover: '/common/images/icons/issued-hover.png?v=#{$randomId-one}';
+$issued-hover-sprite: 16px 18px;
+$issued-select: '/common/images/icons/issued-select.png?v=#{$randomId-one}';
+$issued-select-sprite: 16px 18px;
+$issued: '/common/images/icons/issued.png?v=#{$randomId-one}';
+$issued-sprite: 16px 18px;
+$itemClose: '/common/images/icons/itemClose.png?v=#{$randomId-one}';
+$itemClose-sprite: 16px 16px;
+$jinggao: '/common/images/icons/jinggao.png?v=#{$randomId-one}';
+$jinggao-sprite: 17px 17px;
+$jinyong: '/common/images/icons/jinyong.png?v=#{$randomId-one}';
+$jinyong-sprite: 16px 16px;
+$key: '/common/images/icons/key.png?v=#{$randomId-one}';
+$key-sprite: 26px 26px;
+$last-page-hover: '/common/images/icons/last-page-hover.png?v=#{$randomId-one}';
+$last-page-hover-sprite: 8px 10px;
+$last-page: '/common/images/icons/last-page.png?v=#{$randomId-one}';
+$last-page-sprite: 8px 10px;
+$legend-select: '/common/images/icons/legend-select.png?v=#{$randomId-one}';
+$legend-select-sprite: 16px 14px;
+$legend: '/common/images/icons/legend.png?v=#{$randomId-one}';
+$legend-sprite: 16px 14px;
+$let-asc-order: '/common/images/icons/let-asc-order.png?v=#{$randomId-one}';
+$let-asc-order-sprite: 13px 14px;
+$let-desc-order: '/common/images/icons/let-desc-order.png?v=#{$randomId-one}';
+$let-desc-order-sprite: 13px 14px;
+$let-dialog-suc: '/common/images/icons/let-dialog-suc.png?v=#{$randomId-one}';
+$let-dialog-suc-sprite: 31px 31px;
+$let-first-page-hover: '/common/images/icons/let-first-page-hover.png?v=#{$randomId-one}';
+$let-first-page-hover-sprite: 8px 10px;
+$let-goto-hover: '/common/images/icons/let-goto-hover.png?v=#{$randomId-one}';
+$let-goto-hover-sprite: 18px 14px;
+$let-grid-checkbox-checked: '/common/images/icons/let-grid-checkbox-checked.png?v=#{$randomId-one}';
+$let-grid-checkbox-checked-sprite: 15px 15px;
+$let-grid-checkbox-incomplete: '/common/images/icons/let-grid-checkbox-incomplete.png?v=#{$randomId-one}';
+$let-grid-checkbox-incomplete-sprite: 15px 15px;
+$let-grid-radio-checked: '/common/images/icons/let-grid-radio-checked.png?v=#{$randomId-one}';
+$let-grid-radio-checked-sprite: 15px 15px;
+$let-help-hover: '/common/images/icons/let-help-hover.png?v=#{$randomId-one}';
+$let-help-hover-sprite: 20px 20px;
+$let-last-page-hover: '/common/images/icons/let-last-page-hover.png?v=#{$randomId-one}';
+$let-last-page-hover-sprite: 8px 10px;
+$let-next-hover: '/common/images/icons/let-next-hover.png?v=#{$randomId-one}';
+$let-next-hover-sprite: 5px 10px;
+$let-prev-hover: '/common/images/icons/let-prev-hover.png?v=#{$randomId-one}';
+$let-prev-hover-sprite: 5px 10px;
+$locker: '/common/images/icons/locker.png?v=#{$randomId-one}';
+$locker-sprite: 30px 30px;
+$login-logo: '/common/images/icons/login-logo.png?v=#{$randomId-one}';
+$login-logo-sprite: 196px 73px;
+$logout: '/common/images/icons/logout.png?v=#{$randomId-one}';
+$logout-sprite: 19px 20px;
+$look-hover: '/common/images/icons/look-hover.png?v=#{$randomId-one}';
+$look-hover-sprite: 16px 16px;
+$look-select: '/common/images/icons/look-select.png?v=#{$randomId-one}';
+$look-select-sprite: 16px 16px;
+$look: '/common/images/icons/look.png?v=#{$randomId-one}';
+$look-sprite: 16px 16px;
+$m-add: '/common/images/icons/m-add.png?v=#{$randomId-one}';
+$m-add-sprite: 26px 26px;
+$m-allot-hover: '/common/images/icons/m-allot-hover.png?v=#{$randomId-one}';
+$m-allot-hover-sprite: 21px 21px;
+$m-allot-select: '/common/images/icons/m-allot-select.png?v=#{$randomId-one}';
+$m-allot-select-sprite: 21px 21px;
+$m-allot: '/common/images/icons/m-allot.png?v=#{$randomId-one}';
+$m-allot-sprite: 21px 21px;
+$m-complete: '/common/images/icons/m-complete.png?v=#{$randomId-one}';
+$m-complete-sprite: 74px 74px;
+$m-differ: '/common/images/icons/m-differ.png?v=#{$randomId-one}';
+$m-differ-sprite: 74px 74px;
+$m-install-hover: '/common/images/icons/m-install-hover.png?v=#{$randomId-one}';
+$m-install-hover-sprite: 21px 21px;
+$m-install-select: '/common/images/icons/m-install-select.png?v=#{$randomId-one}';
+$m-install-select-sprite: 21px 21px;
+$m-install: '/common/images/icons/m-install.png?v=#{$randomId-one}';
+$m-install-sprite: 21px 21px;
+$m-minus-disabled: '/common/images/icons/m-minus-disabled.png?v=#{$randomId-one}';
+$m-minus-disabled-sprite: 26px 26px;
+$m-minus: '/common/images/icons/m-minus.png?v=#{$randomId-one}';
+$m-minus-sprite: 26px 26px;
+$m-nosubmit: '/common/images/icons/m-nosubmit.png?v=#{$randomId-one}';
+$m-nosubmit-sprite: 74px 74px;
+$m-polling-hover: '/common/images/icons/m-polling-hover.png?v=#{$randomId-one}';
+$m-polling-hover-sprite: 21px 21px;
+$m-polling-select: '/common/images/icons/m-polling-select.png?v=#{$randomId-one}';
+$m-polling-select-sprite: 21px 21px;
+$m-polling: '/common/images/icons/m-polling.png?v=#{$randomId-one}';
+$m-polling-sprite: 21px 21px;
+$m-relate-hover: '/common/images/icons/m-relate-hover.png?v=#{$randomId-one}';
+$m-relate-hover-sprite: 21px 21px;
+$m-relate-select: '/common/images/icons/m-relate-select.png?v=#{$randomId-one}';
+$m-relate-select-sprite: 21px 21px;
+$m-relate: '/common/images/icons/m-relate.png?v=#{$randomId-one}';
+$m-relate-sprite: 21px 21px;
+$m-searchwork-hover: '/common/images/icons/m-searchwork-hover.png?v=#{$randomId-one}';
+$m-searchwork-hover-sprite: 21px 21px;
+$m-searchwork-select: '/common/images/icons/m-searchwork-select.png?v=#{$randomId-one}';
+$m-searchwork-select-sprite: 21px 21px;
+$m-searchwork: '/common/images/icons/m-searchwork.png?v=#{$randomId-one}';
+$m-searchwork-sprite: 21px 21px;
+$m-sendout-hover: '/common/images/icons/m-sendout-hover.png?v=#{$randomId-one}';
+$m-sendout-hover-sprite: 21px 21px;
+$m-sendout-select: '/common/images/icons/m-sendout-select.png?v=#{$randomId-one}';
+$m-sendout-select-sprite: 21px 21px;
+$m-sendout: '/common/images/icons/m-sendout.png?v=#{$randomId-one}';
+$m-sendout-sprite: 21px 21px;
+$m-total: '/common/images/icons/m-total.png?v=#{$randomId-one}';
+$m-total-sprite: 74px 74px;
+$m-warning-hover: '/common/images/icons/m-warning-hover.png?v=#{$randomId-one}';
+$m-warning-hover-sprite: 21px 21px;
+$m-warning-select: '/common/images/icons/m-warning-select.png?v=#{$randomId-one}';
+$m-warning-select-sprite: 21px 21px;
+$m-warning: '/common/images/icons/m-warning.png?v=#{$randomId-one}';
+$m-warning-sprite: 21px 21px;
+$mVip: '/common/images/icons/mVip.png?v=#{$randomId-one}';
+$mVip-sprite: 28px 24px;
+$machine: '/common/images/icons/machine.png?v=#{$randomId-one}';
+$machine-sprite: 59px 59px;
+$member: '/common/images/icons/member.png?v=#{$randomId-one}';
+$member-sprite: 36px 32px;
+$menu-adticket-hover: '/common/images/icons/menu-adticket-hover.png?v=#{$randomId-one}';
+$menu-adticket-hover-sprite: 66px 58px;
+$menu-adticket: '/common/images/icons/menu-adticket.png?v=#{$randomId-one}';
+$menu-adticket-sprite: 66px 58px;
+$menu-advertising-hover: '/common/images/icons/menu-advertising-hover.png?v=#{$randomId-one}';
+$menu-advertising-hover-sprite: 52px 52px;
+$menu-advertising: '/common/images/icons/menu-advertising.png?v=#{$randomId-one}';
+$menu-advertising-sprite: 52px 52px;
+$menu-app-hover: '/common/images/icons/menu-app-hover.png?v=#{$randomId-one}';
+$menu-app-hover-sprite: 54px 62px;
+$menu-app: '/common/images/icons/menu-app.png?v=#{$randomId-one}';
+$menu-app-sprite: 54px 62px;
+$menu-base-hover: '/common/images/icons/menu-base-hover.png?v=#{$randomId-one}';
+$menu-base-hover-sprite: 59px 59px;
+$menu-base: '/common/images/icons/menu-base.png?v=#{$randomId-one}';
+$menu-base-sprite: 59px 59px;
+$menu-co-hover: '/common/images/icons/menu-co-hover.png?v=#{$randomId-one}';
+$menu-co-hover-sprite: 58px 54px;
+$menu-co: '/common/images/icons/menu-co.png?v=#{$randomId-one}';
+$menu-co-sprite: 58px 54px;
+$menu-compass-hover: '/common/images/icons/menu-compass-hover.png?v=#{$randomId-one}';
+$menu-compass-hover-sprite: 61px 61px;
+$menu-compass: '/common/images/icons/menu-compass.png?v=#{$randomId-one}';
+$menu-compass-sprite: 61px 61px;
+$menu-coupon-hover: '/common/images/icons/menu-coupon-hover.png?v=#{$randomId-one}';
+$menu-coupon-hover-sprite: 62px 49px;
+$menu-coupon: '/common/images/icons/menu-coupon.png?v=#{$randomId-one}';
+$menu-coupon-sprite: 62px 49px;
+$menu-derivatives-hover: '/common/images/icons/menu-derivatives-hover.png?v=#{$randomId-one}';
+$menu-derivatives-hover-sprite: 60px 57px;
+$menu-derivatives: '/common/images/icons/menu-derivatives.png?v=#{$randomId-one}';
+$menu-derivatives-sprite: 60px 57px;
+$menu-direct: '/common/images/icons/menu-direct.png?v=#{$randomId-one}';
+$menu-direct-sprite: 9px 6px;
+$menu-flow-hover: '/common/images/icons/menu-flow-hover.png?v=#{$randomId-one}';
+$menu-flow-hover-sprite: 75px 46px;
+$menu-flow: '/common/images/icons/menu-flow.png?v=#{$randomId-one}';
+$menu-flow-sprite: 75px 46px;
+$menu-ghq-hover: '/common/images/icons/menu-ghq-hover.png?v=#{$randomId-one}';
+$menu-ghq-hover-sprite: 53px 57px;
+$menu-ghq: '/common/images/icons/menu-ghq.png?v=#{$randomId-one}';
+$menu-ghq-sprite: 53px 57px;
+$menu-good-hover: '/common/images/icons/menu-good-hover.png?v=#{$randomId-one}';
+$menu-good-hover-sprite: 61px 49px;
+$menu-good: '/common/images/icons/menu-good.png?v=#{$randomId-one}';
+$menu-good-sprite: 61px 49px;
+$menu-goods-hover: '/common/images/icons/menu-goods-hover.png?v=#{$randomId-one}';
+$menu-goods-hover-sprite: 62px 49px;
+$menu-goods: '/common/images/icons/menu-goods.png?v=#{$randomId-one}';
+$menu-goods-sprite: 62px 49px;
+$menu-hq-hover: '/common/images/icons/menu-hq-hover.png?v=#{$randomId-one}';
+$menu-hq-hover-sprite: 62px 63px;
+$menu-hq: '/common/images/icons/menu-hq.png?v=#{$randomId-one}';
+$menu-hq-sprite: 62px 63px;
+$menu-hqsession-hover: '/common/images/icons/menu-hqsession-hover.png?v=#{$randomId-one}';
+$menu-hqsession-hover-sprite: 54px 54px;
+$menu-hqsession: '/common/images/icons/menu-hqsession.png?v=#{$randomId-one}';
+$menu-hqsession-sprite: 54px 54px;
+$menu-member-hover: '/common/images/icons/menu-member-hover.png?v=#{$randomId-one}';
+$menu-member-hover-sprite: 66px 57px;
+$menu-member: '/common/images/icons/menu-member.png?v=#{$randomId-one}';
+$menu-member-sprite: 66px 57px;
+$menu-mhq-hover: '/common/images/icons/menu-mhq-hover.png?v=#{$randomId-one}';
+$menu-mhq-hover-sprite: 72px 66px;
+$menu-mhq: '/common/images/icons/menu-mhq.png?v=#{$randomId-one}';
+$menu-mhq-sprite: 72px 66px;
+$menu-mmc-hover: '/common/images/icons/menu-mmc-hover.png?v=#{$randomId-one}';
+$menu-mmc-hover-sprite: 60px 60px;
+$menu-mmc: '/common/images/icons/menu-mmc.png?v=#{$randomId-one}';
+$menu-mmc-sprite: 60px 60px;
+$menu-naming-hover: '/common/images/icons/menu-naming-hover.png?v=#{$randomId-one}';
+$menu-naming-hover-sprite: 56px 50px;
+$menu-naming: '/common/images/icons/menu-naming.png?v=#{$randomId-one}';
+$menu-naming-sprite: 56px 50px;
+$menu-noc-hover: '/common/images/icons/menu-noc-hover.png?v=#{$randomId-one}';
+$menu-noc-hover-sprite: 61px 50px;
+$menu-noc: '/common/images/icons/menu-noc.png?v=#{$randomId-one}';
+$menu-noc-sprite: 61px 50px;
+$menu-opera-hover: '/common/images/icons/menu-opera-hover.png?v=#{$randomId-one}';
+$menu-opera-hover-sprite: 62px 60px;
+$menu-opera: '/common/images/icons/menu-opera.png?v=#{$randomId-one}';
+$menu-opera-sprite: 62px 60px;
+$menu-order-hover: '/common/images/icons/menu-order-hover.png?v=#{$randomId-one}';
+$menu-order-hover-sprite: 54px 57px;
+$menu-order: '/common/images/icons/menu-order.png?v=#{$randomId-one}';
+$menu-order-sprite: 54px 57px;
+$menu-platform-hover: '/common/images/icons/menu-platform-hover.png?v=#{$randomId-one}';
+$menu-platform-hover-sprite: 57px 57px;
+$menu-platform: '/common/images/icons/menu-platform.png?v=#{$randomId-one}';
+$menu-platform-sprite: 57px 57px;
+$menu-price-hover: '/common/images/icons/menu-price-hover.png?v=#{$randomId-one}';
+$menu-price-hover-sprite: 54px 57px;
+$menu-price: '/common/images/icons/menu-price.png?v=#{$randomId-one}';
+$menu-price-sprite: 54px 57px;
+$menu-report-hover: '/common/images/icons/menu-report-hover.png?v=#{$randomId-one}';
+$menu-report-hover-sprite: 62px 56px;
+$menu-report: '/common/images/icons/menu-report.png?v=#{$randomId-one}';
+$menu-report-sprite: 62px 56px;
+$menu-reports-hover: '/common/images/icons/menu-reports-hover.png?v=#{$randomId-one}';
+$menu-reports-hover-sprite: 72px 54px;
+$menu-reports: '/common/images/icons/menu-reports.png?v=#{$randomId-one}';
+$menu-reports-sprite: 72px 54px;
+$menu-rmp-hover: '/common/images/icons/menu-rmp-hover.png?v=#{$randomId-one}';
+$menu-rmp-hover-sprite: 59px 53px;
+$menu-rmp: '/common/images/icons/menu-rmp.png?v=#{$randomId-one}';
+$menu-rmp-sprite: 59px 53px;
+$menu-sales-hover: '/common/images/icons/menu-sales-hover.png?v=#{$randomId-one}';
+$menu-sales-hover-sprite: 51px 61px;
+$menu-sales: '/common/images/icons/menu-sales.png?v=#{$randomId-one}';
+$menu-sales-sprite: 51px 61px;
+$menu-slide-down-gray: '/common/images/icons/menu-slide-down-gray.png?v=#{$randomId-one}';
+$menu-slide-down-gray-sprite: 36px 36px;
+$menu-slide-down: '/common/images/icons/menu-slide-down.png?v=#{$randomId-one}';
+$menu-slide-down-sprite: 36px 36px;
+$menu-slide-up-gray: '/common/images/icons/menu-slide-up-gray.png?v=#{$randomId-one}';
+$menu-slide-up-gray-sprite: 36px 36px;
+$menu-slide-up: '/common/images/icons/menu-slide-up.png?v=#{$randomId-one}';
+$menu-slide-up-sprite: 36px 36px;
+$menu-sms-hover: '/common/images/icons/menu-sms-hover.png?v=#{$randomId-one}';
+$menu-sms-hover-sprite: 62px 44px;
+$menu-sms: '/common/images/icons/menu-sms.png?v=#{$randomId-one}';
+$menu-sms-sprite: 62px 44px;
+$menu-vip-hover: '/common/images/icons/menu-vip-hover.png?v=#{$randomId-one}';
+$menu-vip-hover-sprite: 66px 58px;
+$menu-vip: '/common/images/icons/menu-vip.png?v=#{$randomId-one}';
+$menu-vip-sprite: 66px 58px;
+$message: '/common/images/icons/message.png?v=#{$randomId-one}';
+$message-sprite: 23px 21px;
+$mhq: '/common/images/icons/mhq.png?v=#{$randomId-one}';
+$mhq-sprite: 31px 28px;
+$middle-right: '/common/images/icons/middle-right.png?v=#{$randomId-one}';
+$middle-right-sprite: 32px 32px;
+$monitor: '/common/images/icons/monitor.png?v=#{$randomId-one}';
+$monitor-sprite: 29px 38px;
+$monitorIndex: '/common/images/icons/monitorIndex.png?v=#{$randomId-one}';
+$monitorIndex-sprite: 34px 34px;
+$more-menu: '/common/images/icons/more-menu.png?v=#{$randomId-one}';
+$more-menu-sprite: 30px 5px;
+$more: '/common/images/icons/more.png?v=#{$randomId-one}';
+$more-sprite: 15px 9px;
+$movie-seat: '/common/images/icons/movie-seat.png?v=#{$randomId-one}';
+$movie-seat-sprite: 21px 20px;
+$movie-sign: '/common/images/icons/movie-sign.png?v=#{$randomId-one}';
+$movie-sign-sprite: 20px 20px;
+$movie: '/common/images/icons/movie.png?v=#{$randomId-one}';
+$movie-sprite: 70px 70px;
+$my-login-logo: '/common/images/icons/my-login-logo.png?v=#{$randomId-one}';
+$my-login-logo-sprite: 103px 152px;
+$naming: '/common/images/icons/naming.png?v=#{$randomId-one}';
+$naming-sprite: 25px 23px;
+$nav-plus: '/common/images/icons/nav-plus.png?v=#{$randomId-one}';
+$nav-plus-sprite: 7px 7px;
+$nav-xiala: '/common/images/icons/nav-xiala.png?v=#{$randomId-one}';
+$nav-xiala-sprite: 7px 7px;
+$next-hover: '/common/images/icons/next-hover.png?v=#{$randomId-one}';
+$next-hover-sprite: 5px 10px;
+$next: '/common/images/icons/next.png?v=#{$randomId-one}';
+$next-sprite: 5px 10px;
+$next_lg: '/common/images/icons/next_lg.png?v=#{$randomId-one}';
+$next_lg-sprite: 33px 59px;
+$next_lg_hover: '/common/images/icons/next_lg_hover.png?v=#{$randomId-one}';
+$next_lg_hover-sprite: 33px 59px;
+$ng-base-hover: '/common/images/icons/ng-base-hover.png?v=#{$randomId-one}';
+$ng-base-hover-sprite: 26px 26px;
+$ng-base: '/common/images/icons/ng-base.png?v=#{$randomId-one}';
+$ng-base-sprite: 26px 26px;
+$ng-console-hover: '/common/images/icons/ng-console-hover.png?v=#{$randomId-one}';
+$ng-console-hover-sprite: 26px 26px;
+$ng-console: '/common/images/icons/ng-console.png?v=#{$randomId-one}';
+$ng-console-sprite: 26px 26px;
+$ng-coupon-hover: '/common/images/icons/ng-coupon-hover.png?v=#{$randomId-one}';
+$ng-coupon-hover-sprite: 26px 26px;
+$ng-coupon: '/common/images/icons/ng-coupon.png?v=#{$randomId-one}';
+$ng-coupon-sprite: 26px 26px;
+$ng-direct-left: '/common/images/icons/ng-direct-left.png?v=#{$randomId-one}';
+$ng-direct-left-sprite: 7px 10px;
+$ng-direct-right: '/common/images/icons/ng-direct-right.png?v=#{$randomId-one}';
+$ng-direct-right-sprite: 7px 10px;
+$ng-direct: '/common/images/icons/ng-direct.png?v=#{$randomId-one}';
+$ng-direct-sprite: 9px 6px;
+$ng-err: '/common/images/icons/ng-err.png?v=#{$randomId-one}';
+$ng-err-sprite: 28px 28px;
+$ng-exit: '/common/images/icons/ng-exit.png?v=#{$randomId-one}';
+$ng-exit-sprite: 22px 20px;
+$ng-goods-hover: '/common/images/icons/ng-goods-hover.png?v=#{$randomId-one}';
+$ng-goods-hover-sprite: 26px 26px;
+$ng-goods: '/common/images/icons/ng-goods.png?v=#{$randomId-one}';
+$ng-goods-sprite: 26px 26px;
+$ng-info-focus: '/common/images/icons/ng-info-focus.png?v=#{$randomId-one}';
+$ng-info-focus-sprite: 24px 24px;
+$ng-info: '/common/images/icons/ng-info.png?v=#{$randomId-one}';
+$ng-info-sprite: 24px 24px;
+$ng-locker-focus: '/common/images/icons/ng-locker-focus.png?v=#{$randomId-one}';
+$ng-locker-focus-sprite: 22px 24px;
+$ng-locker: '/common/images/icons/ng-locker.png?v=#{$randomId-one}';
+$ng-locker-sprite: 22px 24px;
+$ng-login-logo: '/common/images/icons/ng-login-logo.png?v=#{$randomId-one}';
+$ng-login-logo-sprite: 217px 80px;
+$ng-logo: '/common/images/icons/ng-logo.png?v=#{$randomId-one}';
+$ng-logo-sprite: 86px 26px;
+$ng-member-hover: '/common/images/icons/ng-member-hover.png?v=#{$randomId-one}';
+$ng-member-hover-sprite: 26px 26px;
+$ng-member: '/common/images/icons/ng-member.png?v=#{$randomId-one}';
+$ng-member-sprite: 26px 26px;
+$ng-operate-hover: '/common/images/icons/ng-operate-hover.png?v=#{$randomId-one}';
+$ng-operate-hover-sprite: 26px 26px;
+$ng-operate: '/common/images/icons/ng-operate.png?v=#{$randomId-one}';
+$ng-operate-sprite: 26px 26px;
+$ng-price-hover: '/common/images/icons/ng-price-hover.png?v=#{$randomId-one}';
+$ng-price-hover-sprite: 26px 26px;
+$ng-price: '/common/images/icons/ng-price.png?v=#{$randomId-one}';
+$ng-price-sprite: 26px 26px;
+$ng-report-hover: '/common/images/icons/ng-report-hover.png?v=#{$randomId-one}';
+$ng-report-hover-sprite: 26px 26px;
+$ng-report: '/common/images/icons/ng-report.png?v=#{$randomId-one}';
+$ng-report-sprite: 26px 26px;
+$ng-selling-hover: '/common/images/icons/ng-selling-hover.png?v=#{$randomId-one}';
+$ng-selling-hover-sprite: 26px 26px;
+$ng-selling: '/common/images/icons/ng-selling.png?v=#{$randomId-one}';
+$ng-selling-sprite: 26px 26px;
+$ng-suc: '/common/images/icons/ng-suc.png?v=#{$randomId-one}';
+$ng-suc-sprite: 28px 28px;
+$ng-terminal-hover: '/common/images/icons/ng-terminal-hover.png?v=#{$randomId-one}';
+$ng-terminal-hover-sprite: 26px 26px;
+$ng-terminal: '/common/images/icons/ng-terminal.png?v=#{$randomId-one}';
+$ng-terminal-sprite: 26px 26px;
+$ng-ticketing-hover: '/common/images/icons/ng-ticketing-hover.png?v=#{$randomId-one}';
+$ng-ticketing-hover-sprite: 26px 26px;
+$ng-ticketing: '/common/images/icons/ng-ticketing.png?v=#{$randomId-one}';
+$ng-ticketing-sprite: 26px 26px;
+$ng-user-focus: '/common/images/icons/ng-user-focus.png?v=#{$randomId-one}';
+$ng-user-focus-sprite: 22px 26px;
+$ng-user: '/common/images/icons/ng-user.png?v=#{$randomId-one}';
+$ng-user-sprite: 22px 26px;
+$no-open-hover: '/common/images/icons/no-open-hover.png?v=#{$randomId-one}';
+$no-open-hover-sprite: 63px 21px;
+$no-open: '/common/images/icons/no-open.png?v=#{$randomId-one}';
+$no-open-sprite: 63px 21px;
+$noc: '/common/images/icons/noc.png?v=#{$randomId-one}';
+$noc-sprite: 26px 21px;
+$old-user: '/common/images/icons/old-user.png?v=#{$randomId-one}';
+$old-user-sprite: 36px 37px;
+$open-folder: '/common/images/icons/open-folder.png?v=#{$randomId-one}';
+$open-folder-sprite: 19px 15px;
+$order: '/common/images/icons/order.png?v=#{$randomId-one}';
+$order-sprite: 23px 24px;
+$orderManagement: '/common/images/icons/orderManagement.png?v=#{$randomId-one}';
+$orderManagement-sprite: 59px 59px;
+$out-hover: '/common/images/icons/out-hover.png?v=#{$randomId-one}';
+$out-hover-sprite: 18px 17px;
+$out-right-hover: '/common/images/icons/out-right-hover.png?v=#{$randomId-one}';
+$out-right-hover-sprite: 18px 18px;
+$out-select: '/common/images/icons/out-select.png?v=#{$randomId-one}';
+$out-select-sprite: 18px 17px;
+$out: '/common/images/icons/out.png?v=#{$randomId-one}';
+$out-sprite: 18px 17px;
+$pastDue-hover: '/common/images/icons/pastDue-hover.png?v=#{$randomId-one}';
+$pastDue-hover-sprite: 17px 17px;
+$pastDue-select: '/common/images/icons/pastDue-select.png?v=#{$randomId-one}';
+$pastDue-select-sprite: 17px 17px;
+$pastDue: '/common/images/icons/pastDue.png?v=#{$randomId-one}';
+$pastDue-sprite: 17px 17px;
+$pause-draw-selected: '/common/images/icons/pause-draw-selected.png?v=#{$randomId-one}';
+$pause-draw-selected-sprite: 17px 17px;
+$pause-draw: '/common/images/icons/pause-draw.png?v=#{$randomId-one}';
+$pause-draw-sprite: 17px 17px;
+$pause-hover: '/common/images/icons/pause-hover.png?v=#{$randomId-one}';
+$pause-hover-sprite: 11px 16px;
+$pause-select: '/common/images/icons/pause-select.png?v=#{$randomId-one}';
+$pause-select-sprite: 11px 15px;
+$pause: '/common/images/icons/pause.png?v=#{$randomId-one}';
+$pause-sprite: 11px 16px;
+$pay-hover: '/common/images/icons/pay-hover.png?v=#{$randomId-one}';
+$pay-hover-sprite: 18px 18px;
+$pay-select: '/common/images/icons/pay-select.png?v=#{$randomId-one}';
+$pay-select-sprite: 18px 18px;
+$pay: '/common/images/icons/pay.png?v=#{$randomId-one}';
+$pay-sprite: 18px 18px;
+$polling-hover: '/common/images/icons/polling-hover.png?v=#{$randomId-one}';
+$polling-hover-sprite: 24px 19px;
+$polling-select: '/common/images/icons/polling-select.png?v=#{$randomId-one}';
+$polling-select-sprite: 24px 19px;
+$polling: '/common/images/icons/polling.png?v=#{$randomId-one}';
+$polling-sprite: 24px 19px;
+$polygon-selected: '/common/images/icons/polygon-selected.png?v=#{$randomId-one}';
+$polygon-selected-sprite: 19px 18px;
+$polygon: '/common/images/icons/polygon.png?v=#{$randomId-one}';
+$polygon-sprite: 19px 18px;
+$power: '/common/images/icons/power.png?v=#{$randomId-one}';
+$power-sprite: 31px 34px;
+$prev-hover: '/common/images/icons/prev-hover.png?v=#{$randomId-one}';
+$prev-hover-sprite: 5px 10px;
+$prev: '/common/images/icons/prev.png?v=#{$randomId-one}';
+$prev-sprite: 5px 10px;
+$prev_lg: '/common/images/icons/prev_lg.png?v=#{$randomId-one}';
+$prev_lg-sprite: 33px 59px;
+$prev_lg_hover: '/common/images/icons/prev_lg_hover.png?v=#{$randomId-one}';
+$prev_lg_hover-sprite: 33px 59px;
+$price: '/common/images/icons/price.png?v=#{$randomId-one}';
+$price-sprite: 22px 24px;
+$print-repair-hover: '/common/images/icons/print-repair-hover.png?v=#{$randomId-one}';
+$print-repair-hover-sprite: 20px 18px;
+$print-repair-select: '/common/images/icons/print-repair-select.png?v=#{$randomId-one}';
+$print-repair-select-sprite: 20px 18px;
+$print-repair: '/common/images/icons/print-repair.png?v=#{$randomId-one}';
+$print-repair-sprite: 20px 18px;
+$print-select: '/common/images/icons/print-select.png?v=#{$randomId-one}';
+$print-select-sprite: 16px 16px;
+$print: '/common/images/icons/print.png?v=#{$randomId-one}';
+$print-sprite: 16px 16px;
+$productGrouping: '/common/images/icons/productGrouping.png?v=#{$randomId-one}';
+$productGrouping-sprite: 59px 59px;
+$productList: '/common/images/icons/productList.png?v=#{$randomId-one}';
+$productList-sprite: 59px 59px;
+$putaway-hover: '/common/images/icons/putaway-hover.png?v=#{$randomId-one}';
+$putaway-hover-sprite: 18px 17px;
+$putaway-select: '/common/images/icons/putaway-select.png?v=#{$randomId-one}';
+$putaway-select-sprite: 18px 17px;
+$putaway: '/common/images/icons/putaway.png?v=#{$randomId-one}';
+$putaway-sprite: 18px 17px;
+$qiyong: '/common/images/icons/qiyong.png?v=#{$randomId-one}';
+$qiyong-sprite: 16px 16px;
+$quanguopiaofagn: '/common/images/icons/quanguopiaofagn.png?v=#{$randomId-one}';
+$quanguopiaofagn-sprite: 70px 70px;
+$quanguoxinzengyingyuan: '/common/images/icons/quanguoxinzengyingyuan.png?v=#{$randomId-one}';
+$quanguoxinzengyingyuan-sprite: 70px 70px;
+$qudao: '/common/images/icons/qudao.png?v=#{$randomId-one}';
+$qudao-sprite: 37px 25px;
+$query-hover: '/common/images/icons/query-hover.png?v=#{$randomId-one}';
+$query-hover-sprite: 16px 16px;
+$query-select: '/common/images/icons/query-select.png?v=#{$randomId-one}';
+$query-select-sprite: 16px 16px;
+$query: '/common/images/icons/query.png?v=#{$randomId-one}';
+$query-sprite: 16px 16px;
+$radio-disabled: '/common/images/icons/radio-disabled.png?v=#{$randomId-one}';
+$radio-disabled-sprite: 17px 17px;
+$radio-hover: '/common/images/icons/radio-hover.png?v=#{$randomId-one}';
+$radio-hover-sprite: 17px 17px;
+$radio-select: '/common/images/icons/radio-select.png?v=#{$randomId-one}';
+$radio-select-sprite: 17px 17px;
+$radio: '/common/images/icons/radio.png?v=#{$randomId-one}';
+$radio-sprite: 17px 17px;
+$recomment: '/common/images/icons/recomment.png?v=#{$randomId-one}';
+$recomment-sprite: 59px 59px;
+$red-dialog-suc: '/common/images/icons/red-dialog-suc.png?v=#{$randomId-one}';
+$red-dialog-suc-sprite: 31px 31px;
+$red-first-page-hover: '/common/images/icons/red-first-page-hover.png?v=#{$randomId-one}';
+$red-first-page-hover-sprite: 8px 10px;
+$red-full-screen: '/common/images/icons/red-full-screen.png?v=#{$randomId-one}';
+$red-full-screen-sprite: 28px 28px;
+$red-goto-hover: '/common/images/icons/red-goto-hover.png?v=#{$randomId-one}';
+$red-goto-hover-sprite: 18px 14px;
+$red-grid-checkbox-checked: '/common/images/icons/red-grid-checkbox-checked.png?v=#{$randomId-one}';
+$red-grid-checkbox-checked-sprite: 15px 15px;
+$red-grid-checkbox-incomplete: '/common/images/icons/red-grid-checkbox-incomplete.png?v=#{$randomId-one}';
+$red-grid-checkbox-incomplete-sprite: 15px 15px;
+$red-grid-radio-checked: '/common/images/icons/red-grid-radio-checked.png?v=#{$randomId-one}';
+$red-grid-radio-checked-sprite: 15px 15px;
+$red-help-hover: '/common/images/icons/red-help-hover.png?v=#{$randomId-one}';
+$red-help-hover-sprite: 20px 20px;
+$red-key: '/common/images/icons/red-key.png?v=#{$randomId-one}';
+$red-key-sprite: 25px 25px;
+$red-last-page-hover: '/common/images/icons/red-last-page-hover.png?v=#{$randomId-one}';
+$red-last-page-hover-sprite: 8px 10px;
+$red-locker: '/common/images/icons/red-locker.png?v=#{$randomId-one}';
+$red-locker-sprite: 20px 28px;
+$red-next-hover: '/common/images/icons/red-next-hover.png?v=#{$randomId-one}';
+$red-next-hover-sprite: 5px 10px;
+$red-prev-hover: '/common/images/icons/red-prev-hover.png?v=#{$randomId-one}';
+$red-prev-hover-sprite: 5px 10px;
+$red-reset-screen: '/common/images/icons/red-reset-screen.png?v=#{$randomId-one}';
+$red-reset-screen-sprite: 35px 33px;
+$red-tab-del: '/common/images/icons/red-tab-del.png?v=#{$randomId-one}';
+$red-tab-del-sprite: 10px 10px;
+$red-vip: '/common/images/icons/red-vip.png?v=#{$randomId-one}';
+$red-vip-sprite: 23px 24px;
+$refresh-select: '/common/images/icons/refresh-select.png?v=#{$randomId-one}';
+$refresh-select-sprite: 14px 15px;
+$refresh: '/common/images/icons/refresh.png?v=#{$randomId-one}';
+$refresh-sprite: 14px 15px;
+$refund-hover: '/common/images/icons/refund-hover.png?v=#{$randomId-one}';
+$refund-hover-sprite: 18px 18px;
+$refund-select: '/common/images/icons/refund-select.png?v=#{$randomId-one}';
+$refund-select-sprite: 18px 18px;
+$refund: '/common/images/icons/refund.png?v=#{$randomId-one}';
+$refund-sprite: 18px 18px;
+$relate-hover: '/common/images/icons/relate-hover.png?v=#{$randomId-one}';
+$relate-hover-sprite: 20px 18px;
+$relate-select: '/common/images/icons/relate-select.png?v=#{$randomId-one}';
+$relate-select-sprite: 20px 18px;
+$relate: '/common/images/icons/relate.png?v=#{$randomId-one}';
+$relate-sprite: 20px 18px;
+$reset-screen: '/common/images/icons/reset-screen.png?v=#{$randomId-one}';
+$reset-screen-sprite: 35px 33px;
+$resetBtn-hover: '/common/images/icons/resetBtn-hover.png?v=#{$randomId-one}';
+$resetBtn-hover-sprite: 15px 18px;
+$resetBtn-select: '/common/images/icons/resetBtn-select.png?v=#{$randomId-one}';
+$resetBtn-select-sprite: 15px 18px;
+$resetBtn: '/common/images/icons/resetBtn.png?v=#{$randomId-one}';
+$resetBtn-sprite: 15px 18px;
+$right: '/common/images/icons/right.png?v=#{$randomId-one}';
+$right-sprite: 6px 11px;
+$rmp: '/common/images/icons/rmp.png?v=#{$randomId-one}';
+$rmp-sprite: 22px 24px;
+$sales: '/common/images/icons/sales.png?v=#{$randomId-one}';
+$sales-sprite: 20px 24px;
+$save: '/common/images/icons/save.png?v=#{$randomId-one}';
+$save-sprite: 20px 20px;
+$saves: '/common/images/icons/saves.png?v=#{$randomId-one}';
+$saves-sprite: 24px 24px;
+$search-input: '/common/images/icons/search-input.png?v=#{$randomId-one}';
+$search-input-sprite: 14px 14px;
+$search: '/common/images/icons/search.png?v=#{$randomId-one}';
+$search-sprite: 59px 59px;
+$seat-a: '/common/images/icons/seat-a.png?v=#{$randomId-one}';
+$seat-a-sprite: 41px 39px;
+$seat-b: '/common/images/icons/seat-b.png?v=#{$randomId-one}';
+$seat-b-sprite: 41px 39px;
+$seat-c: '/common/images/icons/seat-c.png?v=#{$randomId-one}';
+$seat-c-sprite: 41px 39px;
+$seat-d: '/common/images/icons/seat-d.png?v=#{$randomId-one}';
+$seat-d-sprite: 41px 39px;
+$seat-double-a-selected: '/common/images/icons/seat-double-a-selected.png?v=#{$randomId-one}';
+$seat-double-a-selected-sprite: 79px 36px;
+$seat-double-a: '/common/images/icons/seat-double-a.png?v=#{$randomId-one}';
+$seat-double-a-sprite: 75px 28px;
+$seat-double-b-selected: '/common/images/icons/seat-double-b-selected.png?v=#{$randomId-one}';
+$seat-double-b-selected-sprite: 79px 36px;
+$seat-double-b: '/common/images/icons/seat-double-b.png?v=#{$randomId-one}';
+$seat-double-b-sprite: 75px 28px;
+$seat-double-c-selected: '/common/images/icons/seat-double-c-selected.png?v=#{$randomId-one}';
+$seat-double-c-selected-sprite: 79px 36px;
+$seat-double-c: '/common/images/icons/seat-double-c.png?v=#{$randomId-one}';
+$seat-double-c-sprite: 75px 28px;
+$seat-double-d-selected: '/common/images/icons/seat-double-d-selected.png?v=#{$randomId-one}';
+$seat-double-d-selected-sprite: 79px 36px;
+$seat-double-d: '/common/images/icons/seat-double-d.png?v=#{$randomId-one}';
+$seat-double-d-sprite: 75px 28px;
+$seat-double-e-selected: '/common/images/icons/seat-double-e-selected.png?v=#{$randomId-one}';
+$seat-double-e-selected-sprite: 79px 36px;
+$seat-double-e: '/common/images/icons/seat-double-e.png?v=#{$randomId-one}';
+$seat-double-e-sprite: 75px 28px;
+$seat-double-selected: '/common/images/icons/seat-double-selected.png?v=#{$randomId-one}';
+$seat-double-selected-sprite: 79px 36px;
+$seat-double: '/common/images/icons/seat-double.png?v=#{$randomId-one}';
+$seat-double-sprite: 75px 28px;
+$seat-e: '/common/images/icons/seat-e.png?v=#{$randomId-one}';
+$seat-e-sprite: 41px 39px;
+$seat-small-a-selected: '/common/images/icons/seat-small-a-selected.png?v=#{$randomId-one}';
+$seat-small-a-selected-sprite: 36px 36px;
+$seat-small-a: '/common/images/icons/seat-small-a.png?v=#{$randomId-one}';
+$seat-small-a-sprite: 30px 28px;
+$seat-small-b-selected: '/common/images/icons/seat-small-b-selected.png?v=#{$randomId-one}';
+$seat-small-b-selected-sprite: 36px 36px;
+$seat-small-b: '/common/images/icons/seat-small-b.png?v=#{$randomId-one}';
+$seat-small-b-sprite: 30px 28px;
+$seat-small-c-selected: '/common/images/icons/seat-small-c-selected.png?v=#{$randomId-one}';
+$seat-small-c-selected-sprite: 36px 36px;
+$seat-small-c: '/common/images/icons/seat-small-c.png?v=#{$randomId-one}';
+$seat-small-c-sprite: 30px 28px;
+$seat-small-d-selected: '/common/images/icons/seat-small-d-selected.png?v=#{$randomId-one}';
+$seat-small-d-selected-sprite: 36px 36px;
+$seat-small-d: '/common/images/icons/seat-small-d.png?v=#{$randomId-one}';
+$seat-small-d-sprite: 29px 28px;
+$seat-small-e-selected: '/common/images/icons/seat-small-e-selected.png?v=#{$randomId-one}';
+$seat-small-e-selected-sprite: 36px 36px;
+$seat-small-e: '/common/images/icons/seat-small-e.png?v=#{$randomId-one}';
+$seat-small-e-sprite: 30px 28px;
+$seat-small-selected: '/common/images/icons/seat-small-selected.png?v=#{$randomId-one}';
+$seat-small-selected-sprite: 36px 36px;
+$seat-small: '/common/images/icons/seat-small.png?v=#{$randomId-one}';
+$seat-small-sprite: 30px 28px;
+$select-disabled: '/common/images/icons/select-disabled.png?v=#{$randomId-one}';
+$select-disabled-sprite: 18px 18px;
+$select-gray: '/common/images/icons/select-gray.png?v=#{$randomId-one}';
+$select-gray-sprite: 28px 28px;
+$select-white: '/common/images/icons/select-white.png?v=#{$randomId-one}';
+$select-white-sprite: 28px 28px;
+$select: '/common/images/icons/select.png?v=#{$randomId-one}';
+$select-sprite: 18px 18px;
+$selected: '/common/images/icons/selected.png?v=#{$randomId-one}';
+$selected-sprite: 18px 18px;
+$sendDown-hover: '/common/images/icons/sendDown-hover.png?v=#{$randomId-one}';
+$sendDown-hover-sprite: 18px 17px;
+$sendDown-select: '/common/images/icons/sendDown-select.png?v=#{$randomId-one}';
+$sendDown-select-sprite: 18px 17px;
+$sendDown: '/common/images/icons/sendDown.png?v=#{$randomId-one}';
+$sendDown-sprite: 18px 17px;
+$sequence: '/common/images/icons/sequence.png?v=#{$randomId-one}';
+$sequence-sprite: 13px 14px;
+$setting-gray: '/common/images/icons/setting-gray.png?v=#{$randomId-one}';
+$setting-gray-sprite: 22px 22px;
+$setting-hover: '/common/images/icons/setting-hover.png?v=#{$randomId-one}';
+$setting-hover-sprite: 22px 22px;
+$setting: '/common/images/icons/setting.png?v=#{$randomId-one}';
+$setting-sprite: 22px 22px;
+$small-arrow-down-disable: '/common/images/icons/small-arrow-down-disable.png?v=#{$randomId-one}';
+$small-arrow-down-disable-sprite: 28px 16px;
+$small-arrow-down-hover: '/common/images/icons/small-arrow-down-hover.png?v=#{$randomId-one}';
+$small-arrow-down-hover-sprite: 28px 16px;
+$small-arrow-down: '/common/images/icons/small-arrow-down.png?v=#{$randomId-one}';
+$small-arrow-down-sprite: 28px 16px;
+$small-arrow-up-disable: '/common/images/icons/small-arrow-up-disable.png?v=#{$randomId-one}';
+$small-arrow-up-disable-sprite: 28px 16px;
+$small-arrow-up-hover: '/common/images/icons/small-arrow-up-hover.png?v=#{$randomId-one}';
+$small-arrow-up-hover-sprite: 28px 16px;
+$small-arrow-up: '/common/images/icons/small-arrow-up.png?v=#{$randomId-one}';
+$small-arrow-up-sprite: 28px 16px;
+$small-help: '/common/images/icons/small-help.png?v=#{$randomId-one}';
+$small-help-sprite: 13px 13px;
+$small-wind: '/common/images/icons/small-wind.png?v=#{$randomId-one}';
+$small-wind-sprite: 13px 13px;
+$sms: '/common/images/icons/sms.png?v=#{$randomId-one}';
+$sms-sprite: 24px 17px;
+$square-selected: '/common/images/icons/square-selected.png?v=#{$randomId-one}';
+$square-selected-sprite: 18px 14px;
+$square: '/common/images/icons/square.png?v=#{$randomId-one}';
+$square-sprite: 18px 14px;
+$star-hover: '/common/images/icons/star-hover.png?v=#{$randomId-one}';
+$star-hover-sprite: 14px 14px;
+$star: '/common/images/icons/star.png?v=#{$randomId-one}';
+$star-sprite: 14px 14px;
+$stream: '/common/images/icons/stream.png?v=#{$randomId-one}';
+$stream-sprite: 39px 32px;
+$switch: '/common/images/icons/switch.png?v=#{$randomId-one}';
+$switch-sprite: 36px 36px;
+$tab-del: '/common/images/icons/tab-del.png?v=#{$randomId-one}';
+$tab-del-sprite: 9px 8px;
+$taijiuhezuopiaofang: '/common/images/icons/taijiuhezuopiaofang.png?v=#{$randomId-one}';
+$taijiuhezuopiaofang-sprite: 70px 70px;
+$taijiuxinzengyingyuan: '/common/images/icons/taijiuxinzengyingyuan.png?v=#{$randomId-one}';
+$taijiuxinzengyingyuan-sprite: 70px 70px;
+$tel-hover: '/common/images/icons/tel-hover.png?v=#{$randomId-one}';
+$tel-hover-sprite: 20px 21px;
+$tel: '/common/images/icons/tel.png?v=#{$randomId-one}';
+$tel-sprite: 20px 21px;
+$template: '/common/images/icons/template.png?v=#{$randomId-one}';
+$template-sprite: 36px 37px;
+$terminal: '/common/images/icons/terminal.png?v=#{$randomId-one}';
+$terminal-sprite: 41px 33px;
+$thematicAd: '/common/images/icons/thematicAd.png?v=#{$randomId-one}';
+$thematicAd-sprite: 59px 59px;
+$time: '/common/images/icons/time.png?v=#{$randomId-one}';
+$time-sprite: 16px 16px;
+$transfer-hover: '/common/images/icons/transfer-hover.png?v=#{$randomId-one}';
+$transfer-hover-sprite: 18px 18px;
+$transfer-select: '/common/images/icons/transfer-select.png?v=#{$randomId-one}';
+$transfer-select-sprite: 18px 18px;
+$transfer: '/common/images/icons/transfer.png?v=#{$randomId-one}';
+$transfer-sprite: 18px 18px;
+$trashing: '/common/images/icons/trashing.png?v=#{$randomId-one}';
+$trashing-sprite: 59px 59px;
+$unfold: '/common/images/icons/unfold.png?v=#{$randomId-one}';
+$unfold-sprite: 15px 13px;
+$user: '/common/images/icons/user.png?v=#{$randomId-one}';
+$user-sprite: 35px 33px;
+$view: '/common/images/icons/view.png?v=#{$randomId-one}';
+$view-sprite: 16px 14px;
+$vip: '/common/images/icons/vip.png?v=#{$randomId-one}';
+$vip-sprite: 26px 26px;
+$vista: '/common/images/icons/vista.png?v=#{$randomId-one}';
+$vista-sprite: 70px 70px;
+$water: '/common/images/icons/water.png?v=#{$randomId-one}';
+$water-sprite: 33px 33px;
+$wifi: '/common/images/icons/wifi.png?v=#{$randomId-one}';
+$wifi-sprite: 12px 9px;
+$win: '/common/images/icons/win.png?v=#{$randomId-one}';
+$win-sprite: 14px 15px;
+$xf-app: '/common/images/icons/xf-app.png?v=#{$randomId-one}';
+$xf-app-sprite: 140px 140px;
+$xf-base: '/common/images/icons/xf-base.png?v=#{$randomId-one}';
+$xf-base-sprite: 121px 121px;
+$xf-close: '/common/images/icons/xf-close.png?v=#{$randomId-one}';
+$xf-close-sprite: 64px 24px;
+$xf-compass: '/common/images/icons/xf-compass.png?v=#{$randomId-one}';
+$xf-compass-sprite: 120px 121px;
+$xf-default: '/common/images/icons/xf-default.png?v=#{$randomId-one}';
+$xf-default-sprite: 121px 121px;
+$xf-derivatives: '/common/images/icons/xf-derivatives.png?v=#{$randomId-one}';
+$xf-derivatives-sprite: 121px 121px;
+$xf-flow: '/common/images/icons/xf-flow.png?v=#{$randomId-one}';
+$xf-flow-sprite: 121px 121px;
+$xf-ghq: '/common/images/icons/xf-ghq.png?v=#{$randomId-one}';
+$xf-ghq-sprite: 121px 121px;
+$xf-good: '/common/images/icons/xf-good.png?v=#{$randomId-one}';
+$xf-good-sprite: 120px 121px;
+$xf-hqsession: '/common/images/icons/xf-hqsession.png?v=#{$randomId-one}';
+$xf-hqsession-sprite: 121px 121px;
+$xf-mhq: '/common/images/icons/xf-mhq.png?v=#{$randomId-one}';
+$xf-mhq-sprite: 121px 121px;
+$xf-mmc: '/common/images/icons/xf-mmc.png?v=#{$randomId-one}';
+$xf-mmc-sprite: 121px 121px;
+$xf-naming: '/common/images/icons/xf-naming.png?v=#{$randomId-one}';
+$xf-naming-sprite: 121px 121px;
+$xf-noc: '/common/images/icons/xf-noc.png?v=#{$randomId-one}';
+$xf-noc-sprite: 140px 140px;
+$xf-open: '/common/images/icons/xf-open.png?v=#{$randomId-one}';
+$xf-open-sprite: 63px 24px;
+$xf-order: '/common/images/icons/xf-order.png?v=#{$randomId-one}';
+$xf-order-sprite: 120px 121px;
+$xf-platform: '/common/images/icons/xf-platform.png?v=#{$randomId-one}';
+$xf-platform-sprite: 121px 122px;
+$xf-price: '/common/images/icons/xf-price.png?v=#{$randomId-one}';
+$xf-price-sprite: 121px 121px;
+$xf-report: '/common/images/icons/xf-report.png?v=#{$randomId-one}';
+$xf-report-sprite: 121px 122px;
+$xf-rmp: '/common/images/icons/xf-rmp.png?v=#{$randomId-one}';
+$xf-rmp-sprite: 121px 122px;
+$xf-sales: '/common/images/icons/xf-sales.png?v=#{$randomId-one}';
+$xf-sales-sprite: 121px 121px;
+$xf-sms: '/common/images/icons/xf-sms.png?v=#{$randomId-one}';
+$xf-sms-sprite: 121px 121px;
+$xf-vip: '/common/images/icons/xf-vip.png?v=#{$randomId-one}';
+$xf-vip-sprite: 121px 121px;
+$xflh-code: '/common/images/icons/xflh-code.png?v=#{$randomId-one}';
+$xflh-code-sprite: 25px 18px;
+$xflh-logo: '/common/images/icons/xflh-logo.png?v=#{$randomId-one}';
+$xflh-logo-sprite: 426px 52px;
+$xflh-pwd: '/common/images/icons/xflh-pwd.png?v=#{$randomId-one}';
+$xflh-pwd-sprite: 24px 25px;
+$xflh-user: '/common/images/icons/xflh-user.png?v=#{$randomId-one}';
+$xflh-user-sprite: 22px 25px;
+$yanshengphuogui: '/common/images/icons/yanshengphuogui.png?v=#{$randomId-one}';
+$yanshengphuogui-sprite: 70px 70px;
+$yingyuan: '/common/images/icons/yingyuan.png?v=#{$randomId-one}';
+$yingyuan-sprite: 31px 31px;
+$zhinengchuwugui: '/common/images/icons/zhinengchuwugui.png?v=#{$randomId-one}';
+$zhinengchuwugui-sprite: 70px 70px;
+$zizhuqupiaoji: '/common/images/icons/zizhuqupiaoji.png?v=#{$randomId-one}';
+$zizhuqupiaoji-sprite: 70px 70px;
+$zizhuzhaji: '/common/images/icons/zizhuzhaji.png?v=#{$randomId-one}';
+$zizhuzhaji-sprite: 70px 70px;
+$zy-frame-logo: '/common/images/icons/zy-frame-logo.png?v=#{$randomId-one}';
+$zy-frame-logo-sprite: 129px 52px;
+$zy-login-logo: '/common/images/icons/zy-login-logo.png?v=#{$randomId-one}';
+$zy-login-logo-sprite: 222px 90px;
+
+@function px2rem-one ($px) {
+  @if (type-of($px) == "number") {
+    @return $px / 1rem * 1rem;
+  }
+  @if (type-of($px) == "list") {
+    @if (nth($px, 1) == 0 and nth($px, 2) != 0) {
+      @return 0 nth($px, 2) / 1rem * 1rem;
+    } @else if (nth($px, 1) == 0 and nth($px, 2) == 0)  {
+      @return 0 0;
+    } @else if (nth($px, 1) != 0 and nth($px, 2) == 0) {
+      @return nth($px, 1) / 1rem * 1rem;
+    } @else {
+      @return nth($px, 1) / 1rem *1rem nth($px, 2) / 1rem * 1rem;
+    }
+  }
+}
+
+@mixin sprite-width-one($sprite, $precision) {
+	@if $precision {
+		width: px2rem-one(nth($sprite, 1));
+	}@else{
+		width: px2rem-one(nth($sprite, 1) + 2px);
+	}
+	
+}
+
+@mixin sprite-height-one($sprite, $precision) {
+	@if $precision {
+		height: px2rem-one(nth($sprite, 2));
+	}@else{
+		height: px2rem-one(nth($sprite, 2) + 2px);
+	}
+}
+
+%common-sprite-one{
+	background-repeat: no-repeat;
+	background-position: 0;
+	background-size: auto;
+    display: inline-block;	
+}
+
+@mixin sprite-one($name, $sprite, $precision) {
+	@include sprite-width-one($sprite, $precision);
+	@include sprite-height-one($sprite, $precision);
+    background-image: url($name);
+	@extend %common-sprite-one;
+}
+
+
+@mixin mix-active-user($precision: false) {
+    @include sprite-one($active-user, $active-user-sprite, $precision);
+}
+@mixin mix-add($precision: false) {
+    @include sprite-one($add, $add-sprite, $precision);
+}
+@mixin mix-adticket($precision: false) {
+    @include sprite-one($adticket, $adticket-sprite, $precision);
+}
+@mixin mix-advertising($precision: false) {
+    @include sprite-one($advertising, $advertising-sprite, $precision);
+}
+@mixin mix-alarm-radio-checked($precision: false) {
+    @include sprite-one($alarm-radio-checked, $alarm-radio-checked-sprite, $precision);
+}
+@mixin mix-alarm-radio-unchecked($precision: false) {
+    @include sprite-one($alarm-radio-unchecked, $alarm-radio-unchecked-sprite, $precision);
+}
+@mixin mix-app($precision: false) {
+    @include sprite-one($app, $app-sprite, $precision);
+}
+@mixin mix-arrow-right($precision: false) {
+    @include sprite-one($arrow-right, $arrow-right-sprite, $precision);
+}
+@mixin mix-asc-order($precision: false) {
+    @include sprite-one($asc-order, $asc-order-sprite, $precision);
+}
+@mixin mix-back($precision: false) {
+    @include sprite-one($back, $back-sprite, $precision);
+}
+@mixin mix-bannerAd($precision: false) {
+    @include sprite-one($bannerAd, $bannerAd-sprite, $precision);
+}
+@mixin mix-barrier-hover($precision: false) {
+    @include sprite-one($barrier-hover, $barrier-hover-sprite, $precision);
+}
+@mixin mix-barrier-select($precision: false) {
+    @include sprite-one($barrier-select, $barrier-select-sprite, $precision);
+}
+@mixin mix-barrier($precision: false) {
+    @include sprite-one($barrier, $barrier-sprite, $precision);
+}
+@mixin mix-base($precision: false) {
+    @include sprite-one($base, $base-sprite, $precision);
+}
+@mixin mix-batch-upload-hover($precision: false) {
+    @include sprite-one($batch-upload-hover, $batch-upload-hover-sprite, $precision);
+}
+@mixin mix-batch-upload-select($precision: false) {
+    @include sprite-one($batch-upload-select, $batch-upload-select-sprite, $precision);
+}
+@mixin mix-batch-upload($precision: false) {
+    @include sprite-one($batch-upload, $batch-upload-sprite, $precision);
+}
+@mixin mix-battery($precision: false) {
+    @include sprite-one($battery, $battery-sprite, $precision);
+}
+@mixin mix-big-right($precision: false) {
+    @include sprite-one($big-right, $big-right-sprite, $precision);
+}
+@mixin mix-big-wind($precision: false) {
+    @include sprite-one($big-wind, $big-wind-sprite, $precision);
+}
+@mixin mix-bulb($precision: false) {
+    @include sprite-one($bulb, $bulb-sprite, $precision);
+}
+@mixin mix-calendar-icon-lf($precision: false) {
+    @include sprite-one($calendar-icon-lf, $calendar-icon-lf-sprite, $precision);
+}
+@mixin mix-calendar-icon-rt($precision: false) {
+    @include sprite-one($calendar-icon-rt, $calendar-icon-rt-sprite, $precision);
+}
+@mixin mix-cancel-check-hover($precision: false) {
+    @include sprite-one($cancel-check-hover, $cancel-check-hover-sprite, $precision);
+}
+@mixin mix-cancel-check-select($precision: false) {
+    @include sprite-one($cancel-check-select, $cancel-check-select-sprite, $precision);
+}
+@mixin mix-cancel-check($precision: false) {
+    @include sprite-one($cancel-check, $cancel-check-sprite, $precision);
+}
+@mixin mix-card($precision: false) {
+    @include sprite-one($card, $card-sprite, $precision);
+}
+@mixin mix-change-hover($precision: false) {
+    @include sprite-one($change-hover, $change-hover-sprite, $precision);
+}
+@mixin mix-change-select($precision: false) {
+    @include sprite-one($change-select, $change-select-sprite, $precision);
+}
+@mixin mix-change($precision: false) {
+    @include sprite-one($change, $change-sprite, $precision);
+}
+@mixin mix-charts($precision: false) {
+    @include sprite-one($charts, $charts-sprite, $precision);
+}
+@mixin mix-chat-hover($precision: false) {
+    @include sprite-one($chat-hover, $chat-hover-sprite, $precision);
+}
+@mixin mix-chat($precision: false) {
+    @include sprite-one($chat, $chat-sprite, $precision);
+}
+@mixin mix-check-hover($precision: false) {
+    @include sprite-one($check-hover, $check-hover-sprite, $precision);
+}
+@mixin mix-check-select($precision: false) {
+    @include sprite-one($check-select, $check-select-sprite, $precision);
+}
+@mixin mix-check($precision: false) {
+    @include sprite-one($check, $check-sprite, $precision);
+}
+@mixin mix-chenxing($precision: false) {
+    @include sprite-one($chenxing, $chenxing-sprite, $precision);
+}
+@mixin mix-circle-selected($precision: false) {
+    @include sprite-one($circle-selected, $circle-selected-sprite, $precision);
+}
+@mixin mix-circle($precision: false) {
+    @include sprite-one($circle, $circle-sprite, $precision);
+}
+@mixin mix-classification($precision: false) {
+    @include sprite-one($classification, $classification-sprite, $precision);
+}
+@mixin mix-clear($precision: false) {
+    @include sprite-one($clear, $clear-sprite, $precision);
+}
+@mixin mix-clear_2($precision: false) {
+    @include sprite-one($clear_2, $clear_2-sprite, $precision);
+}
+@mixin mix-close($precision: false) {
+    @include sprite-one($close, $close-sprite, $precision);
+}
+@mixin mix-close_lg($precision: false) {
+    @include sprite-one($close_lg, $close_lg-sprite, $precision);
+}
+@mixin mix-close_lg_hover($precision: false) {
+    @include sprite-one($close_lg_hover, $close_lg_hover-sprite, $precision);
+}
+@mixin mix-cloudlet-frame-logo($precision: false) {
+    @include sprite-one($cloudlet-frame-logo, $cloudlet-frame-logo-sprite, $precision);
+}
+@mixin mix-cloudlet-full-screen($precision: false) {
+    @include sprite-one($cloudlet-full-screen, $cloudlet-full-screen-sprite, $precision);
+}
+@mixin mix-cloudlet-reset-screen($precision: false) {
+    @include sprite-one($cloudlet-reset-screen, $cloudlet-reset-screen-sprite, $precision);
+}
+@mixin mix-cloudletlogin-logo($precision: false) {
+    @include sprite-one($cloudletlogin-logo, $cloudletlogin-logo-sprite, $precision);
+}
+@mixin mix-cloudmy-frame-logo($precision: false) {
+    @include sprite-one($cloudmy-frame-logo, $cloudmy-frame-logo-sprite, $precision);
+}
+@mixin mix-cmts($precision: false) {
+    @include sprite-one($cmts, $cmts-sprite, $precision);
+}
+@mixin mix-co($precision: false) {
+    @include sprite-one($co, $co-sprite, $precision);
+}
+@mixin mix-color($precision: false) {
+    @include sprite-one($color, $color-sprite, $precision);
+}
+@mixin mix-comment($precision: false) {
+    @include sprite-one($comment, $comment-sprite, $precision);
+}
+@mixin mix-compass($precision: false) {
+    @include sprite-one($compass, $compass-sprite, $precision);
+}
+@mixin mix-config-hover($precision: false) {
+    @include sprite-one($config-hover, $config-hover-sprite, $precision);
+}
+@mixin mix-config-select($precision: false) {
+    @include sprite-one($config-select, $config-select-sprite, $precision);
+}
+@mixin mix-config($precision: false) {
+    @include sprite-one($config, $config-sprite, $precision);
+}
+@mixin mix-content($precision: false) {
+    @include sprite-one($content, $content-sprite, $precision);
+}
+@mixin mix-control($precision: false) {
+    @include sprite-one($control, $control-sprite, $precision);
+}
+@mixin mix-cool-disabled($precision: false) {
+    @include sprite-one($cool-disabled, $cool-disabled-sprite, $precision);
+}
+@mixin mix-cool($precision: false) {
+    @include sprite-one($cool, $cool-sprite, $precision);
+}
+@mixin mix-copy-add-hover($precision: false) {
+    @include sprite-one($copy-add-hover, $copy-add-hover-sprite, $precision);
+}
+@mixin mix-copy-add-select($precision: false) {
+    @include sprite-one($copy-add-select, $copy-add-select-sprite, $precision);
+}
+@mixin mix-copy-add($precision: false) {
+    @include sprite-one($copy-add, $copy-add-sprite, $precision);
+}
+@mixin mix-copy-select($precision: false) {
+    @include sprite-one($copy-select, $copy-select-sprite, $precision);
+}
+@mixin mix-copy($precision: false) {
+    @include sprite-one($copy, $copy-sprite, $precision);
+}
+@mixin mix-create-hover($precision: false) {
+    @include sprite-one($create-hover, $create-hover-sprite, $precision);
+}
+@mixin mix-create-select($precision: false) {
+    @include sprite-one($create-select, $create-select-sprite, $precision);
+}
+@mixin mix-create($precision: false) {
+    @include sprite-one($create, $create-sprite, $precision);
+}
+@mixin mix-date($precision: false) {
+    @include sprite-one($date, $date-sprite, $precision);
+}
+@mixin mix-del-hover($precision: false) {
+    @include sprite-one($del-hover, $del-hover-sprite, $precision);
+}
+@mixin mix-del-select($precision: false) {
+    @include sprite-one($del-select, $del-select-sprite, $precision);
+}
+@mixin mix-del($precision: false) {
+    @include sprite-one($del, $del-sprite, $precision);
+}
+@mixin mix-derivatives($precision: false) {
+    @include sprite-one($derivatives, $derivatives-sprite, $precision);
+}
+@mixin mix-desc-order($precision: false) {
+    @include sprite-one($desc-order, $desc-order-sprite, $precision);
+}
+@mixin mix-dialog-err($precision: false) {
+    @include sprite-one($dialog-err, $dialog-err-sprite, $precision);
+}
+@mixin mix-dialog-suc($precision: false) {
+    @include sprite-one($dialog-suc, $dialog-suc-sprite, $precision);
+}
+@mixin mix-dingdan($precision: false) {
+    @include sprite-one($dingdan, $dingdan-sprite, $precision);
+}
+@mixin mix-dingxin($precision: false) {
+    @include sprite-one($dingxin, $dingxin-sprite, $precision);
+}
+@mixin mix-down($precision: false) {
+    @include sprite-one($down, $down-sprite, $precision);
+}
+@mixin mix-edit-hover($precision: false) {
+    @include sprite-one($edit-hover, $edit-hover-sprite, $precision);
+}
+@mixin mix-edit-select($precision: false) {
+    @include sprite-one($edit-select, $edit-select-sprite, $precision);
+}
+@mixin mix-edit($precision: false) {
+    @include sprite-one($edit, $edit-sprite, $precision);
+}
+@mixin mix-electric($precision: false) {
+    @include sprite-one($electric, $electric-sprite, $precision);
+}
+@mixin mix-ellipse($precision: false) {
+    @include sprite-one($ellipse, $ellipse-sprite, $precision);
+}
+@mixin mix-else_yingjian($precision: false) {
+    @include sprite-one($else_yingjian, $else_yingjian-sprite, $precision);
+}
+@mixin mix-emerchant($precision: false) {
+    @include sprite-one($emerchant, $emerchant-sprite, $precision);
+}
+@mixin mix-error($precision: false) {
+    @include sprite-one($error, $error-sprite, $precision);
+}
+@mixin mix-exit($precision: false) {
+    @include sprite-one($exit, $exit-sprite, $precision);
+}
+@mixin mix-export-hover($precision: false) {
+    @include sprite-one($export-hover, $export-hover-sprite, $precision);
+}
+@mixin mix-export-select($precision: false) {
+    @include sprite-one($export-select, $export-select-sprite, $precision);
+}
+@mixin mix-export($precision: false) {
+    @include sprite-one($export, $export-sprite, $precision);
+}
+@mixin mix-fans($precision: false) {
+    @include sprite-one($fans, $fans-sprite, $precision);
+}
+@mixin mix-feedback-hover($precision: false) {
+    @include sprite-one($feedback-hover, $feedback-hover-sprite, $precision);
+}
+@mixin mix-feedback($precision: false) {
+    @include sprite-one($feedback, $feedback-sprite, $precision);
+}
+@mixin mix-film($precision: false) {
+    @include sprite-one($film, $film-sprite, $precision);
+}
+@mixin mix-first-page-hover($precision: false) {
+    @include sprite-one($first-page-hover, $first-page-hover-sprite, $precision);
+}
+@mixin mix-first-page($precision: false) {
+    @include sprite-one($first-page, $first-page-sprite, $precision);
+}
+@mixin mix-flow($precision: false) {
+    @include sprite-one($flow, $flow-sprite, $precision);
+}
+@mixin mix-fold($precision: false) {
+    @include sprite-one($fold, $fold-sprite, $precision);
+}
+@mixin mix-folder($precision: false) {
+    @include sprite-one($folder, $folder-sprite, $precision);
+}
+@mixin mix-frame-logo($precision: false) {
+    @include sprite-one($frame-logo, $frame-logo-sprite, $precision);
+}
+@mixin mix-frame-topNav-more($precision: false) {
+    @include sprite-one($frame-topNav-more, $frame-topNav-more-sprite, $precision);
+}
+@mixin mix-freely-login-logo($precision: false) {
+    @include sprite-one($freely-login-logo, $freely-login-logo-sprite, $precision);
+}
+@mixin mix-freely-logo($precision: false) {
+    @include sprite-one($freely-logo, $freely-logo-sprite, $precision);
+}
+@mixin mix-full-screen($precision: false) {
+    @include sprite-one($full-screen, $full-screen-sprite, $precision);
+}
+@mixin mix-get-on-hover($precision: false) {
+    @include sprite-one($get-on-hover, $get-on-hover-sprite, $precision);
+}
+@mixin mix-get-on-select($precision: false) {
+    @include sprite-one($get-on-select, $get-on-select-sprite, $precision);
+}
+@mixin mix-get-on($precision: false) {
+    @include sprite-one($get-on, $get-on-sprite, $precision);
+}
+@mixin mix-ghq($precision: false) {
+    @include sprite-one($ghq, $ghq-sprite, $precision);
+}
+@mixin mix-good($precision: false) {
+    @include sprite-one($good, $good-sprite, $precision);
+}
+@mixin mix-goodList($precision: false) {
+    @include sprite-one($goodList, $goodList-sprite, $precision);
+}
+@mixin mix-goodPurchase($precision: false) {
+    @include sprite-one($goodPurchase, $goodPurchase-sprite, $precision);
+}
+@mixin mix-goto-hover($precision: false) {
+    @include sprite-one($goto-hover, $goto-hover-sprite, $precision);
+}
+@mixin mix-goto($precision: false) {
+    @include sprite-one($goto, $goto-sprite, $precision);
+}
+@mixin mix-grid-checkbox-checked-disabled($precision: false) {
+    @include sprite-one($grid-checkbox-checked-disabled, $grid-checkbox-checked-disabled-sprite, $precision);
+}
+@mixin mix-grid-checkbox-checked($precision: false) {
+    @include sprite-one($grid-checkbox-checked, $grid-checkbox-checked-sprite, $precision);
+}
+@mixin mix-grid-checkbox-disabled($precision: false) {
+    @include sprite-one($grid-checkbox-disabled, $grid-checkbox-disabled-sprite, $precision);
+}
+@mixin mix-grid-checkbox-incomplete-disabled($precision: false) {
+    @include sprite-one($grid-checkbox-incomplete-disabled, $grid-checkbox-incomplete-disabled-sprite, $precision);
+}
+@mixin mix-grid-checkbox-incomplete($precision: false) {
+    @include sprite-one($grid-checkbox-incomplete, $grid-checkbox-incomplete-sprite, $precision);
+}
+@mixin mix-grid-checkbox($precision: false) {
+    @include sprite-one($grid-checkbox, $grid-checkbox-sprite, $precision);
+}
+@mixin mix-grid-radio-checked-disabled($precision: false) {
+    @include sprite-one($grid-radio-checked-disabled, $grid-radio-checked-disabled-sprite, $precision);
+}
+@mixin mix-grid-radio-checked($precision: false) {
+    @include sprite-one($grid-radio-checked, $grid-radio-checked-sprite, $precision);
+}
+@mixin mix-grid-radio-disabled($precision: false) {
+    @include sprite-one($grid-radio-disabled, $grid-radio-disabled-sprite, $precision);
+}
+@mixin mix-grid-radio($precision: false) {
+    @include sprite-one($grid-radio, $grid-radio-sprite, $precision);
+}
+@mixin mix-help-hover($precision: false) {
+    @include sprite-one($help-hover, $help-hover-sprite, $precision);
+}
+@mixin mix-help($precision: false) {
+    @include sprite-one($help, $help-sprite, $precision);
+}
+@mixin mix-help_2-hover($precision: false) {
+    @include sprite-one($help_2-hover, $help_2-hover-sprite, $precision);
+}
+@mixin mix-help_2($precision: false) {
+    @include sprite-one($help_2, $help_2-sprite, $precision);
+}
+@mixin mix-hfh($precision: false) {
+    @include sprite-one($hfh, $hfh-sprite, $precision);
+}
+@mixin mix-hln($precision: false) {
+    @include sprite-one($hln, $hln-sprite, $precision);
+}
+@mixin mix-hot-disabled($precision: false) {
+    @include sprite-one($hot-disabled, $hot-disabled-sprite, $precision);
+}
+@mixin mix-hot($precision: false) {
+    @include sprite-one($hot, $hot-sprite, $precision);
+}
+@mixin mix-hq-key($precision: false) {
+    @include sprite-one($hq-key, $hq-key-sprite, $precision);
+}
+@mixin mix-hq-locker($precision: false) {
+    @include sprite-one($hq-locker, $hq-locker-sprite, $precision);
+}
+@mixin mix-hq-login-logo($precision: false) {
+    @include sprite-one($hq-login-logo, $hq-login-logo-sprite, $precision);
+}
+@mixin mix-hq-logo($precision: false) {
+    @include sprite-one($hq-logo, $hq-logo-sprite, $precision);
+}
+@mixin mix-hq-user($precision: false) {
+    @include sprite-one($hq-user, $hq-user-sprite, $precision);
+}
+@mixin mix-hq($precision: false) {
+    @include sprite-one($hq, $hq-sprite, $precision);
+}
+@mixin mix-hqsession($precision: false) {
+    @include sprite-one($hqsession, $hqsession-sprite, $precision);
+}
+@mixin mix-huiyuan($precision: false) {
+    @include sprite-one($huiyuan, $huiyuan-sprite, $precision);
+}
+@mixin mix-input-search($precision: false) {
+    @include sprite-one($input-search, $input-search-sprite, $precision);
+}
+@mixin mix-input-shangla($precision: false) {
+    @include sprite-one($input-shangla, $input-shangla-sprite, $precision);
+}
+@mixin mix-input-xiala($precision: false) {
+    @include sprite-one($input-xiala, $input-xiala-sprite, $precision);
+}
+@mixin mix-install-deploy-hover($precision: false) {
+    @include sprite-one($install-deploy-hover, $install-deploy-hover-sprite, $precision);
+}
+@mixin mix-install-deploy-select($precision: false) {
+    @include sprite-one($install-deploy-select, $install-deploy-select-sprite, $precision);
+}
+@mixin mix-install-deploy($precision: false) {
+    @include sprite-one($install-deploy, $install-deploy-sprite, $precision);
+}
+@mixin mix-issued-hover($precision: false) {
+    @include sprite-one($issued-hover, $issued-hover-sprite, $precision);
+}
+@mixin mix-issued-select($precision: false) {
+    @include sprite-one($issued-select, $issued-select-sprite, $precision);
+}
+@mixin mix-issued($precision: false) {
+    @include sprite-one($issued, $issued-sprite, $precision);
+}
+@mixin mix-itemClose($precision: false) {
+    @include sprite-one($itemClose, $itemClose-sprite, $precision);
+}
+@mixin mix-jinggao($precision: false) {
+    @include sprite-one($jinggao, $jinggao-sprite, $precision);
+}
+@mixin mix-jinyong($precision: false) {
+    @include sprite-one($jinyong, $jinyong-sprite, $precision);
+}
+@mixin mix-key($precision: false) {
+    @include sprite-one($key, $key-sprite, $precision);
+}
+@mixin mix-last-page-hover($precision: false) {
+    @include sprite-one($last-page-hover, $last-page-hover-sprite, $precision);
+}
+@mixin mix-last-page($precision: false) {
+    @include sprite-one($last-page, $last-page-sprite, $precision);
+}
+@mixin mix-legend-select($precision: false) {
+    @include sprite-one($legend-select, $legend-select-sprite, $precision);
+}
+@mixin mix-legend($precision: false) {
+    @include sprite-one($legend, $legend-sprite, $precision);
+}
+@mixin mix-let-asc-order($precision: false) {
+    @include sprite-one($let-asc-order, $let-asc-order-sprite, $precision);
+}
+@mixin mix-let-desc-order($precision: false) {
+    @include sprite-one($let-desc-order, $let-desc-order-sprite, $precision);
+}
+@mixin mix-let-dialog-suc($precision: false) {
+    @include sprite-one($let-dialog-suc, $let-dialog-suc-sprite, $precision);
+}
+@mixin mix-let-first-page-hover($precision: false) {
+    @include sprite-one($let-first-page-hover, $let-first-page-hover-sprite, $precision);
+}
+@mixin mix-let-goto-hover($precision: false) {
+    @include sprite-one($let-goto-hover, $let-goto-hover-sprite, $precision);
+}
+@mixin mix-let-grid-checkbox-checked($precision: false) {
+    @include sprite-one($let-grid-checkbox-checked, $let-grid-checkbox-checked-sprite, $precision);
+}
+@mixin mix-let-grid-checkbox-incomplete($precision: false) {
+    @include sprite-one($let-grid-checkbox-incomplete, $let-grid-checkbox-incomplete-sprite, $precision);
+}
+@mixin mix-let-grid-radio-checked($precision: false) {
+    @include sprite-one($let-grid-radio-checked, $let-grid-radio-checked-sprite, $precision);
+}
+@mixin mix-let-help-hover($precision: false) {
+    @include sprite-one($let-help-hover, $let-help-hover-sprite, $precision);
+}
+@mixin mix-let-last-page-hover($precision: false) {
+    @include sprite-one($let-last-page-hover, $let-last-page-hover-sprite, $precision);
+}
+@mixin mix-let-next-hover($precision: false) {
+    @include sprite-one($let-next-hover, $let-next-hover-sprite, $precision);
+}
+@mixin mix-let-prev-hover($precision: false) {
+    @include sprite-one($let-prev-hover, $let-prev-hover-sprite, $precision);
+}
+@mixin mix-locker($precision: false) {
+    @include sprite-one($locker, $locker-sprite, $precision);
+}
+@mixin mix-login-logo($precision: false) {
+    @include sprite-one($login-logo, $login-logo-sprite, $precision);
+}
+@mixin mix-logout($precision: false) {
+    @include sprite-one($logout, $logout-sprite, $precision);
+}
+@mixin mix-look-hover($precision: false) {
+    @include sprite-one($look-hover, $look-hover-sprite, $precision);
+}
+@mixin mix-look-select($precision: false) {
+    @include sprite-one($look-select, $look-select-sprite, $precision);
+}
+@mixin mix-look($precision: false) {
+    @include sprite-one($look, $look-sprite, $precision);
+}
+@mixin mix-m-add($precision: false) {
+    @include sprite-one($m-add, $m-add-sprite, $precision);
+}
+@mixin mix-m-allot-hover($precision: false) {
+    @include sprite-one($m-allot-hover, $m-allot-hover-sprite, $precision);
+}
+@mixin mix-m-allot-select($precision: false) {
+    @include sprite-one($m-allot-select, $m-allot-select-sprite, $precision);
+}
+@mixin mix-m-allot($precision: false) {
+    @include sprite-one($m-allot, $m-allot-sprite, $precision);
+}
+@mixin mix-m-complete($precision: false) {
+    @include sprite-one($m-complete, $m-complete-sprite, $precision);
+}
+@mixin mix-m-differ($precision: false) {
+    @include sprite-one($m-differ, $m-differ-sprite, $precision);
+}
+@mixin mix-m-install-hover($precision: false) {
+    @include sprite-one($m-install-hover, $m-install-hover-sprite, $precision);
+}
+@mixin mix-m-install-select($precision: false) {
+    @include sprite-one($m-install-select, $m-install-select-sprite, $precision);
+}
+@mixin mix-m-install($precision: false) {
+    @include sprite-one($m-install, $m-install-sprite, $precision);
+}
+@mixin mix-m-minus-disabled($precision: false) {
+    @include sprite-one($m-minus-disabled, $m-minus-disabled-sprite, $precision);
+}
+@mixin mix-m-minus($precision: false) {
+    @include sprite-one($m-minus, $m-minus-sprite, $precision);
+}
+@mixin mix-m-nosubmit($precision: false) {
+    @include sprite-one($m-nosubmit, $m-nosubmit-sprite, $precision);
+}
+@mixin mix-m-polling-hover($precision: false) {
+    @include sprite-one($m-polling-hover, $m-polling-hover-sprite, $precision);
+}
+@mixin mix-m-polling-select($precision: false) {
+    @include sprite-one($m-polling-select, $m-polling-select-sprite, $precision);
+}
+@mixin mix-m-polling($precision: false) {
+    @include sprite-one($m-polling, $m-polling-sprite, $precision);
+}
+@mixin mix-m-relate-hover($precision: false) {
+    @include sprite-one($m-relate-hover, $m-relate-hover-sprite, $precision);
+}
+@mixin mix-m-relate-select($precision: false) {
+    @include sprite-one($m-relate-select, $m-relate-select-sprite, $precision);
+}
+@mixin mix-m-relate($precision: false) {
+    @include sprite-one($m-relate, $m-relate-sprite, $precision);
+}
+@mixin mix-m-searchwork-hover($precision: false) {
+    @include sprite-one($m-searchwork-hover, $m-searchwork-hover-sprite, $precision);
+}
+@mixin mix-m-searchwork-select($precision: false) {
+    @include sprite-one($m-searchwork-select, $m-searchwork-select-sprite, $precision);
+}
+@mixin mix-m-searchwork($precision: false) {
+    @include sprite-one($m-searchwork, $m-searchwork-sprite, $precision);
+}
+@mixin mix-m-sendout-hover($precision: false) {
+    @include sprite-one($m-sendout-hover, $m-sendout-hover-sprite, $precision);
+}
+@mixin mix-m-sendout-select($precision: false) {
+    @include sprite-one($m-sendout-select, $m-sendout-select-sprite, $precision);
+}
+@mixin mix-m-sendout($precision: false) {
+    @include sprite-one($m-sendout, $m-sendout-sprite, $precision);
+}
+@mixin mix-m-total($precision: false) {
+    @include sprite-one($m-total, $m-total-sprite, $precision);
+}
+@mixin mix-m-warning-hover($precision: false) {
+    @include sprite-one($m-warning-hover, $m-warning-hover-sprite, $precision);
+}
+@mixin mix-m-warning-select($precision: false) {
+    @include sprite-one($m-warning-select, $m-warning-select-sprite, $precision);
+}
+@mixin mix-m-warning($precision: false) {
+    @include sprite-one($m-warning, $m-warning-sprite, $precision);
+}
+@mixin mix-mVip($precision: false) {
+    @include sprite-one($mVip, $mVip-sprite, $precision);
+}
+@mixin mix-machine($precision: false) {
+    @include sprite-one($machine, $machine-sprite, $precision);
+}
+@mixin mix-member($precision: false) {
+    @include sprite-one($member, $member-sprite, $precision);
+}
+@mixin mix-menu-adticket-hover($precision: false) {
+    @include sprite-one($menu-adticket-hover, $menu-adticket-hover-sprite, $precision);
+}
+@mixin mix-menu-adticket($precision: false) {
+    @include sprite-one($menu-adticket, $menu-adticket-sprite, $precision);
+}
+@mixin mix-menu-advertising-hover($precision: false) {
+    @include sprite-one($menu-advertising-hover, $menu-advertising-hover-sprite, $precision);
+}
+@mixin mix-menu-advertising($precision: false) {
+    @include sprite-one($menu-advertising, $menu-advertising-sprite, $precision);
+}
+@mixin mix-menu-app-hover($precision: false) {
+    @include sprite-one($menu-app-hover, $menu-app-hover-sprite, $precision);
+}
+@mixin mix-menu-app($precision: false) {
+    @include sprite-one($menu-app, $menu-app-sprite, $precision);
+}
+@mixin mix-menu-base-hover($precision: false) {
+    @include sprite-one($menu-base-hover, $menu-base-hover-sprite, $precision);
+}
+@mixin mix-menu-base($precision: false) {
+    @include sprite-one($menu-base, $menu-base-sprite, $precision);
+}
+@mixin mix-menu-co-hover($precision: false) {
+    @include sprite-one($menu-co-hover, $menu-co-hover-sprite, $precision);
+}
+@mixin mix-menu-co($precision: false) {
+    @include sprite-one($menu-co, $menu-co-sprite, $precision);
+}
+@mixin mix-menu-compass-hover($precision: false) {
+    @include sprite-one($menu-compass-hover, $menu-compass-hover-sprite, $precision);
+}
+@mixin mix-menu-compass($precision: false) {
+    @include sprite-one($menu-compass, $menu-compass-sprite, $precision);
+}
+@mixin mix-menu-coupon-hover($precision: false) {
+    @include sprite-one($menu-coupon-hover, $menu-coupon-hover-sprite, $precision);
+}
+@mixin mix-menu-coupon($precision: false) {
+    @include sprite-one($menu-coupon, $menu-coupon-sprite, $precision);
+}
+@mixin mix-menu-derivatives-hover($precision: false) {
+    @include sprite-one($menu-derivatives-hover, $menu-derivatives-hover-sprite, $precision);
+}
+@mixin mix-menu-derivatives($precision: false) {
+    @include sprite-one($menu-derivatives, $menu-derivatives-sprite, $precision);
+}
+@mixin mix-menu-direct($precision: false) {
+    @include sprite-one($menu-direct, $menu-direct-sprite, $precision);
+}
+@mixin mix-menu-flow-hover($precision: false) {
+    @include sprite-one($menu-flow-hover, $menu-flow-hover-sprite, $precision);
+}
+@mixin mix-menu-flow($precision: false) {
+    @include sprite-one($menu-flow, $menu-flow-sprite, $precision);
+}
+@mixin mix-menu-ghq-hover($precision: false) {
+    @include sprite-one($menu-ghq-hover, $menu-ghq-hover-sprite, $precision);
+}
+@mixin mix-menu-ghq($precision: false) {
+    @include sprite-one($menu-ghq, $menu-ghq-sprite, $precision);
+}
+@mixin mix-menu-good-hover($precision: false) {
+    @include sprite-one($menu-good-hover, $menu-good-hover-sprite, $precision);
+}
+@mixin mix-menu-good($precision: false) {
+    @include sprite-one($menu-good, $menu-good-sprite, $precision);
+}
+@mixin mix-menu-goods-hover($precision: false) {
+    @include sprite-one($menu-goods-hover, $menu-goods-hover-sprite, $precision);
+}
+@mixin mix-menu-goods($precision: false) {
+    @include sprite-one($menu-goods, $menu-goods-sprite, $precision);
+}
+@mixin mix-menu-hq-hover($precision: false) {
+    @include sprite-one($menu-hq-hover, $menu-hq-hover-sprite, $precision);
+}
+@mixin mix-menu-hq($precision: false) {
+    @include sprite-one($menu-hq, $menu-hq-sprite, $precision);
+}
+@mixin mix-menu-hqsession-hover($precision: false) {
+    @include sprite-one($menu-hqsession-hover, $menu-hqsession-hover-sprite, $precision);
+}
+@mixin mix-menu-hqsession($precision: false) {
+    @include sprite-one($menu-hqsession, $menu-hqsession-sprite, $precision);
+}
+@mixin mix-menu-member-hover($precision: false) {
+    @include sprite-one($menu-member-hover, $menu-member-hover-sprite, $precision);
+}
+@mixin mix-menu-member($precision: false) {
+    @include sprite-one($menu-member, $menu-member-sprite, $precision);
+}
+@mixin mix-menu-mhq-hover($precision: false) {
+    @include sprite-one($menu-mhq-hover, $menu-mhq-hover-sprite, $precision);
+}
+@mixin mix-menu-mhq($precision: false) {
+    @include sprite-one($menu-mhq, $menu-mhq-sprite, $precision);
+}
+@mixin mix-menu-mmc-hover($precision: false) {
+    @include sprite-one($menu-mmc-hover, $menu-mmc-hover-sprite, $precision);
+}
+@mixin mix-menu-mmc($precision: false) {
+    @include sprite-one($menu-mmc, $menu-mmc-sprite, $precision);
+}
+@mixin mix-menu-naming-hover($precision: false) {
+    @include sprite-one($menu-naming-hover, $menu-naming-hover-sprite, $precision);
+}
+@mixin mix-menu-naming($precision: false) {
+    @include sprite-one($menu-naming, $menu-naming-sprite, $precision);
+}
+@mixin mix-menu-noc-hover($precision: false) {
+    @include sprite-one($menu-noc-hover, $menu-noc-hover-sprite, $precision);
+}
+@mixin mix-menu-noc($precision: false) {
+    @include sprite-one($menu-noc, $menu-noc-sprite, $precision);
+}
+@mixin mix-menu-opera-hover($precision: false) {
+    @include sprite-one($menu-opera-hover, $menu-opera-hover-sprite, $precision);
+}
+@mixin mix-menu-opera($precision: false) {
+    @include sprite-one($menu-opera, $menu-opera-sprite, $precision);
+}
+@mixin mix-menu-order-hover($precision: false) {
+    @include sprite-one($menu-order-hover, $menu-order-hover-sprite, $precision);
+}
+@mixin mix-menu-order($precision: false) {
+    @include sprite-one($menu-order, $menu-order-sprite, $precision);
+}
+@mixin mix-menu-platform-hover($precision: false) {
+    @include sprite-one($menu-platform-hover, $menu-platform-hover-sprite, $precision);
+}
+@mixin mix-menu-platform($precision: false) {
+    @include sprite-one($menu-platform, $menu-platform-sprite, $precision);
+}
+@mixin mix-menu-price-hover($precision: false) {
+    @include sprite-one($menu-price-hover, $menu-price-hover-sprite, $precision);
+}
+@mixin mix-menu-price($precision: false) {
+    @include sprite-one($menu-price, $menu-price-sprite, $precision);
+}
+@mixin mix-menu-report-hover($precision: false) {
+    @include sprite-one($menu-report-hover, $menu-report-hover-sprite, $precision);
+}
+@mixin mix-menu-report($precision: false) {
+    @include sprite-one($menu-report, $menu-report-sprite, $precision);
+}
+@mixin mix-menu-reports-hover($precision: false) {
+    @include sprite-one($menu-reports-hover, $menu-reports-hover-sprite, $precision);
+}
+@mixin mix-menu-reports($precision: false) {
+    @include sprite-one($menu-reports, $menu-reports-sprite, $precision);
+}
+@mixin mix-menu-rmp-hover($precision: false) {
+    @include sprite-one($menu-rmp-hover, $menu-rmp-hover-sprite, $precision);
+}
+@mixin mix-menu-rmp($precision: false) {
+    @include sprite-one($menu-rmp, $menu-rmp-sprite, $precision);
+}
+@mixin mix-menu-sales-hover($precision: false) {
+    @include sprite-one($menu-sales-hover, $menu-sales-hover-sprite, $precision);
+}
+@mixin mix-menu-sales($precision: false) {
+    @include sprite-one($menu-sales, $menu-sales-sprite, $precision);
+}
+@mixin mix-menu-slide-down-gray($precision: false) {
+    @include sprite-one($menu-slide-down-gray, $menu-slide-down-gray-sprite, $precision);
+}
+@mixin mix-menu-slide-down($precision: false) {
+    @include sprite-one($menu-slide-down, $menu-slide-down-sprite, $precision);
+}
+@mixin mix-menu-slide-up-gray($precision: false) {
+    @include sprite-one($menu-slide-up-gray, $menu-slide-up-gray-sprite, $precision);
+}
+@mixin mix-menu-slide-up($precision: false) {
+    @include sprite-one($menu-slide-up, $menu-slide-up-sprite, $precision);
+}
+@mixin mix-menu-sms-hover($precision: false) {
+    @include sprite-one($menu-sms-hover, $menu-sms-hover-sprite, $precision);
+}
+@mixin mix-menu-sms($precision: false) {
+    @include sprite-one($menu-sms, $menu-sms-sprite, $precision);
+}
+@mixin mix-menu-vip-hover($precision: false) {
+    @include sprite-one($menu-vip-hover, $menu-vip-hover-sprite, $precision);
+}
+@mixin mix-menu-vip($precision: false) {
+    @include sprite-one($menu-vip, $menu-vip-sprite, $precision);
+}
+@mixin mix-message($precision: false) {
+    @include sprite-one($message, $message-sprite, $precision);
+}
+@mixin mix-mhq($precision: false) {
+    @include sprite-one($mhq, $mhq-sprite, $precision);
+}
+@mixin mix-middle-right($precision: false) {
+    @include sprite-one($middle-right, $middle-right-sprite, $precision);
+}
+@mixin mix-monitor($precision: false) {
+    @include sprite-one($monitor, $monitor-sprite, $precision);
+}
+@mixin mix-monitorIndex($precision: false) {
+    @include sprite-one($monitorIndex, $monitorIndex-sprite, $precision);
+}
+@mixin mix-more-menu($precision: false) {
+    @include sprite-one($more-menu, $more-menu-sprite, $precision);
+}
+@mixin mix-more($precision: false) {
+    @include sprite-one($more, $more-sprite, $precision);
+}
+@mixin mix-movie-seat($precision: false) {
+    @include sprite-one($movie-seat, $movie-seat-sprite, $precision);
+}
+@mixin mix-movie-sign($precision: false) {
+    @include sprite-one($movie-sign, $movie-sign-sprite, $precision);
+}
+@mixin mix-movie($precision: false) {
+    @include sprite-one($movie, $movie-sprite, $precision);
+}
+@mixin mix-my-login-logo($precision: false) {
+    @include sprite-one($my-login-logo, $my-login-logo-sprite, $precision);
+}
+@mixin mix-naming($precision: false) {
+    @include sprite-one($naming, $naming-sprite, $precision);
+}
+@mixin mix-nav-plus($precision: false) {
+    @include sprite-one($nav-plus, $nav-plus-sprite, $precision);
+}
+@mixin mix-nav-xiala($precision: false) {
+    @include sprite-one($nav-xiala, $nav-xiala-sprite, $precision);
+}
+@mixin mix-next-hover($precision: false) {
+    @include sprite-one($next-hover, $next-hover-sprite, $precision);
+}
+@mixin mix-next($precision: false) {
+    @include sprite-one($next, $next-sprite, $precision);
+}
+@mixin mix-next_lg($precision: false) {
+    @include sprite-one($next_lg, $next_lg-sprite, $precision);
+}
+@mixin mix-next_lg_hover($precision: false) {
+    @include sprite-one($next_lg_hover, $next_lg_hover-sprite, $precision);
+}
+@mixin mix-ng-base-hover($precision: false) {
+    @include sprite-one($ng-base-hover, $ng-base-hover-sprite, $precision);
+}
+@mixin mix-ng-base($precision: false) {
+    @include sprite-one($ng-base, $ng-base-sprite, $precision);
+}
+@mixin mix-ng-console-hover($precision: false) {
+    @include sprite-one($ng-console-hover, $ng-console-hover-sprite, $precision);
+}
+@mixin mix-ng-console($precision: false) {
+    @include sprite-one($ng-console, $ng-console-sprite, $precision);
+}
+@mixin mix-ng-coupon-hover($precision: false) {
+    @include sprite-one($ng-coupon-hover, $ng-coupon-hover-sprite, $precision);
+}
+@mixin mix-ng-coupon($precision: false) {
+    @include sprite-one($ng-coupon, $ng-coupon-sprite, $precision);
+}
+@mixin mix-ng-direct-left($precision: false) {
+    @include sprite-one($ng-direct-left, $ng-direct-left-sprite, $precision);
+}
+@mixin mix-ng-direct-right($precision: false) {
+    @include sprite-one($ng-direct-right, $ng-direct-right-sprite, $precision);
+}
+@mixin mix-ng-direct($precision: false) {
+    @include sprite-one($ng-direct, $ng-direct-sprite, $precision);
+}
+@mixin mix-ng-err($precision: false) {
+    @include sprite-one($ng-err, $ng-err-sprite, $precision);
+}
+@mixin mix-ng-exit($precision: false) {
+    @include sprite-one($ng-exit, $ng-exit-sprite, $precision);
+}
+@mixin mix-ng-goods-hover($precision: false) {
+    @include sprite-one($ng-goods-hover, $ng-goods-hover-sprite, $precision);
+}
+@mixin mix-ng-goods($precision: false) {
+    @include sprite-one($ng-goods, $ng-goods-sprite, $precision);
+}
+@mixin mix-ng-info-focus($precision: false) {
+    @include sprite-one($ng-info-focus, $ng-info-focus-sprite, $precision);
+}
+@mixin mix-ng-info($precision: false) {
+    @include sprite-one($ng-info, $ng-info-sprite, $precision);
+}
+@mixin mix-ng-locker-focus($precision: false) {
+    @include sprite-one($ng-locker-focus, $ng-locker-focus-sprite, $precision);
+}
+@mixin mix-ng-locker($precision: false) {
+    @include sprite-one($ng-locker, $ng-locker-sprite, $precision);
+}
+@mixin mix-ng-login-logo($precision: false) {
+    @include sprite-one($ng-login-logo, $ng-login-logo-sprite, $precision);
+}
+@mixin mix-ng-logo($precision: false) {
+    @include sprite-one($ng-logo, $ng-logo-sprite, $precision);
+}
+@mixin mix-ng-member-hover($precision: false) {
+    @include sprite-one($ng-member-hover, $ng-member-hover-sprite, $precision);
+}
+@mixin mix-ng-member($precision: false) {
+    @include sprite-one($ng-member, $ng-member-sprite, $precision);
+}
+@mixin mix-ng-operate-hover($precision: false) {
+    @include sprite-one($ng-operate-hover, $ng-operate-hover-sprite, $precision);
+}
+@mixin mix-ng-operate($precision: false) {
+    @include sprite-one($ng-operate, $ng-operate-sprite, $precision);
+}
+@mixin mix-ng-price-hover($precision: false) {
+    @include sprite-one($ng-price-hover, $ng-price-hover-sprite, $precision);
+}
+@mixin mix-ng-price($precision: false) {
+    @include sprite-one($ng-price, $ng-price-sprite, $precision);
+}
+@mixin mix-ng-report-hover($precision: false) {
+    @include sprite-one($ng-report-hover, $ng-report-hover-sprite, $precision);
+}
+@mixin mix-ng-report($precision: false) {
+    @include sprite-one($ng-report, $ng-report-sprite, $precision);
+}
+@mixin mix-ng-selling-hover($precision: false) {
+    @include sprite-one($ng-selling-hover, $ng-selling-hover-sprite, $precision);
+}
+@mixin mix-ng-selling($precision: false) {
+    @include sprite-one($ng-selling, $ng-selling-sprite, $precision);
+}
+@mixin mix-ng-suc($precision: false) {
+    @include sprite-one($ng-suc, $ng-suc-sprite, $precision);
+}
+@mixin mix-ng-terminal-hover($precision: false) {
+    @include sprite-one($ng-terminal-hover, $ng-terminal-hover-sprite, $precision);
+}
+@mixin mix-ng-terminal($precision: false) {
+    @include sprite-one($ng-terminal, $ng-terminal-sprite, $precision);
+}
+@mixin mix-ng-ticketing-hover($precision: false) {
+    @include sprite-one($ng-ticketing-hover, $ng-ticketing-hover-sprite, $precision);
+}
+@mixin mix-ng-ticketing($precision: false) {
+    @include sprite-one($ng-ticketing, $ng-ticketing-sprite, $precision);
+}
+@mixin mix-ng-user-focus($precision: false) {
+    @include sprite-one($ng-user-focus, $ng-user-focus-sprite, $precision);
+}
+@mixin mix-ng-user($precision: false) {
+    @include sprite-one($ng-user, $ng-user-sprite, $precision);
+}
+@mixin mix-no-open-hover($precision: false) {
+    @include sprite-one($no-open-hover, $no-open-hover-sprite, $precision);
+}
+@mixin mix-no-open($precision: false) {
+    @include sprite-one($no-open, $no-open-sprite, $precision);
+}
+@mixin mix-noc($precision: false) {
+    @include sprite-one($noc, $noc-sprite, $precision);
+}
+@mixin mix-old-user($precision: false) {
+    @include sprite-one($old-user, $old-user-sprite, $precision);
+}
+@mixin mix-open-folder($precision: false) {
+    @include sprite-one($open-folder, $open-folder-sprite, $precision);
+}
+@mixin mix-order($precision: false) {
+    @include sprite-one($order, $order-sprite, $precision);
+}
+@mixin mix-orderManagement($precision: false) {
+    @include sprite-one($orderManagement, $orderManagement-sprite, $precision);
+}
+@mixin mix-out-hover($precision: false) {
+    @include sprite-one($out-hover, $out-hover-sprite, $precision);
+}
+@mixin mix-out-right-hover($precision: false) {
+    @include sprite-one($out-right-hover, $out-right-hover-sprite, $precision);
+}
+@mixin mix-out-select($precision: false) {
+    @include sprite-one($out-select, $out-select-sprite, $precision);
+}
+@mixin mix-out($precision: false) {
+    @include sprite-one($out, $out-sprite, $precision);
+}
+@mixin mix-pastDue-hover($precision: false) {
+    @include sprite-one($pastDue-hover, $pastDue-hover-sprite, $precision);
+}
+@mixin mix-pastDue-select($precision: false) {
+    @include sprite-one($pastDue-select, $pastDue-select-sprite, $precision);
+}
+@mixin mix-pastDue($precision: false) {
+    @include sprite-one($pastDue, $pastDue-sprite, $precision);
+}
+@mixin mix-pause-draw-selected($precision: false) {
+    @include sprite-one($pause-draw-selected, $pause-draw-selected-sprite, $precision);
+}
+@mixin mix-pause-draw($precision: false) {
+    @include sprite-one($pause-draw, $pause-draw-sprite, $precision);
+}
+@mixin mix-pause-hover($precision: false) {
+    @include sprite-one($pause-hover, $pause-hover-sprite, $precision);
+}
+@mixin mix-pause-select($precision: false) {
+    @include sprite-one($pause-select, $pause-select-sprite, $precision);
+}
+@mixin mix-pause($precision: false) {
+    @include sprite-one($pause, $pause-sprite, $precision);
+}
+@mixin mix-pay-hover($precision: false) {
+    @include sprite-one($pay-hover, $pay-hover-sprite, $precision);
+}
+@mixin mix-pay-select($precision: false) {
+    @include sprite-one($pay-select, $pay-select-sprite, $precision);
+}
+@mixin mix-pay($precision: false) {
+    @include sprite-one($pay, $pay-sprite, $precision);
+}
+@mixin mix-polling-hover($precision: false) {
+    @include sprite-one($polling-hover, $polling-hover-sprite, $precision);
+}
+@mixin mix-polling-select($precision: false) {
+    @include sprite-one($polling-select, $polling-select-sprite, $precision);
+}
+@mixin mix-polling($precision: false) {
+    @include sprite-one($polling, $polling-sprite, $precision);
+}
+@mixin mix-polygon-selected($precision: false) {
+    @include sprite-one($polygon-selected, $polygon-selected-sprite, $precision);
+}
+@mixin mix-polygon($precision: false) {
+    @include sprite-one($polygon, $polygon-sprite, $precision);
+}
+@mixin mix-power($precision: false) {
+    @include sprite-one($power, $power-sprite, $precision);
+}
+@mixin mix-prev-hover($precision: false) {
+    @include sprite-one($prev-hover, $prev-hover-sprite, $precision);
+}
+@mixin mix-prev($precision: false) {
+    @include sprite-one($prev, $prev-sprite, $precision);
+}
+@mixin mix-prev_lg($precision: false) {
+    @include sprite-one($prev_lg, $prev_lg-sprite, $precision);
+}
+@mixin mix-prev_lg_hover($precision: false) {
+    @include sprite-one($prev_lg_hover, $prev_lg_hover-sprite, $precision);
+}
+@mixin mix-price($precision: false) {
+    @include sprite-one($price, $price-sprite, $precision);
+}
+@mixin mix-print-repair-hover($precision: false) {
+    @include sprite-one($print-repair-hover, $print-repair-hover-sprite, $precision);
+}
+@mixin mix-print-repair-select($precision: false) {
+    @include sprite-one($print-repair-select, $print-repair-select-sprite, $precision);
+}
+@mixin mix-print-repair($precision: false) {
+    @include sprite-one($print-repair, $print-repair-sprite, $precision);
+}
+@mixin mix-print-select($precision: false) {
+    @include sprite-one($print-select, $print-select-sprite, $precision);
+}
+@mixin mix-print($precision: false) {
+    @include sprite-one($print, $print-sprite, $precision);
+}
+@mixin mix-productGrouping($precision: false) {
+    @include sprite-one($productGrouping, $productGrouping-sprite, $precision);
+}
+@mixin mix-productList($precision: false) {
+    @include sprite-one($productList, $productList-sprite, $precision);
+}
+@mixin mix-putaway-hover($precision: false) {
+    @include sprite-one($putaway-hover, $putaway-hover-sprite, $precision);
+}
+@mixin mix-putaway-select($precision: false) {
+    @include sprite-one($putaway-select, $putaway-select-sprite, $precision);
+}
+@mixin mix-putaway($precision: false) {
+    @include sprite-one($putaway, $putaway-sprite, $precision);
+}
+@mixin mix-qiyong($precision: false) {
+    @include sprite-one($qiyong, $qiyong-sprite, $precision);
+}
+@mixin mix-quanguopiaofagn($precision: false) {
+    @include sprite-one($quanguopiaofagn, $quanguopiaofagn-sprite, $precision);
+}
+@mixin mix-quanguoxinzengyingyuan($precision: false) {
+    @include sprite-one($quanguoxinzengyingyuan, $quanguoxinzengyingyuan-sprite, $precision);
+}
+@mixin mix-qudao($precision: false) {
+    @include sprite-one($qudao, $qudao-sprite, $precision);
+}
+@mixin mix-query-hover($precision: false) {
+    @include sprite-one($query-hover, $query-hover-sprite, $precision);
+}
+@mixin mix-query-select($precision: false) {
+    @include sprite-one($query-select, $query-select-sprite, $precision);
+}
+@mixin mix-query($precision: false) {
+    @include sprite-one($query, $query-sprite, $precision);
+}
+@mixin mix-radio-disabled($precision: false) {
+    @include sprite-one($radio-disabled, $radio-disabled-sprite, $precision);
+}
+@mixin mix-radio-hover($precision: false) {
+    @include sprite-one($radio-hover, $radio-hover-sprite, $precision);
+}
+@mixin mix-radio-select($precision: false) {
+    @include sprite-one($radio-select, $radio-select-sprite, $precision);
+}
+@mixin mix-radio($precision: false) {
+    @include sprite-one($radio, $radio-sprite, $precision);
+}
+@mixin mix-recomment($precision: false) {
+    @include sprite-one($recomment, $recomment-sprite, $precision);
+}
+@mixin mix-red-dialog-suc($precision: false) {
+    @include sprite-one($red-dialog-suc, $red-dialog-suc-sprite, $precision);
+}
+@mixin mix-red-first-page-hover($precision: false) {
+    @include sprite-one($red-first-page-hover, $red-first-page-hover-sprite, $precision);
+}
+@mixin mix-red-full-screen($precision: false) {
+    @include sprite-one($red-full-screen, $red-full-screen-sprite, $precision);
+}
+@mixin mix-red-goto-hover($precision: false) {
+    @include sprite-one($red-goto-hover, $red-goto-hover-sprite, $precision);
+}
+@mixin mix-red-grid-checkbox-checked($precision: false) {
+    @include sprite-one($red-grid-checkbox-checked, $red-grid-checkbox-checked-sprite, $precision);
+}
+@mixin mix-red-grid-checkbox-incomplete($precision: false) {
+    @include sprite-one($red-grid-checkbox-incomplete, $red-grid-checkbox-incomplete-sprite, $precision);
+}
+@mixin mix-red-grid-radio-checked($precision: false) {
+    @include sprite-one($red-grid-radio-checked, $red-grid-radio-checked-sprite, $precision);
+}
+@mixin mix-red-help-hover($precision: false) {
+    @include sprite-one($red-help-hover, $red-help-hover-sprite, $precision);
+}
+@mixin mix-red-key($precision: false) {
+    @include sprite-one($red-key, $red-key-sprite, $precision);
+}
+@mixin mix-red-last-page-hover($precision: false) {
+    @include sprite-one($red-last-page-hover, $red-last-page-hover-sprite, $precision);
+}
+@mixin mix-red-locker($precision: false) {
+    @include sprite-one($red-locker, $red-locker-sprite, $precision);
+}
+@mixin mix-red-next-hover($precision: false) {
+    @include sprite-one($red-next-hover, $red-next-hover-sprite, $precision);
+}
+@mixin mix-red-prev-hover($precision: false) {
+    @include sprite-one($red-prev-hover, $red-prev-hover-sprite, $precision);
+}
+@mixin mix-red-reset-screen($precision: false) {
+    @include sprite-one($red-reset-screen, $red-reset-screen-sprite, $precision);
+}
+@mixin mix-red-tab-del($precision: false) {
+    @include sprite-one($red-tab-del, $red-tab-del-sprite, $precision);
+}
+@mixin mix-red-vip($precision: false) {
+    @include sprite-one($red-vip, $red-vip-sprite, $precision);
+}
+@mixin mix-refresh-select($precision: false) {
+    @include sprite-one($refresh-select, $refresh-select-sprite, $precision);
+}
+@mixin mix-refresh($precision: false) {
+    @include sprite-one($refresh, $refresh-sprite, $precision);
+}
+@mixin mix-refund-hover($precision: false) {
+    @include sprite-one($refund-hover, $refund-hover-sprite, $precision);
+}
+@mixin mix-refund-select($precision: false) {
+    @include sprite-one($refund-select, $refund-select-sprite, $precision);
+}
+@mixin mix-refund($precision: false) {
+    @include sprite-one($refund, $refund-sprite, $precision);
+}
+@mixin mix-relate-hover($precision: false) {
+    @include sprite-one($relate-hover, $relate-hover-sprite, $precision);
+}
+@mixin mix-relate-select($precision: false) {
+    @include sprite-one($relate-select, $relate-select-sprite, $precision);
+}
+@mixin mix-relate($precision: false) {
+    @include sprite-one($relate, $relate-sprite, $precision);
+}
+@mixin mix-reset-screen($precision: false) {
+    @include sprite-one($reset-screen, $reset-screen-sprite, $precision);
+}
+@mixin mix-resetBtn-hover($precision: false) {
+    @include sprite-one($resetBtn-hover, $resetBtn-hover-sprite, $precision);
+}
+@mixin mix-resetBtn-select($precision: false) {
+    @include sprite-one($resetBtn-select, $resetBtn-select-sprite, $precision);
+}
+@mixin mix-resetBtn($precision: false) {
+    @include sprite-one($resetBtn, $resetBtn-sprite, $precision);
+}
+@mixin mix-right($precision: false) {
+    @include sprite-one($right, $right-sprite, $precision);
+}
+@mixin mix-rmp($precision: false) {
+    @include sprite-one($rmp, $rmp-sprite, $precision);
+}
+@mixin mix-sales($precision: false) {
+    @include sprite-one($sales, $sales-sprite, $precision);
+}
+@mixin mix-save($precision: false) {
+    @include sprite-one($save, $save-sprite, $precision);
+}
+@mixin mix-saves($precision: false) {
+    @include sprite-one($saves, $saves-sprite, $precision);
+}
+@mixin mix-search-input($precision: false) {
+    @include sprite-one($search-input, $search-input-sprite, $precision);
+}
+@mixin mix-search($precision: false) {
+    @include sprite-one($search, $search-sprite, $precision);
+}
+@mixin mix-seat-a($precision: false) {
+    @include sprite-one($seat-a, $seat-a-sprite, $precision);
+}
+@mixin mix-seat-b($precision: false) {
+    @include sprite-one($seat-b, $seat-b-sprite, $precision);
+}
+@mixin mix-seat-c($precision: false) {
+    @include sprite-one($seat-c, $seat-c-sprite, $precision);
+}
+@mixin mix-seat-d($precision: false) {
+    @include sprite-one($seat-d, $seat-d-sprite, $precision);
+}
+@mixin mix-seat-double-a-selected($precision: false) {
+    @include sprite-one($seat-double-a-selected, $seat-double-a-selected-sprite, $precision);
+}
+@mixin mix-seat-double-a($precision: false) {
+    @include sprite-one($seat-double-a, $seat-double-a-sprite, $precision);
+}
+@mixin mix-seat-double-b-selected($precision: false) {
+    @include sprite-one($seat-double-b-selected, $seat-double-b-selected-sprite, $precision);
+}
+@mixin mix-seat-double-b($precision: false) {
+    @include sprite-one($seat-double-b, $seat-double-b-sprite, $precision);
+}
+@mixin mix-seat-double-c-selected($precision: false) {
+    @include sprite-one($seat-double-c-selected, $seat-double-c-selected-sprite, $precision);
+}
+@mixin mix-seat-double-c($precision: false) {
+    @include sprite-one($seat-double-c, $seat-double-c-sprite, $precision);
+}
+@mixin mix-seat-double-d-selected($precision: false) {
+    @include sprite-one($seat-double-d-selected, $seat-double-d-selected-sprite, $precision);
+}
+@mixin mix-seat-double-d($precision: false) {
+    @include sprite-one($seat-double-d, $seat-double-d-sprite, $precision);
+}
+@mixin mix-seat-double-e-selected($precision: false) {
+    @include sprite-one($seat-double-e-selected, $seat-double-e-selected-sprite, $precision);
+}
+@mixin mix-seat-double-e($precision: false) {
+    @include sprite-one($seat-double-e, $seat-double-e-sprite, $precision);
+}
+@mixin mix-seat-double-selected($precision: false) {
+    @include sprite-one($seat-double-selected, $seat-double-selected-sprite, $precision);
+}
+@mixin mix-seat-double($precision: false) {
+    @include sprite-one($seat-double, $seat-double-sprite, $precision);
+}
+@mixin mix-seat-e($precision: false) {
+    @include sprite-one($seat-e, $seat-e-sprite, $precision);
+}
+@mixin mix-seat-small-a-selected($precision: false) {
+    @include sprite-one($seat-small-a-selected, $seat-small-a-selected-sprite, $precision);
+}
+@mixin mix-seat-small-a($precision: false) {
+    @include sprite-one($seat-small-a, $seat-small-a-sprite, $precision);
+}
+@mixin mix-seat-small-b-selected($precision: false) {
+    @include sprite-one($seat-small-b-selected, $seat-small-b-selected-sprite, $precision);
+}
+@mixin mix-seat-small-b($precision: false) {
+    @include sprite-one($seat-small-b, $seat-small-b-sprite, $precision);
+}
+@mixin mix-seat-small-c-selected($precision: false) {
+    @include sprite-one($seat-small-c-selected, $seat-small-c-selected-sprite, $precision);
+}
+@mixin mix-seat-small-c($precision: false) {
+    @include sprite-one($seat-small-c, $seat-small-c-sprite, $precision);
+}
+@mixin mix-seat-small-d-selected($precision: false) {
+    @include sprite-one($seat-small-d-selected, $seat-small-d-selected-sprite, $precision);
+}
+@mixin mix-seat-small-d($precision: false) {
+    @include sprite-one($seat-small-d, $seat-small-d-sprite, $precision);
+}
+@mixin mix-seat-small-e-selected($precision: false) {
+    @include sprite-one($seat-small-e-selected, $seat-small-e-selected-sprite, $precision);
+}
+@mixin mix-seat-small-e($precision: false) {
+    @include sprite-one($seat-small-e, $seat-small-e-sprite, $precision);
+}
+@mixin mix-seat-small-selected($precision: false) {
+    @include sprite-one($seat-small-selected, $seat-small-selected-sprite, $precision);
+}
+@mixin mix-seat-small($precision: false) {
+    @include sprite-one($seat-small, $seat-small-sprite, $precision);
+}
+@mixin mix-select-disabled($precision: false) {
+    @include sprite-one($select-disabled, $select-disabled-sprite, $precision);
+}
+@mixin mix-select-gray($precision: false) {
+    @include sprite-one($select-gray, $select-gray-sprite, $precision);
+}
+@mixin mix-select-white($precision: false) {
+    @include sprite-one($select-white, $select-white-sprite, $precision);
+}
+@mixin mix-select($precision: false) {
+    @include sprite-one($select, $select-sprite, $precision);
+}
+@mixin mix-selected($precision: false) {
+    @include sprite-one($selected, $selected-sprite, $precision);
+}
+@mixin mix-sendDown-hover($precision: false) {
+    @include sprite-one($sendDown-hover, $sendDown-hover-sprite, $precision);
+}
+@mixin mix-sendDown-select($precision: false) {
+    @include sprite-one($sendDown-select, $sendDown-select-sprite, $precision);
+}
+@mixin mix-sendDown($precision: false) {
+    @include sprite-one($sendDown, $sendDown-sprite, $precision);
+}
+@mixin mix-sequence($precision: false) {
+    @include sprite-one($sequence, $sequence-sprite, $precision);
+}
+@mixin mix-setting-gray($precision: false) {
+    @include sprite-one($setting-gray, $setting-gray-sprite, $precision);
+}
+@mixin mix-setting-hover($precision: false) {
+    @include sprite-one($setting-hover, $setting-hover-sprite, $precision);
+}
+@mixin mix-setting($precision: false) {
+    @include sprite-one($setting, $setting-sprite, $precision);
+}
+@mixin mix-small-arrow-down-disable($precision: false) {
+    @include sprite-one($small-arrow-down-disable, $small-arrow-down-disable-sprite, $precision);
+}
+@mixin mix-small-arrow-down-hover($precision: false) {
+    @include sprite-one($small-arrow-down-hover, $small-arrow-down-hover-sprite, $precision);
+}
+@mixin mix-small-arrow-down($precision: false) {
+    @include sprite-one($small-arrow-down, $small-arrow-down-sprite, $precision);
+}
+@mixin mix-small-arrow-up-disable($precision: false) {
+    @include sprite-one($small-arrow-up-disable, $small-arrow-up-disable-sprite, $precision);
+}
+@mixin mix-small-arrow-up-hover($precision: false) {
+    @include sprite-one($small-arrow-up-hover, $small-arrow-up-hover-sprite, $precision);
+}
+@mixin mix-small-arrow-up($precision: false) {
+    @include sprite-one($small-arrow-up, $small-arrow-up-sprite, $precision);
+}
+@mixin mix-small-help($precision: false) {
+    @include sprite-one($small-help, $small-help-sprite, $precision);
+}
+@mixin mix-small-wind($precision: false) {
+    @include sprite-one($small-wind, $small-wind-sprite, $precision);
+}
+@mixin mix-sms($precision: false) {
+    @include sprite-one($sms, $sms-sprite, $precision);
+}
+@mixin mix-square-selected($precision: false) {
+    @include sprite-one($square-selected, $square-selected-sprite, $precision);
+}
+@mixin mix-square($precision: false) {
+    @include sprite-one($square, $square-sprite, $precision);
+}
+@mixin mix-star-hover($precision: false) {
+    @include sprite-one($star-hover, $star-hover-sprite, $precision);
+}
+@mixin mix-star($precision: false) {
+    @include sprite-one($star, $star-sprite, $precision);
+}
+@mixin mix-stream($precision: false) {
+    @include sprite-one($stream, $stream-sprite, $precision);
+}
+@mixin mix-switch($precision: false) {
+    @include sprite-one($switch, $switch-sprite, $precision);
+}
+@mixin mix-tab-del($precision: false) {
+    @include sprite-one($tab-del, $tab-del-sprite, $precision);
+}
+@mixin mix-taijiuhezuopiaofang($precision: false) {
+    @include sprite-one($taijiuhezuopiaofang, $taijiuhezuopiaofang-sprite, $precision);
+}
+@mixin mix-taijiuxinzengyingyuan($precision: false) {
+    @include sprite-one($taijiuxinzengyingyuan, $taijiuxinzengyingyuan-sprite, $precision);
+}
+@mixin mix-tel-hover($precision: false) {
+    @include sprite-one($tel-hover, $tel-hover-sprite, $precision);
+}
+@mixin mix-tel($precision: false) {
+    @include sprite-one($tel, $tel-sprite, $precision);
+}
+@mixin mix-template($precision: false) {
+    @include sprite-one($template, $template-sprite, $precision);
+}
+@mixin mix-terminal($precision: false) {
+    @include sprite-one($terminal, $terminal-sprite, $precision);
+}
+@mixin mix-thematicAd($precision: false) {
+    @include sprite-one($thematicAd, $thematicAd-sprite, $precision);
+}
+@mixin mix-time($precision: false) {
+    @include sprite-one($time, $time-sprite, $precision);
+}
+@mixin mix-transfer-hover($precision: false) {
+    @include sprite-one($transfer-hover, $transfer-hover-sprite, $precision);
+}
+@mixin mix-transfer-select($precision: false) {
+    @include sprite-one($transfer-select, $transfer-select-sprite, $precision);
+}
+@mixin mix-transfer($precision: false) {
+    @include sprite-one($transfer, $transfer-sprite, $precision);
+}
+@mixin mix-trashing($precision: false) {
+    @include sprite-one($trashing, $trashing-sprite, $precision);
+}
+@mixin mix-unfold($precision: false) {
+    @include sprite-one($unfold, $unfold-sprite, $precision);
+}
+@mixin mix-user($precision: false) {
+    @include sprite-one($user, $user-sprite, $precision);
+}
+@mixin mix-view($precision: false) {
+    @include sprite-one($view, $view-sprite, $precision);
+}
+@mixin mix-vip($precision: false) {
+    @include sprite-one($vip, $vip-sprite, $precision);
+}
+@mixin mix-vista($precision: false) {
+    @include sprite-one($vista, $vista-sprite, $precision);
+}
+@mixin mix-water($precision: false) {
+    @include sprite-one($water, $water-sprite, $precision);
+}
+@mixin mix-wifi($precision: false) {
+    @include sprite-one($wifi, $wifi-sprite, $precision);
+}
+@mixin mix-win($precision: false) {
+    @include sprite-one($win, $win-sprite, $precision);
+}
+@mixin mix-xf-app($precision: false) {
+    @include sprite-one($xf-app, $xf-app-sprite, $precision);
+}
+@mixin mix-xf-base($precision: false) {
+    @include sprite-one($xf-base, $xf-base-sprite, $precision);
+}
+@mixin mix-xf-close($precision: false) {
+    @include sprite-one($xf-close, $xf-close-sprite, $precision);
+}
+@mixin mix-xf-compass($precision: false) {
+    @include sprite-one($xf-compass, $xf-compass-sprite, $precision);
+}
+@mixin mix-xf-default($precision: false) {
+    @include sprite-one($xf-default, $xf-default-sprite, $precision);
+}
+@mixin mix-xf-derivatives($precision: false) {
+    @include sprite-one($xf-derivatives, $xf-derivatives-sprite, $precision);
+}
+@mixin mix-xf-flow($precision: false) {
+    @include sprite-one($xf-flow, $xf-flow-sprite, $precision);
+}
+@mixin mix-xf-ghq($precision: false) {
+    @include sprite-one($xf-ghq, $xf-ghq-sprite, $precision);
+}
+@mixin mix-xf-good($precision: false) {
+    @include sprite-one($xf-good, $xf-good-sprite, $precision);
+}
+@mixin mix-xf-hqsession($precision: false) {
+    @include sprite-one($xf-hqsession, $xf-hqsession-sprite, $precision);
+}
+@mixin mix-xf-mhq($precision: false) {
+    @include sprite-one($xf-mhq, $xf-mhq-sprite, $precision);
+}
+@mixin mix-xf-mmc($precision: false) {
+    @include sprite-one($xf-mmc, $xf-mmc-sprite, $precision);
+}
+@mixin mix-xf-naming($precision: false) {
+    @include sprite-one($xf-naming, $xf-naming-sprite, $precision);
+}
+@mixin mix-xf-noc($precision: false) {
+    @include sprite-one($xf-noc, $xf-noc-sprite, $precision);
+}
+@mixin mix-xf-open($precision: false) {
+    @include sprite-one($xf-open, $xf-open-sprite, $precision);
+}
+@mixin mix-xf-order($precision: false) {
+    @include sprite-one($xf-order, $xf-order-sprite, $precision);
+}
+@mixin mix-xf-platform($precision: false) {
+    @include sprite-one($xf-platform, $xf-platform-sprite, $precision);
+}
+@mixin mix-xf-price($precision: false) {
+    @include sprite-one($xf-price, $xf-price-sprite, $precision);
+}
+@mixin mix-xf-report($precision: false) {
+    @include sprite-one($xf-report, $xf-report-sprite, $precision);
+}
+@mixin mix-xf-rmp($precision: false) {
+    @include sprite-one($xf-rmp, $xf-rmp-sprite, $precision);
+}
+@mixin mix-xf-sales($precision: false) {
+    @include sprite-one($xf-sales, $xf-sales-sprite, $precision);
+}
+@mixin mix-xf-sms($precision: false) {
+    @include sprite-one($xf-sms, $xf-sms-sprite, $precision);
+}
+@mixin mix-xf-vip($precision: false) {
+    @include sprite-one($xf-vip, $xf-vip-sprite, $precision);
+}
+@mixin mix-xflh-code($precision: false) {
+    @include sprite-one($xflh-code, $xflh-code-sprite, $precision);
+}
+@mixin mix-xflh-logo($precision: false) {
+    @include sprite-one($xflh-logo, $xflh-logo-sprite, $precision);
+}
+@mixin mix-xflh-pwd($precision: false) {
+    @include sprite-one($xflh-pwd, $xflh-pwd-sprite, $precision);
+}
+@mixin mix-xflh-user($precision: false) {
+    @include sprite-one($xflh-user, $xflh-user-sprite, $precision);
+}
+@mixin mix-yanshengphuogui($precision: false) {
+    @include sprite-one($yanshengphuogui, $yanshengphuogui-sprite, $precision);
+}
+@mixin mix-yingyuan($precision: false) {
+    @include sprite-one($yingyuan, $yingyuan-sprite, $precision);
+}
+@mixin mix-zhinengchuwugui($precision: false) {
+    @include sprite-one($zhinengchuwugui, $zhinengchuwugui-sprite, $precision);
+}
+@mixin mix-zizhuqupiaoji($precision: false) {
+    @include sprite-one($zizhuqupiaoji, $zizhuqupiaoji-sprite, $precision);
+}
+@mixin mix-zizhuzhaji($precision: false) {
+    @include sprite-one($zizhuzhaji, $zizhuzhaji-sprite, $precision);
+}
+@mixin mix-zy-frame-logo($precision: false) {
+    @include sprite-one($zy-frame-logo, $zy-frame-logo-sprite, $precision);
+}
+@mixin mix-zy-login-logo($precision: false) {
+    @include sprite-one($zy-login-logo, $zy-login-logo-sprite, $precision);
+}

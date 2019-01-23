@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import "../js/plugin/scss/pc";
+@import "../js/plugin/scss/mixin";
+body {
+    background: $bg6 url(image-path("intermediate-bg.jpg")) no-repeat scroll center center;
+    background-size: 1920px 1080px;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 100%;
+	font-size: 15px;
+	color: $color2;
+}

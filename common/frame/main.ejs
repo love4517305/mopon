@@ -1,0 +1,130 @@
+<%if(theme != 'cloud-ng'){%>
+<header class="mg-header" id="m-header">
+    <a class="logo" href="/nav.html">
+        <i></i>
+    </a>
+    <p class="setting-cinema" node-name="setCinema"><span node-name="settingCinemaName"></span><span class="icon"></span></p>
+    <div class="nav-box" node-name="navBox">
+        <nav class="opera" node-name="opera">
+            <% moduleList.forEach(function(item) { %>
+            <a node-name="item" data-id="<%=item.id%>" data-query="id=<%=item.id%>&text=<%=item.text%>&flag=<%=item.flag%>&home=<%=item.home%>" href="#/<%=item.flag%><%=item.home%>"><i class="iconfont icon-<%=item.flag%>"></i><span><%=item.text%></span></a>
+            <% }) %>
+        </nav>
+        <nav class="opera"><a href="javascript:void(0)" node-name="more"><i class="iconfont icon-more-menu"></i>更多</a></nav>
+    </div>
+
+    <div class="setting">
+        <span class="msg" node-name="hoverItem" data-type="saves">
+            <a href="javascript:void(0);" class="iconfont icon-saves"><em class="hide"></em></a>
+            <div class="set-items saves" node-name="saves">
+               <div class="header">
+                   <span>我的收藏</span>
+               </div>
+               <div class="no-msg" node-name="noSave">暂无收藏！</div>        
+               <ul class="msg-items" node-name="savesItems">
+               </ul>
+            </div>
+        </span>
+
+        <% var hasMsgMod = false; moduleList.forEach(function(item){ 
+            if(item.code === 'mmc'){
+              hasMsgMod = true;
+              return false;
+            }
+        });%>
+
+        <% if(hasMsgMod){ %>
+        <span class="msg" node-name="hoverItem" data-type="msgs">
+            <a node-name="jump" href="javascript:void(0);" class="iconfont icon-message icon-mmc"><em class="hide" node-name="msgNum"></em></a>
+            <div class="set-items msgs setLeft" node-name="msgs">
+                <div class="header">
+                    <span>消息中心</span>
+                    <span class="fr setPadding" node-name="allMsgs"><a href="javascript:void(0);">全部</a></span>
+                </div>
+                <div class="no-msg" node-name="noMsg">暂无新消息！</div>        
+                    <ul class="msg-items" node-name="msgItems">
+                    </ul>
+            </div>
+        </span>
+        <% } %>
+        <span class="welcome-wrap"  node-name="hoverItem" data-type="config"><span class="welcome" node-name="hoverItem" data-type="config" title="<%= user.name %>"><%= user.name %></span></span>
+        <ul class="set-items config" node-name="config">
+            <li title=<%= user.roleName %>><%= user.roleName %></li>
+            <li node-name="updatePwd">修改密码</li>
+            <!-- <li>模块排序</li>
+            <li>后台换肤</li> -->
+            <li node-name="logout">退出</li>
+        </ul>
+        <!--<a href="javascript:void(0);" class="icon-setting"></a>
+        <a href="javascript:void(0);" class="icon-exit"></a>-->
+    </div>
+</header>
+<%}%>
+<main class="mg-main" id="m-main">
+    <%if(theme == 'cloud-ng'){%>
+    <a class="mg-left-header" href="/nav.html">
+        <i></i>
+    </a>
+    <div class="mg-close-menu" id="m-close-menu" data-type="1"><span class="open">菜单</span><span class="close">收起</span><i></i></div>
+    <%}%>
+    <div class="layout-nav" id="m-layout-nav">
+        <%if(theme == 'cloud-ng'){%>
+        <nav class="mg-left-module" id="m-left-module">
+            <% moduleList.forEach(function(item) { %>
+            <a node-name="item" data-id="<%=item.id%>" data-query="id=<%=item.id%>&text=<%=item.text%>&flag=<%=item.flag%>&home=<%=item.home%>" href="#/<%=item.flag%><%=item.home%>">
+                <i class="icon-ng-<%=item.flag%>"></i>
+                <span title="<%=item.adText || item.text %>"><%=item.adText || item.text %></span>
+            </a>
+            <% }) %>
+        </nav>
+        <div class="mg-left-line"></div>
+        <%}%>
+        <menu class="mg-left-nav" id="m-left-nav"></menu>
+    </div>
+    <div class="layout-content">
+        <section class="mg-tab" id="m-tab">
+            <ul class="tab-items" node-name="tabItems"></ul>
+            <div class="check-line" node-name="line"></div>
+            <div class="tab-more hide" node-name="tabMore">
+                <div class="title">更多<i class="icon"></i></div>
+                <ul class="more-items" node-name="moreItems" data-type="more"></ul>
+            </div>
+            <%if(theme == 'cloud-ng'){%>
+            <div class="user-msg">
+                <div class="icon-group">
+                    <i class="setting-gray" node-name="clientConfig" title="客户端配置"></i>
+                </div>
+                <span class="welcome-wrap"><span class="welcome" title="<%= user.name %>"><%= user.name %></span><i class="arrow-down"></i></span>
+                <ul class="set-items">
+                    <li title=<%= user.roleName %>><%= user.roleName %></li>
+                    <li node-name="updatePwd">修改密码</li>
+                    <li node-name="logout">退出</li>
+                </ul>
+            </div>
+            <%}else{%>
+            <i class="full-screen" node-name="fullScreen" data-type="full" title="全屏"></i>
+            <%}%>
+        </section>
+        <section class="mg-frames" id="m-frames"></section>
+        <!--iframe src="about:blank" id="" style="width: 100%; height: 100%; background-color: white;" frameborder="0"></iframe-->
+    </div>
+</main>
+<%if(theme == 'cloud-let' || theme == 'default'){%>
+<ul class='m-fix-right' id='m-fixRight'>
+    <li id='m-toHelp'><i></i><span class='text'>帮助</span></li>
+    <li id='m-feedback'><i></i><span class='text'>反馈</span></li>
+</ul>
+<%}%>
+
+<%if(theme == 'cloud-ng'){%>
+<ul class='m-ng-help-box' id='m-fixRight'>
+    <li id='m-tel' class="tel">
+        <i></i><p class='text'>咨询</p><p class='text'>电话</p>
+    </li>
+    <li class="tel-detail-box">
+        <p>客服电话</p>
+        <p class="tel-num">0755-82888020</p>
+    </li>
+    <li id='m-chat' class="chat"><a href="tencent://message/?uin=4008922014&Site=Sambow&Menu=yes"><i></i><p class='text'>QQ</p><p class='text'>客服</p></a></li>
+</ul>
+<%}%>

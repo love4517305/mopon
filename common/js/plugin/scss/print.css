@@ -1,0 +1,195 @@
+.group-title {
+  text-align: center;
+}
+.grid-title {
+  overflow: hidden;
+  border-right: 1px solid #999;
+  width: 100%;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.grid-title .grid-header {
+  width: 100% !important;
+  clear: both;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.grid-title .grid-header .td {
+  flex: 1;
+  height: 30px !important;
+  line-height: 30px !important;
+  float: left;
+  /*clear: both;*/
+  font-size: 14px;
+  color: #000;
+  border-right: 1px solid #999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+.grid-title .grid-header .td.first {
+  margin-left: 1px;
+}
+.grid-title .grid-header .td.first:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #999;
+  left: -1px;
+  top: 0;
+}
+.grid-title .grid-header .td.rows {
+  /*clear: both;*/
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.grid-title .grid-header .td.cols {
+  border-bottom: 1px solid #999;
+}
+.grid-title .grid-header .td.end .text {
+  text-indent: 0;
+  clear: both;
+}
+.grid-title .grid-header .text {
+  height: 100%;
+  width: 100%;
+  /*text-indent: 14px;*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid-title .grid-header .text .display {
+  /*text-indent: 14px;*/
+  color: #000;
+  max-width: 100%;
+}
+.grid-title .grid-header .text .display.display_sort {
+  max-width: calc(100% - 25px);
+}
+.grid-title .grid-header .text .display.bold {
+  font-weight: bold;
+}
+.grid-title .grid-header .text .display, .grid-title .grid-header .text .sort, .grid-title .grid-header .text .tips {
+  display: block;
+  float: left;
+  height: 100%;
+}
+.grid-title .grid-header .text .sort {
+  width: 24px;
+  text-align: left;
+}
+.grid-title .grid-header .text.center {
+  text-indent: 0;
+  text-align: left;
+}
+.grid-title .grid-header .text.right {
+  text-indent: 0;
+  padding-right: 14px;
+  text-align: right;
+}
+.grid-title .group-table {
+  border-bottom: 0 none;
+}
+.grid-title .group-table td {
+  border-bottom: 0 none;
+}
+
+.grid-cont {
+  margin-left: -1px;
+  height: auto !important;
+  overflow: initial !important;
+}
+
+.grid-cont tr:first-of-type td {
+  border-top: 0 none;
+}
+.grid-cont .text {
+  width: 100%;
+  height: 100%;
+  line-height: inherit;
+  /*text-indent: 14px;*/
+}
+.grid-cont .text a {
+  padding-right: 8px;
+  color: #000;
+  text-decoration: none;
+}
+
+.grid-cont .text.center {
+  text-indent: 0;
+  text-align: left;
+}
+.grid-cont .text.right {
+  text-indent: 0;
+  padding-right: 14px;
+  text-align: right;
+}
+.grid-cont .text .child-radio, .grid-cont .text .child-checkbox {
+  padding-right: 8px;
+}
+.grid-cont .text .child-radio:last-of-type, .grid-cont .text .child-checkbox:last-of-type {
+  padding-right: 0;
+}
+.grid-cont .text .child-radio input, .grid-cont .text .child-checkbox input {
+  display: none;
+}
+.grid-cont .text .child-radio span, .grid-cont .text .child-checkbox span {
+  display: inline-block;
+  padding-left: 3px;
+  text-indent: 0;
+  margin-top: -8px;
+}
+.grid-cont .text .child-radio .child-icon-radio {
+  margin-top: -7px;
+}
+.grid-cont .text .child-checkbox .child-icon-checkbox {
+  margin-top: -7px;
+}
+
+table {
+  width: 100% !important;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+}
+
+table th {
+  border: 1px solid #999;
+  font-size: 16px;
+  color: #000;
+  height: 26px;
+  line-height: 26px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0 4px;
+}
+
+table td {
+  border: 1px solid #999;
+  font-size: 14px;
+  color: #000;
+  height: 30px;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0 4px;
+  width: auto !important;
+}
+
+.title {
+  text-align: center;
+}
+
+.head, .foot {
+  text-align: right;
+}
+
+.title, .head, .foot {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* 图片版本号 在image-path函数中调用 */
+$image-ver: 201606121032;
+
+/* 非标注中的序号的颜色，以00开始编号，保证数字编号与设计图标注的标号一致。*/
+
+/* 背景颜色 */
+$bg_frame_topNav_hover: rgba(0, 78, 143, 0.8); /*frame顶部的透明色*/
+$cloudlet_bg_frame_topNav_hover: #6152e6;
+$bg1: #ffffff;
+$bg2: #f2f4f4;
+$bg3: #e3e4e9;
+$bg4: #f4f5f9;
+$bg5: #e2effa;
+$bg6: #666666;
+$bg7: #333333;
+$bg8: #2ba0ff;
+$bg9: #2e96ea;
+$bg10: #1d7ac7;
+$bg11: #4eaaff;
+$bg12: #f3f6f8;
+$bg13: #e6e9eb;
+$bg14: #edebeb;
+$bg15: #f7f7f7;
+$bg16: #edebec;
+$bg17: #2ec7c9;
+$bg18: #b6a2de;
+$bg19: #5ab1ef;
+$bg20: #ffb980;
+$bg21: #d87a80;
+$bg22: #fffed2;
+$bg23: #6699cc;
+$bg24: #f1f4f6;
+$bg25: #f6f9fb;
+$bg26: #94dbfa;
+$bg27: #c9c9c9;
+$bg28: #6761f5;
+$bg29: #6777fc;
+$bg30: #3b4966;
+$bg31: #2e3b58;
+$bg32: #465677;
+$bg33: #e9ecfc;
+$bg34: #efefef;
+$bg35: #c7c7c7;
+$bg36: #b5b5b5;
+$bg37: transparent;
+$bg38: #e1e4fe;
+$bg39: #000000;
+$bg40: #ff9000;
+$bg41: #ececed;
+$bg42: #fafbfc;
+$bg43: #eceeff;
+$bg44: #e8ebff;
+$bg44: #f7f8fb;
+$bg45: #48ce59;
+$bg46: #f34541;
+$bg47: #4c555c;
+$bg48: #353f46;
+$bg49: #0e0927;
+
+$c1: #7e7f8b;
+$c2: #f8c90b;
+$c3: #2acc85;
+$c4: #6777fc;
+$c5: #b76ae4;
+$c6: #f36354;
+$c7: #fe3640;
+$c8: #ababab;
+
+/* 字体颜色 */
+$color1: #ffffff;
+$color2: #666666;
+$color3: #333333;
+$color4: #2f95ea;
+$color5: #f2f4f4;
+$color6: #c9c9c9;
+$color7: #2ba0ff;
+$color8: #f34541;
+$color9: #999999;
+$color10: #faafae;
+$color11: #2c2c2c;
+$color12: #868686;
+$color13: #b6c3e0;
+$color14: #6777fc;
+$color15: #ff783f;
+$color16: #00ccfe;
+$color17: #ff9000;
+$color18: #7e7f8b;
+$color19: #6666ff;
+$color20: #ffcc00;
+$color21: #bbb;
+$color22: #c1c1c1;
+$color23: #211d1e;
+
+/* 字体大小 */
+/* 字体序号数字为rem值的小数，即1.8rem则为$font_size_8 */
+$fs12: 12px;
+$fs14: 14px;
+$fs16: 16px;
+$fs18: 18px;
+$fs19: 19px;
+$fs20: 20px;
+$fs22: 22px;
+$fs24: 24px;
+$fs26: 26px;
+$fs28: 28px;
+$fs30: 30px;
+
+/* 边框颜色 */
+$border1: #ffffff;
+$border2: #f2f4f4;
+$border3: #e3e4e9;
+$border4: #f4f5f9;
+$border5: #e2effa;
+$border6: #666666;
+$border7: #333333;
+$border8: #2ba0ff;
+$border9: #2e96ea;
+$border10: #1d7ac7;
+$border11: #2f95ea;
+$border12: #b1b3b9;
+$border13: #e1e1e1;
+$border14: #e8c885;
+$border15: #6699cc;
+$border16: #b7d0e5;
+$border17: #b5b6bf;
+$border18: #6777fc;
+$border19: #ccc;
+

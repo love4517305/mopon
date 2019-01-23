@@ -1,0 +1,20 @@
+<div class="m-dialogBig-form" node-name="dialogForm" style="width: 400px;">
+    <div style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+        <% for (var i = 0; i < data.length; i++) { %>
+        <div class="m-tab-title"><%= data[i].name %></div>
+        <ul class="items-box">
+            <% for (var j = 0; j < data[i].cinemas.length; j++) { %>
+            <li class="item auto" style="line-height: 20px;">
+                <input style="float: left; margin: 14px 7px 0 0;" id="<%= data[i].cinemas[j].id %>" type="radio" value="<%= data[i].cinemas[j].id %>" name="cinemas" data-validate="required=true&nullText=影院"><label for="<%= data[i].cinemas[j].id %>" style="float: left; width: 300px; margin-top: 10px; word-wrap: break-word;"><%= data[i].cinemas[j].name %></label>
+            </li>
+            <% } %>
+            <% if (data[i].cinemas.length == 0) { %>
+            <li class="item auto">该影院组下无可选影院</li>
+            <% } %>
+        </ul>
+        <% } %>
+    </div>
+    <div class="remember-config" style="position: absolute; bottom: 70px; left: 45px;">
+        <label><input type="checkbox" name="isDefault" value="isDefault" checked="checked" data-validate="nullText=记住影院选项"><span style="margin-left: 10px; line-height: 21px;">记住影院选项</span></label>
+    </div>
+</div>

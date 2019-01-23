@@ -1,0 +1,77 @@
+<%if(fn.getType(data) == "array"){%>
+<%var createTreeHTML = function(res, create){
+    res.forEach(function(item){
+    if(fn.getType(item) != "object") return;
+    var bool = fn.getType(item[filter.child]) == "array";
+    var any = fn.getType(tiled) == "object" && fn.getType(item[tiled.child]) == "array";
+%>
+<li class="<%if(bool || any){%>folder-item<%}else{%>item<%}%>" <%if(create){%>data-unique="<%=item[filter.key]%>"<%}%>>
+    <%if(bool || any){%>
+    <i class="fold<%if(item[filter.status] !== false){%> open<%}%>" data-action="fold" data-unique="<%=item[filter.key]%>"></i>
+    <i class="folder<%if(item[filter.status] !== false){%> open<%}%>"></i>
+    <%}%>
+    <label class="content<%if(bool || any){%> _parent<%}%>" data-unique="<%=item[filter.key]%>" data-action="bindMenu" title="<%=item[filter.text]%>">
+        <%if(item[filter.type] !== false && selectType == "checkbox"){%>
+        <span class="checkbox"><input id="m_tree_unique_<%=item[filter.key]%>" data-unique="<%=item[filter.key]%>" data-action="checkbox" data-event="<%if(item[filter.event]){%><%=item[filter.event]%><%}else{%>checkbox<%}%>" type="checkbox" <%if(item[filter.checked]){%>checked="checked"<%}%>/><i class="icon-checkbox"></i></span>
+        <%}else if(item[filter.type] !== false && selectType == "radio"){%>
+        <span class="radio"><input id="m_tree_unique_<%=item[filter.key]%>" data-unique="<%=item[filter.key]%>" data-action="radio" data-event="<%if(item[filter.event]){%><%=item[filter.event]%><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/><i class="icon-radio"></i></span>
+        <%}%>
+        <span class="text<%if(item[filter.highlight]){%> highlight<%}%>"<%if(item[filter.type] === false){%> id="m_tree_unique_<%=item[filter.key]%>"<%}%>><%=item[filter.text]%></span>
+    </label>
+    <%if(any){%>
+    <ul class="child-items"<%if(item[filter.status] !== false){%> style="height: auto;"<%}%>>
+        <li class="item">
+            <ul class="content-items">
+                <%item[tiled.child].forEach(function(obj){%>
+                <li>
+                    <label>
+                        <%if(obj[filter.type] !== false && selectType == "checkbox"){%>
+                        <span class="checkbox"><input id="m_tree_unique_<%=obj[filter.key]%>" data-unique="<%=obj[filter.key]%>" data-action="checkbox" data-event="<%if(obj[filter.event]){%><%=obj[filter.event]%><%}else{%>checkbox<%}%>" type="checkbox" <%if(obj[filter.checked]){%>checked="checked"<%}%>/><i class="icon-checkbox"></i></span>
+                        <%}else if(obj[filter.type] !== false && selectType == "radio"){%>
+                        <span class="radio"><input id="m_tree_unique_<%=obj[filter.key]%>" data-unique="<%=obj[filter.key]%>" data-action="radio" data-event="<%if(obj[filter.event]){%><%=obj[filter.event]%><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/><i class="icon-radio"></i></span>
+                        <%}%>
+                        <span <%if(tiled.width){%>style="width: <%=fn.unit(tiled.width) %> !important; padding-right: 0 !important;"<%}%> class="text<%if(obj[filter.highlight]){%> highlight<%}%>"<%if(obj[filter.type] === false){%> id="m_tree_unique_<%=obj[filter.key]%>"<%}%>><%=obj[filter.text]%></span>
+                    </label>
+                </li>
+                <%})%>
+            </ul>
+        </li>
+    </ul>
+    <%}%>
+    <%if(bool){%>
+    <ul class="child-items"<%if(item[filter.status] !== false){%> style="height: auto;"<%}%>>
+    <%createTreeHTML(item[filter.child]);%>
+    </ul>
+    <%}%>
+</li>
+<%
+    });
+};createTreeHTML(data, true);%>
+<%}else if(fn.getType(data) == "object"){%>
+    <%if(data.type == 1){%>
+    <li class="folder-item">
+        <i class="fold open" data-action="fold" data-unique="<%=data.res.id %>"></i>
+        <i class="folder open"></i>
+        <label class="content _parent" data-unique="<%=data.res.id %>" data-action="bindMenu" title="<%=data.res.text %>">
+            <%if(data.selectType == "checkbox"){%>
+            <span class="checkbox"><input id="m_tree_unique_<%=data.res.id %>" data-unique="<%=data.res.id %>" data-action="checkbox" data-event="<%if(data.event){%><%=data.event %><%}else{%>checkbox<%}%>" type="checkbox"/></span>
+            <%}else if(data.selectType == "radio"){%>
+            <span class="radio"><input id="m_tree_unique_<%=data.res.id %>" data-unique="<%=data.res.id %>" data-action="radio" data-event="<%if(data.event){%><%=data.event %><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/></span>
+            <%}%>
+            <span<%if(data.selectType === false){%> id="m_tree_unique_<%=data.res.id %>"<%}%> class="text"><%=data.res.text %></span>
+        </label>
+        <ul class="child-items" style="height: auto"></ul>
+    </li>
+    <%}else if(data.type == 2){%>
+    <li class="item">
+        <label class="content" data-action="bindMenu" data-unique="<%=data.res.id %>" title="<%=data.res.text %>">
+            <%if(data.selectType == "checkbox"){%>
+            <span class="checkbox"><input id="m_tree_unique_<%=data.res.id %>" data-unique="<%=data.res.id %>" data-action="checkbox" data-event="<%if(data.event){%><%=data.event %><%}else{%>checkbox<%}%>" type="checkbox"/></span>
+            <%}else if(data.selectType == "radio"){%>
+            <span class="radio"><input id="m_tree_unique_<%=data.res.id %>" data-unique="<%=data.res.id %>" data-action="radio" data-event="<%if(data.event){%><%=data.event %><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/></span>
+            <%}%>
+            <span class="text"<%if(data.selectType === false){%> id="m_tree_unique_<%=data.res.id %>"<%}%>><%=data.res.text %></span>
+        </label>
+    </li>
+    <%}%>
+<%}%>

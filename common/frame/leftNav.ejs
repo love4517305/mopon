@@ -1,0 +1,32 @@
+<% menuList.forEach(function(item) { %>
+    <div class="menu-item">
+        <% if (!("list" in item)) { %>
+        <a href="<%=item.mobile?'/mobile.html':''%>#<%=item.uri%>" target="<%=item.mobile?'_blank':'_self'%>" data-path="<%=item.uri%>" data-id="<%=item.id %>" class="title<%if(theme == 'not'){%> first-uri link<%}%>" title="<%=item.text%>"><%if(theme == 'showIcon'){%><i class="iconfont icon-<%if(item.style){%><%=item.style %><%}else{%>jichuguanli<%}%>"></i><%}%><span><%=item.text%></span></a>
+        <% } else { %>
+            <a href="javascript:void(0);" data-action="menu" data-menu-id="<%=item.id%>" class="title" title="<%=item.text%>"><i class="<%if(theme == 'showIcon'){%>iconfont icon-<%if(item.style){%><%=item.style %><%}else{%>jichuguanli<%}%><%}else{%>icon-add<%}%>"></i><%=item.text%><i class="icon-arrow"></i></a>
+            <menu class="sub-menu" data-for="<%=item.id%>">
+                <% item.list.forEach(function(item2) { %>
+                    <% if (!("list" in item2)) { %>
+                <a href="<%=item2.mobile?'/mobile.html':''%>#<%=item2.uri%>" target="<%=item2.mobile?'_blank':'_self'%>" data-id="<%=item2.id %>" data-path="<%=item2.uri%>" class="sub-title link" title="<%=item2.text%>"><span><%=item2.text%></span></a>
+                    <% } else { %>
+                        <a href="javascript:void(0)" data-action="menu" data-menu-id="<%=item2.id%>" class="sub-title" title="<%=item2.text%>"><i class="icon-add"></i><%=item2.text%></a>
+                        <menu class="small-menu" data-for="<%=item2.id%>">
+                            <% item2.list.forEach(function(item3) { %>
+                                <% if (!("list" in item3)) { %>
+                                <a class="subx-title link" data-id="<%=item3.id %>" data-path="<%=item3.uri%>" href="<%=item3.mobile?'/mobile.html':''%>#<%=item3.uri%>" target="<%=item3.mobile?'_blank':'_self'%>" title="<%=item3.text%>"><span><%=item3.text%></span></a>
+                                <% } else { %>
+                                <a href="javascript:void(0)" data-action="menu" data-menu-id="<%=item3.id%>" class="subx-title" title="<%=item3.text%>"><i class="icon-add"></i><%=item3.text%></a>
+                                <menu class="smallx-menu" data-for="<%=item3.id%>">
+                                    <% item3.list.forEach(function(item4) { %>
+                                    <a href="<%=item4.mobile?'/mobile.html':''%>#<%=item4.uri%>" target="<%=item4.mobile?'_blank':'_self'%>" data-id="<%=item4.id %>" data-path="<%=item4.uri%>" class="leaf link" title="<%=item4.text%>"><span><%=item4.text%></span></a>
+                                    <% }) %>
+                                </menu>
+                                <% } %>
+                            <% }) %>
+                        </menu>
+                    <% } %>
+                <% }) %>
+            </menu>
+        <% } %>
+    </div>
+<% }) %>

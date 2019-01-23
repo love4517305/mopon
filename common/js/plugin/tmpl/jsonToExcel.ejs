@@ -1,0 +1,33 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:excel' xmlns='http://www.w3.org/TR/REC-html40'>
+<meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">
+<meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">
+<head><!--[if gte mso 9]>
+    <xml>
+        <x:ExcelWorkbook>
+            <x:ExcelWorksheets>
+                <x:ExcelWorksheet>
+                    <x:Name>{worksheet}</x:Name>
+                    <x:WorksheetOptions>
+                        <x:DisplayGridlines/>
+                    </x:WorksheetOptions>
+                </x:ExcelWorksheet>
+            </x:ExcelWorksheets>
+        </x:ExcelWorkbook>
+    </xml><![endif]--></head>
+<body>
+<table>
+    <tr>
+        <%option.forEach(function(v){%>
+            <td x:str><%=v.display%></td>
+        <%})%>
+    </tr>
+    <%data.forEach(function(val){%>
+        <tr>
+            <%option.forEach(function(v,i){%>
+                    <td x:str><%=val[v.name]%></td>
+            <%})%>
+        </tr>
+    <%})%>
+</table>
+</body>
+</html>

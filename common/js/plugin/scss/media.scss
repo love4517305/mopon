@@ -1,0 +1,535 @@
+
+@media screen and (max-width: 1400px) {
+    body{
+        //通用搜索盒子
+        .m-search-wrap {
+            .search-items {
+                height: 50px;
+                min-width: 800px;
+                @include transition(all 0.3s ease-in);
+                .item {
+                    float: left;
+                    padding-top: 9px;
+                    padding-left: 15px;
+                    input,.selected-item{
+                        font-size: 13px !important;
+                    }
+                }
+                .fill-box {
+                    width: 200px;
+                    height: 50px;
+                    padding-left: 0;
+                }
+                .icon-hover {
+                    margin-right: 5px;
+                    margin-left: -5px;
+                    &:hover {
+                        .icon {
+                            &:after {
+                                left: 20px;
+                            }
+                        }
+                    }
+                    &:before {
+                        top: -4px;
+                        left: 33px;
+                        height: 24px;
+                        min-width: 20px;
+                        line-height: 24px;
+                        padding-right: 8px;
+                        border-radius: 3px;
+                        text-indent: 5px;
+                    }
+                    &:after,
+                    .icon:after {
+                        top: 1px;
+                        left: 18px;
+                        width: 0;
+                        height: 0;
+                        border: 8px solid transparent;
+                    }
+                }
+                .m-add-btn,
+                .m-delete-btn ,.m-blue-bg-button{
+                    height: 32px;
+                    line-height: 30px;
+                    padding: 0 18px;
+                    font-size: 13px;
+                    .icon {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .search-but {
+                left: 800px;
+                height: 50px;
+                width: 200px;
+                padding-top: 9px;
+                .m-more-condition-btn {
+                    padding-top: 4px;
+                    padding-left: 20px;
+                    font-size: 13px;
+                    .more{
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .icon-more {
+                        @include transition(all 0.3s ease-in);
+                        top: 8px;
+                        left: 5px;
+                    }
+                    .up {
+                        .icon-more {
+                            @include rotate(180deg);
+                        }
+                    }
+                }
+                .m-search-btn {
+                    margin-left: 20px;
+                    height: 32px;
+                    line-height: 30px;
+                    padding: 0 18px;
+                    font-size: 13px;
+                }
+            }
+
+            .m-search-condition {
+                height: 32px;
+                line-height: 1;
+                margin-bottom: 9px;
+                >span {
+                    margin-right: 10px;
+                }
+                .label {
+                    margin-right: 15px;
+                    line-height: 32px;
+                    font-size: 13px;
+                }
+                .condition-content {
+                    width: 180px;
+                    height: 100%;
+                    border: 1px solid $border3;
+                    border-radius: 3px;
+                    font-size: 13px;
+                    &.radio {
+                        line-height: 36px;
+                        input {
+                            left: 0;
+                            top: 2px;
+                        }
+                        >label {
+                            margin-right: 12px;
+                            padding-left: 18px;
+                        }
+                    }
+                    &.m-select{
+                        border: 0 none;
+                    }
+                    .icon-date {
+                        right: 8px;
+                        top: 8px;
+                    }
+                }
+                .inputGroup {
+                    line-height: 38px;
+                    li {
+                        label {
+                            padding: 0 8px;
+                        }
+                        padding-right: 20px;
+                    }
+                }
+            }
+
+            .m-select {
+                height: 32px;
+                .selected-item {
+                    line-height: 30px;
+                }
+                .icon {
+                    top: 15px;
+                }
+            }
+        }
+        //按钮集合
+        .m-but-group{
+            >span{
+                height: 32px;
+                line-height: 30px;
+                padding: 0 15px;
+                font-size: 13px;
+                .icon{
+                    margin-top: 7px;
+                }
+                span:last-of-type{
+                    height: 32px;
+                    line-height: 30px;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .m-grid-page {
+            .first,.prev,.next,.last,.goTo ,.auto-width{
+                font-size: 13px;
+            }
+        }
+        .m-grid {
+            font-size: 13px;
+            .grid-time {
+                width: 170px;
+                height: 70px;
+                padding-left: 15px;
+                .time-spot {
+                    padding: 0 5px;
+                    margin-top: 2px;
+                    line-height: 32px;
+                }
+                .select-group {
+                    margin-top: 8px;
+                }
+                .but-group {
+                    span {
+                        margin: 4px 16px 0 0;
+                        height: 22px;
+                        line-height: 22px;
+                        padding: 0 8px;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .select-group {
+                width: 62px;
+                margin-top: -3px;
+                .select {
+                    height: 24px;
+                    line-height: 22px;
+                    text-indent: 5px;
+                }
+                .icon {
+                    top: 10px;
+                    right: 10px;
+                }
+                .items {
+                    top: 23px;
+                    left: 0;
+                    max-height: 160px;
+                    &.up {
+                        bottom: 23px;
+                    }
+                }
+            }
+            .grid-title {
+                .grid-header {
+                    .text {
+                        text-indent: 10px;
+                        font-size: 13px;
+                        &.right {
+                            padding-right: 10px;
+                        }
+                        i {
+                            margin-left: 6px;
+                        }
+                    }
+                    .hover-tips {
+                        margin-top: -3px;
+                    }
+                }
+            }
+            .grid-cont {
+                .text {
+                    text-indent: 10px;
+                    font-size: 13px;
+                    a {
+                        padding-right: 8px;
+                        font-size: 13px;
+                    }
+                    &.right {
+                        padding-right: 10px;
+                    }
+                    .child-radio, .child-checkbox{
+                        padding-right: 8px;
+                        .child-icon-checkbox {
+                            margin-top: -7px;
+                        }
+                        span{
+                            padding-left: 3px;
+                            margin-top: -8px;
+                        }
+                    }
+                }
+                .drop-down {
+                    &.right {
+                        .select-group {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .u-input {
+                    height: 24px;
+                    line-height: 22px;
+                    text-indent: 3px;
+                    font-size: 13px;
+                }
+                .select-group {
+                    margin-left: 14px;
+                    height: 24px;
+                    .icon {
+                        top: 10px;
+                        right: 10px;
+                    }
+                    .items {
+                        top: 24px;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .grid-page {
+                .first,.prev,.next,.last,.goTo ,.auto-width{
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .mg-header {
+            $header_height: 53px;
+            $setting_width: 300px;
+            height: $header_height;
+            padding: 0 ($setting_width + 20px) 0 183px;
+            .logo {
+                width: 231px;
+                height: $header_height;
+                position: absolute;
+                left: 0;
+                i{
+                    margin: -3px 0 0 27px;
+                    @include scale(0.8);
+                }
+            }
+            .setting-cinema {
+                top: 34px;
+                left: 82px;
+                width: 112px;
+                text-align: left;
+                font-size: 13px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .opera {
+                height: $header_height;
+                line-height: $header_height;
+                >a {
+                    height: $header_height;
+                    padding: 0 12px;
+                    font-size: 14px;
+                }
+                [class^=icon-] {
+                    margin: -4px 12px 0 0;
+                }
+            }
+            .welcome {
+                margin-right: 50px;
+                margin-left: 10px;
+                font-size: 14px;
+                &:before {
+                    right: -18px;
+                    top: 26px;
+                }
+            }
+            .setLeft {
+                left: -204px;
+            }
+            .set-items {
+                padding: 10px;
+                top: 56px;
+                li{
+                    font-size: 14px;
+                }
+                &:before {
+                    top: -16px;
+                }
+                &.config {
+                    width: 100px;
+                    &:before {
+                        left: 43px;
+                    }
+                }
+                .header {
+                    padding-bottom: 4px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                .no-msg{
+                    padding: 30px 0;
+                    height: 40px;
+                    line-height: 40px;
+                }
+                &.saves {
+                    width: 320px;
+                    left: -160px;
+                    &:before {
+                        left: 172px;
+                    }
+
+                    .msg-items{
+                        .item {
+                            .limit {
+                                width: 265px;
+                            }
+                        }
+                    }
+                }
+                &.msgs{
+                    width: 350px;
+                    left: -240px;
+                    max-height: 410px;
+                    &:before {
+                        left: 250px;
+                    }
+                    .msg-items{
+                        .item {
+                            p{
+                                width: 180px;
+                            }
+                        }
+                    }
+                }
+                li {
+                    height: 30px;
+                    line-height: 30px;
+                }
+                .fu {
+                    width: 35px;
+                    height: 30px;
+                }
+            }
+            .setting {
+                width: $setting_width;
+                line-height: $header_height;
+            }
+            .msg {
+                padding: 0 10px;
+            }
+        }
+
+        &.cloud-xflh {
+            .mg-header {
+                .logo {
+                    i{
+                        margin: -6px 0 0 -87px;
+                        @include scale(0.5);
+                    }
+                }
+            }
+        }
+
+        .mg-more-menu {
+            $menu_height: 54px;
+            height: auto;
+            line-height: $menu_height;
+            >a {
+                padding: 0 12px;
+                font-size: 14px;
+            }
+        }
+
+        .mg-main {
+            padding-left: 193px;
+            top: 63px;
+            .layout-nav {
+                width: 183px;
+            }
+        }
+
+        .mg-left-nav {
+            a {
+                height: 36px;
+                line-height: 36px;
+                padding-right: 10px;
+                font-size: 13px;
+            }
+            .title {
+                height: 46px;
+                line-height: 46px;
+                font-size: 14px;
+                .icon-add {
+                    margin-right: 14px;
+                    margin-left: 15px;
+                }
+            }
+            .sub-title {
+                padding-left: 26px;
+            }
+            .subx-title {
+                padding-left: 32px;
+            }
+            .link {
+                text-indent: 16px;
+            }
+            .first-uri {
+                text-indent: 34px;
+            }
+            .leaf {
+                padding-left: 66px;
+            }
+            .icon-add {
+                margin-top: -2px;
+                margin-right: 9px;
+            }
+        }
+        &.cloud-let{
+            .mg-header {
+                padding-left: 201px;
+                .logo {
+                    width: 201px;
+                    i{
+                        margin: 0;
+                    }
+                }
+                .setting-cinema {
+                    left: 84px;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 112px;
+                    top: 30px;
+                }
+            }
+            .mg-main {
+                top: 53px;
+                padding-left: 213px;
+                .layout-nav {
+                    width: 201px;
+                }
+            }
+            .mg-left-nav {
+                .title {
+                    .iconfont {
+                        margin-right: 14px;
+                        margin-left: 15px;
+                    }
+                    .icon-arrow{
+                        width: 12px;
+                        height: 12px;
+                        right: 12px;
+                        top: 19px;
+                    }
+                }
+                .sub-title {
+                    padding-left: 32px;
+                }
+                .subx-title{
+                    padding-left: 60px;
+                }
+                .link.selected {
+                    &:before{
+                        top: 9px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<%var arr = []%>
+<%for(var k in data){%>
+<%arr.push(k)%>
+<li>
+    <label>
+        <input data-action="<%=type%>" data-query="group=<%=k%>" type="checkbox" ><span><%=data[k]%></span>
+    </label>
+</li>
+<%}%>
+<li>
+    <label>
+        <input data-action="<%=type%>" data-query="group=<%=arr.join(",")%>&checkAll=true" type="checkbox" ><span>全选</span>
+    </label>
+</li>

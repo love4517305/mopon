@@ -1,0 +1,37 @@
+<% var colGroups = []; columns.forEach(function(g1, idx){
+    if(!colGroups[0]) colGroups[0] = [];
+    if(g1.group) {
+        var leaf2NodesLen = 0;
+        var leaf3NodesLen = 0;                
+        g1.group.forEach(function(g2){     
+            leaf2NodesLen++       
+            if(!colGroups[1]) colGroups[1] = [];
+            
+            if(g2.group) {
+                g2.colspanNum = g2.group.length;
+                colGroups[1].push(g2);
+                g2.group.forEach(function(g3){
+                    ++leaf3NodesLen;
+                    if(!colGroups[2]) colGroups[2] = [];
+                    colGroups[2].push(g3);
+                });           
+            } else {
+                colGroups[1].push(g2);
+            }
+        });
+        
+        g1.colspanNum = leaf3NodesLen > 0? leaf3NodesLen : leaf2NodesLen;
+        colGroups[0].push(g1);          
+    } else {
+        colGroups[0].push(g1);
+    }
+}); %>
+
+
+<% colGroups.forEach(function(item, idx){ %>
+    <tr>
+        <% item.forEach(function(col){ %>
+            <td <%if(col.colspanNum != undefined){%> class="group-title" colspan="<%= col.colspanNum %>" <%}else{%> rowspan="<%= idx==0? colGroups.length : 0 %>" <%}%>><%= col.display %></td>
+        <% }); %> 
+    </tr>
+<% }); %>

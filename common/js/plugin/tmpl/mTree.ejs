@@ -1,0 +1,214 @@
+<%if(fn.getType(title) == "object" && selectType == "checkbox"){%>
+<div class="tree-title">
+    <i class="icon"></i>
+    <label>
+        <%if(title[filter.type] !== false){%><span class="checkbox"><input node-name="topCheckbox" data-action="checkbox" data-event="<%if(title[filter.event]){%><%=title[filter.event]%><%}else{%>checkbox<%}%>" type="checkbox"/><i class="icon-checkbox"></i></span><%}%>
+        <span class="text"><%=title.text%></span>
+    </label>
+</div>
+<%}%>
+<ul class="tree-items" node-name="treeItems" style="width: <%=width%>">
+    <%if(fn.getType(data) == "array"){%>
+    <%var createTreeHTML = function(res, create){
+        res.forEach(function(item){
+        if(fn.getType(item) != "object") return;
+        var bool = fn.getType(item[filter.child]) == "array";
+	    var any = fn.getType(tiled) == "object" && fn.getType(item[tiled.child]) == "array";
+    %>
+    <li class="<%if(bool || any){%>folder-item<%}else{%>item<%}%>" <%if(create){%>data-unique="<%=item[filter.key]%>"<%}%>>
+        <%if(bool || any){%>
+        <i class="fold<%if(item[filter.status] !== false){%> open<%}%>" data-action="fold" data-unique="<%=item[filter.key]%>"></i>
+        <i class="folder<%if(item[filter.status] !== false){%> open<%}%>"></i>
+        <%}%>
+        <label class="content<%if(bool || any){%> _parent<%}%>" data-unique="<%=item[filter.key]%>" data-action="bindMenu">
+            <%if(item[filter.type] !== false && selectType == "checkbox"){%>
+	        <span class="checkbox"><input id="m_tree_unique_<%=item[filter.key]%>" data-unique="<%=item[filter.key]%>" data-action="checkbox" data-event="<%if(item[filter.event]){%><%=item[filter.event]%><%}else{%>checkbox<%}%>" type="checkbox" <%if(item[filter.checked]){%>checked="checked"<%}%>/><i class="icon-checkbox"></i></span>
+	        <%}else if(item[filter.type] !== false && selectType == "radio"){%>
+	        <span class="radio"><input id="m_tree_unique_<%=item[filter.key]%>" data-unique="<%=item[filter.key]%>" data-action="radio" data-event="<%if(item[filter.event]){%><%=item[filter.event]%><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/><i class="icon-radio"></i></span>
+	        <%}%>
+            <span class="text<%if(item[filter.highlight]){%> highlight<%}%>"<%if(item[filter.type] === false){%> id="m_tree_unique_<%=item[filter.key]%>"<%}%>><%=item[filter.text]%></span>
+        </label>
+	    <%if(any){%>
+	    <ul class="child-items"<%if(item[filter.status] !== false){%> style="height: auto;"<%}%>>
+		    <li class="item">
+			    <ul class="content-items">
+				    <%item[tiled.child].forEach(function(obj){%>
+				    <li>
+					    <label>
+						    <%if(obj[filter.type] !== false && selectType == "checkbox"){%>
+						    <span class="checkbox"><input id="m_tree_unique_<%=obj[filter.key]%>" data-unique="<%=obj[filter.key]%>" data-action="checkbox" data-event="<%if(obj[filter.event]){%><%=obj[filter.event]%><%}else{%>checkbox<%}%>" type="checkbox" <%if(obj[filter.checked]){%>checked="checked"<%}%>/><i class="icon-checkbox"></i></span>
+						    <%}else if(obj[filter.type] !== false && selectType == "radio"){%>
+						    <span class="radio"><input id="m_tree_unique_<%=obj[filter.key]%>" data-unique="<%=obj[filter.key]%>" data-action="radio" data-event="<%if(obj[filter.event]){%><%=obj[filter.event]%><%}else{%>radio<%}%>" type="radio" name="tree_radio_unique"/><i class="icon-radio"></i></span>
+						    <%}%>
+						    <span <%if(tiled.width){%>style="width: <%=fn.unit(tiled.width) %> !important; padding-right: 0 !important;"<%}%> class="text<%if(obj[filter.highlight]){%> highlight<%}%>"<%if(obj[filter.type] === false){%> id="m_tree_unique_<%=obj[filter.key]%>"<%}%>><%=obj[filter.text]%></span>
+					    </label>
+				    </li>
+				    <%})%>
+			    </ul>
+		    </li>
+	    </ul>
+	    <%}%>
+        <%if(bool){%>
+        <ul class="child-items"<%if(item[filter.status] !== false){%> style="height: auto;"<%}%>>
+        <%createTreeHTML(item[filter.child]);%>
+        </ul>
+        <%}%>
+    </li>
+    <%
+    });
+    };createTreeHTML(data, true);%>
+    <%}%>
+    <%#
+    <li class="item">
+
+        <ul class="content-items">
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+        </ul>
+    </li>
+    <li class="item">
+        <i class="fold"></i>
+        <i class="folder"></i>
+        <ul class="content-items">
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+        </ul>
+        <ul class="folder-child-items">
+            <li class="item">
+                <i class="fold"></i>
+                <i class="folder"></i>
+                <label class="content">
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">我是子模块</span>
+                </label>
+                <ul class="content-items">
+                    <li>
+                        <label>
+                            <span class="checkbox"><input type="checkbox"/></span>
+                            <span class="text">我是子模块</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="checkbox"><input type="checkbox"/></span>
+                            <span class="text">我是子模块</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <span class="checkbox"><input type="checkbox"/></span>
+                            <span class="text">我是子模块</span>
+                        </label>
+                    </li>
+                </ul>
+                <ul class="folder-child-items">
+                    <li class="item">
+                        <i class="fold"></i>
+                        <i class="folder"></i>
+                        <ul class="content-items">
+                            <li>
+                                <label>
+                                    <span class="checkbox"><input type="checkbox"/></span>
+                                    <span class="text">我是子模块</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span class="checkbox"><input type="checkbox"/></span>
+                                    <span class="text">我是子模块</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <span class="checkbox"><input type="checkbox"/></span>
+                                    <span class="text">我是子模块</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="child-items">
+                            <li class="item">
+                                <ul class="content-items">
+                                    <li>
+                                        <label>
+                                            <span class="checkbox"><input type="checkbox"/></span>
+                                            <span class="text">我是子模块</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <span class="checkbox"><input type="checkbox"/></span>
+                                            <span class="text">我是子模块</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <span class="checkbox"><input type="checkbox"/></span>
+                                            <span class="text">我是子模块</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="item">
+        <i class="fold"></i>
+        <i class="folder"></i>
+        <ul class="content-items">
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="checkbox"><input type="checkbox"/></span>
+                    <span class="text">交易记录</span>
+                </label>
+            </li>
+        </ul>
+    </li>
+    %>
+</ul>

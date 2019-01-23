@@ -1,0 +1,909 @@
+//@charset "UTF-8";
+//
+////表格
+//.m-grid-page {
+//  @extend %clearfix;
+//  height: 54px;
+//  line-height: normal;
+//  padding-left: 12px;
+//  @include transition(all 0.3s ease-in);
+//  span,div,a {
+//    float: left;
+//    font-size: $fs14;
+//    color: $color2;
+//    margin: 0 4px;
+//  }
+//  .select-group {
+//    position: relative;
+//    width: 62px;
+//    margin-top: 11px;
+//    .select {
+//      @include wh(62px, 32px);
+//      line-height: 30px;
+//      border: 1px solid $border3;
+//      @include radius(3px);
+//      @include box-sizing;
+//      text-indent: 5px;
+//      &:focus+.items {
+//        display: block;
+//      }
+//    }
+//    .icon {
+//      @include mix-input-xiala;
+//      position: absolute;
+//      right: 8px;
+//      top: 15px;
+//    }
+//    .items {
+//      @extend %white;
+//      position: absolute;
+//      border: 1px solid $border3;
+//      @include box-sizing;
+//      width: 100%;
+//      z-index: 5;
+//      top: 31px;
+//      left: 0;
+//      max-height: 160px;
+//      overflow: auto;
+//      display: none;
+//      &:hover {
+//        display: block;
+//      }
+//      &.up {
+//        top: auto;
+//        bottom: 31px;
+//      }
+//      li {
+//        line-height: 30px;
+//        cursor: pointer;
+//        text-indent: 8px;
+//        &:hover {
+//          background-color: $bg4;
+//        }
+//      }
+//    }
+//  }
+//  span {
+//    line-height: 54px;
+//  }
+//  .first,.prev,.next,.last,.goTo ,.auto-width{
+//    margin-top: 11px;
+//    @include wh(27px, 30px);
+//    line-height: 30px;
+//    border: 1px solid $border3;
+//    @include radius(3px);
+//    text-align: center;
+//    i {
+//      vertical-align: baseline;
+//    }
+//    &:hover {
+//      border: 1px solid $bg8;
+//      color: $color7;
+//    }
+//    &.gray {
+//      cursor: default;
+//      &:hover {
+//        color: $color2;
+//        border: 1px solid $border3;
+//      }
+//    }
+//  }
+//  .first {
+//    i {
+//      @include mix-first-page;
+//    }
+//    &.gray {
+//      &:hover {
+//        i {
+//          @include mix-first-page;
+//        }
+//      }
+//    }
+//    &:hover {
+//      i {
+//        @include mix-first-page-hover;
+//      }
+//    }
+//  }
+//  .prev {
+//    i {
+//      @include mix-prev;
+//    }
+//    &.gray {
+//      &:hover {
+//        i {
+//          @include mix-prev;
+//        }
+//      }
+//    }
+//    &:hover {
+//      i {
+//        @include mix-prev-hover;
+//      }
+//    }
+//  }
+//  .next {
+//    i {
+//      @include mix-next;
+//    }
+//    &.gray {
+//      &:hover {
+//        i {
+//          @include mix-next;
+//        }
+//      }
+//    }
+//    &:hover {
+//      i {
+//        @include mix-next-hover;
+//      }
+//    }
+//  }
+//  .last {
+//    i {
+//      @include mix-last-page;
+//    }
+//    &.gray {
+//      &:hover {
+//        i {
+//          @include mix-last-page;
+//        }
+//      }
+//    }
+//    &:hover {
+//      i {
+//        @include mix-last-page-hover;
+//      }
+//    }
+//  }
+//  .total {
+//    color: $color3;
+//    padding: 0 3px;
+//  }
+//  .goTo {
+//    width: 80px;
+//    &.gray {
+//      &:hover {
+//        i {
+//          @include mix-goto;
+//        }
+//      }
+//    }
+//    i {
+//      @include mix-goto;
+//      padding-right: 5px;
+//    }
+//    &:hover {
+//      i {
+//        @include mix-goto-hover;
+//      }
+//    }
+//  }
+//  .page {
+//    margin-top: 9px;
+//    margin-left: 16px;
+//    line-height: 32px;
+//    input {
+//      @include wh(32px, 32px);
+//      line-height: 30px;
+//      @include box-sizing;
+//      border: 1px solid $border3;
+//      @include radius(3px);
+//      text-align: center;
+//      margin: 0 8px;
+//      overflow: hidden;
+//      &:focus {
+//        border: 1px solid $bg9;
+//      }
+//    }
+//  }
+//  .change {
+//    line-height: 54px;
+//    color: $color4;
+//  }
+//  .total-text {
+//    padding: 0 5px 0 16px;
+//  }
+//  .auto-width{
+//    float: right;
+//    width: 110px;
+//    margin-right: 12px;
+//  }
+//}
+//.m-bottom-scroll{
+//  width: 100%;
+//  height: 17px;
+//  position: absolute;
+//  bottom: 54px;
+//  left: 0;
+//  @extend %white;
+//  .scroll-bg{
+//    height: 7px;
+//    background-color: $bg34;
+//    margin: 5px 17px;
+//    position: relative;
+//  }
+//  .scroll-tool{
+//    position: absolute;
+//    height: 7px;
+//    width: 200px;
+//    left: 0;
+//    top: 0;
+//    background-color: rgba($bg35, 0.6);
+//    cursor: pointer;
+//    @include radius(3px);
+//    &:hover{
+//      background-color: $bg35;
+//    }
+//    &:active{
+//      background-color: $bg36;
+//    }
+//  }
+//}
+//.m-right-scroll{
+//  width: 17px;
+//  height: 80px;
+//  position: absolute;
+//  top: 40px;
+//  right: 0;
+//  @extend %white;
+//  .scroll-bg{
+//    height: 50px;
+//    width: 7px;
+//    background-color: $bg34;
+//    margin: 17px 5px;
+//    position: relative;
+//  }
+//  .scroll-tool{
+//    position: absolute;
+//    height: 30px;
+//    width: 7px;
+//    top: 0;
+//    right: 0;
+//    background-color: rgba($bg35, 0.6);
+//    cursor: pointer;
+//    @include radius(3px);
+//    &:hover{
+//      background-color: $bg35;
+//    }
+//    &:active{
+//      background-color: $bg36;
+//    }
+//  }
+//}
+//
+//.m-grid {
+//  width: 100%;
+//  @extend %white;
+//  border: 1px solid $border3;
+//  overflow-x: hidden;
+//  @include box-sizing;
+//  position: relative;
+//  .grid-tips {
+//    position: absolute;
+//    min-width: 120px;
+//    max-width: 220px;
+//    background-color: $bg6;
+//    @include radius(5px);
+//    z-index: 100;
+//    padding: 5px 12px;
+//    font-size: $fs12;
+//    font-weight: bold;
+//    color: $color1;
+//    line-height: 22px;
+//    word-break: break-all;
+//    top: 0;
+//    left: 0;
+//    &.right {
+//      &:before {
+//        left: auto;
+//        right: -3px;
+//        @include rotate(150deg);
+//      }
+//    }
+//    &:before {
+//      content: "";
+//      position: absolute;
+//      width: 0;
+//      height: 0;
+//      @include rotate(-150deg);
+//      border: 12px solid transparent;
+//      border-bottom-color: $bg6;
+//      top: -7px;
+//      left: -3px;
+//    }
+//  }
+//  .grid-time {
+//    position: absolute;
+//    z-index: 100000;
+//    top: 0;
+//    left: 0;
+//    background-color: $bg24;
+//    width: 170px;
+//    height: 80px;
+//    line-height: 0;
+//    border: 1px solid $border3;
+//    padding-left: 15px;
+//    @include box-sizing;
+//    @extend %clearfix;
+//    .time-spot {
+//      float: left;
+//      padding: 0 5px;
+//      margin-top: 8px;
+//      line-height: 32px;
+//    }
+//    .select-group {
+//      margin-top: 8px;
+//      float: left;
+//    }
+//    .but-group {
+//      clear: both;
+//      text-align: right;
+//      span {
+//        margin: 7px 16px 0 0;
+//        display: inline-block;
+//        border: 1px solid $border3;
+//        border-radius: 3px;
+//        text-align: center;
+//        color: $color2;
+//        background: $bg1;
+//        height: 22px;
+//        line-height: 22px;
+//        padding: 0 8px;
+//        cursor: pointer;
+//        font-size: $fs14;
+//        &:hover {
+//          color: $color7;
+//          border-color: $border8;
+//        }
+//        &:active {
+//          background: $bg8;
+//          border-color: $border8;
+//          color: $color1;
+//        }
+//      }
+//    }
+//  }
+//  .grid-select {
+//    @extend %white;
+//    border: 1px solid $border3;
+//    @include box-sizing;
+//    width: 100%;
+//    max-height: 160px;
+//    overflow: auto;
+//    position: absolute;
+//    z-index: 100000;
+//    li {
+//      line-height: 30px;
+//      cursor: pointer;
+//      text-indent: 8px;
+//      &:hover {
+//        background-color: $bg4;
+//      }
+//    }
+//  }
+//  .select-group {
+//    position: relative;
+//    width: 62px;
+//    margin-top: -3px;
+//    .select {
+//      @include wh(62px, 32px);
+//      line-height: 30px;
+//      border: 1px solid $border3;
+//      @include radius(3px);
+//      @include box-sizing;
+//      text-indent: 5px;
+//      &:focus+.items {
+//        display: block;
+//      }
+//    }
+//    .icon {
+//      @include mix-input-xiala;
+//      position: absolute;
+//      right: 8px;
+//      top: 15px;
+//    }
+//    .items {
+//      @extend %white;
+//      position: absolute;
+//      border: 1px solid $border3;
+//      @include box-sizing;
+//      width: 100%;
+//      z-index: 5;
+//      top: 31px;
+//      left: 0;
+//      max-height: 160px;
+//      overflow: auto;
+//      display: none;
+//      &:hover {
+//        display: block;
+//      }
+//      &.up {
+//        top: auto;
+//        bottom: 31px;
+//      }
+//      li {
+//        line-height: 30px;
+//        cursor: pointer;
+//        text-indent: 8px;
+//        &:hover {
+//          background-color: $bg4;
+//        }
+//      }
+//    }
+//  }
+//  .table {
+//    width: 100%;
+//    table-layout: fixed;
+//    border: 1px solid $border3;
+//    border-left: 0 none;
+//    border-right: 0 none;
+//    border-collapse: collapse;
+//    .def-tr{
+//      td{
+//        background-color: $bg24;
+//      }
+//      .text{
+//        text-indent: 14px;
+//        background-color: $bg24;
+//      }
+//    }
+//    tr {
+//      height: 40px;
+//    }
+//    td {
+//      border: 1px solid $border3;
+//      font-size: $fs14;
+//      color: $color2;
+//      height: 40px;
+//      line-height: 40px;
+//      @include box-sizing;
+//    }
+//    .checkbox,
+//    .order,
+//    .radio {
+//      text-align: center;
+//      background-color: $bg24;
+//      width: 42px;
+//      label {
+//        display: block;
+//      }
+//    }
+//    .checkbox{
+//      input {
+//        display: none;
+//      }
+//      input:checked+.icon-checkbox {
+//        @include mix-grid-checkbox-checked;
+//      }
+//      .icon-checkbox {
+//        @include mix-grid-checkbox;
+//        margin: -5px 0 0 -2px;
+//      }
+//    }
+//    .radio {
+//      input {
+//        display: none;
+//      }
+//      input:checked+.icon-checkbox {
+//        @include mix-grid-radio-checked;
+//      }
+//      .icon-checkbox {
+//        @include mix-grid-radio;
+//        margin: -5px 0 0 -2px;
+//      }
+//    }
+//    .hover {
+//      background-color: $bg5 !important;
+//    }
+//    .selected{
+//      background-color: rgba($bg8, 0.8) !important;
+//      .text{
+//        color: $color1 !important;
+//        a {
+//          color: $color1 !important;
+//        }
+//      }
+//    }
+//  }
+//  .grid-hover {
+//    position: absolute;
+//    min-width: 120px;
+//    max-width: 220px;
+//    background: $bg6;
+//    background-color: rgba(#000, 0.4);
+//    @include radius(5px);
+//    display: none;
+//    z-index: 100;
+//    .hover-items {
+//      padding: 5px 12px 5px 5px;
+//    }
+//    .item {
+//      font-size: $fs12;
+//      font-weight: bold;
+//      color: $color1;
+//      line-height: 22px;
+//      height: 22px;
+//      @extend %ellipsis-basic;
+//    }
+//  }
+//  .grid-title {
+//    overflow: hidden;
+//    border-right: 1px solid $border3;
+//    width: 100%;
+//    margin-top: -1px;
+//    margin-left: -1px;
+//    .grid-header {
+//      @extend %clearfix;
+//      .td {
+//        height: 40px;
+//        line-height: 40px;
+//        float: left;
+//        @extend %clearfix;
+//        font-size: $fs14;
+//        color: $color2;
+//        background-color: $bg24;
+//        border-right: 1px solid $border3;
+//        @include box-sizing;
+//        position: relative;
+//        &.first {
+//          margin-left: 1px;
+//          &:before {
+//            content: "";
+//            position: absolute;
+//            width: 0;
+//            height: 100%;
+//            border-left: 1px solid $border3;
+//            left: -1px;
+//            top: 0;
+//          }
+//        }
+//        &.rows {
+//          @extend %clearfix;
+//          border-right: 1px solid $border3;
+//          border-bottom: 1px solid $border3;
+//        }
+//        &.cols {
+//          border-bottom: 1px solid $border3;
+//        }
+//        &.end{
+//          .text{
+//            text-indent: 0;
+//            @extend %clearfix;
+//          }
+//        }
+//      }
+//      .checkbox, .order, .radio {
+//        &.first {
+//          margin-left: 0;
+//        }
+//        text-align: center;
+//        background-color: $bg24;
+//        border-left: 1px solid $border3;
+//        width: 43px;
+//        label {
+//          display: block;
+//        }
+//      }
+//      .checkbox, .radio {
+//        &.has-order {
+//          width: 42px;
+//          border-left: 0 none;
+//        }
+//        .label-checked {
+//          .icon-checkbox {
+//            @include mix-grid-checkbox-checked;
+//          }
+//        }
+//        input {
+//          display: none;
+//        }
+//        input:checked+.icon-checkbox {
+//          @include mix-grid-checkbox-checked;
+//        }
+//        .icon-checkbox {
+//          @include mix-grid-checkbox;
+//          margin: -5px 0 0 -2px;
+//        }
+//      }
+//      .text {
+//        height: 100%;
+//        width: 100%;
+//        text-indent: 14px;
+//        @include box-sizing;
+//        &:hover{
+//          .tips{
+//            opacity: 1;
+//            width: 24px;
+//          }
+//          .calculate{
+//            opacity: 1;
+//            width: 18px;
+//          }
+//          .display{
+//            &.display_cal,&.display_sort,&.display_tips{
+//              max-width: calc(100% - 25px);
+//            }
+//            &.display_cal.display_sort,&.display_cal.display_tips,&.display_sort.display_tips{
+//              max-width: calc(100% - 50px);
+//            }
+//            &.display_cal.display_sort.display_tips{
+//              max-width: calc(100% - 75px);
+//            }
+//          }
+//        }
+//        .display{
+//          text-indent: 14px;
+//          color: $color3;
+//          @extend %ellipsis-basic;
+//          max-width: 100%;
+//          &.display_sort{
+//            max-width: calc(100% - 25px);
+//          }
+//          @include transition(max-width 0.5s linear);
+//          &.bold{
+//            font-weight: bold;
+//          }
+//        }
+//        .display, .sort, .tips{
+//          display: block;
+//          float: left;
+//          height: 100%;
+//        }
+//        .sort{
+//          width: 24px;
+//          text-align: center;
+//        }
+//        &.center {
+//          text-indent: 0;
+//          text-align: center;
+//        }
+//        &.right {
+//          text-indent: 0;
+//          padding-right: 14px;
+//          text-align: right;
+//        }
+//        .asc,.desc {
+//          cursor: pointer;
+//          display: block;
+//          width: 0;
+//          height: 50%;
+//          border: 6px solid transparent;
+//          margin-left: 6px;
+//          padding: 0;
+//          @include box-sizing;
+//        }
+//        .asc {
+//          border-bottom-color: $border17;
+//          margin-top: -1px;
+//          &.checked{
+//            border-bottom-color: $border9;
+//          }
+//        }
+//        .desc {
+//          height: 42%;
+//          margin-top: 3px;
+//          border-top-color: $border17;
+//          &.checked{
+//            border-top-color: $border9;
+//          }
+//        }
+//        .tips {
+//          width: 0;
+//          overflow: hidden;
+//          text-align: center;
+//          @include transition(opacity 0.5s linear);
+//          opacity: 0;
+//          &:hover {
+//            .hover-tips {
+//              color: $border9;
+//            }
+//          }
+//        }
+//        .hover-tips {
+//          display: inline-block;
+//          margin-top: -3px;
+//          color: $border17;
+//          font-size: 16px;
+//          cursor: pointer;
+//        }
+//        .calculate{
+//          @include transition(opacity 0.5s linear);
+//          opacity: 0;
+//          height: 100%;
+//          float: right;
+//          margin-right: 7px;
+//          width: 0;
+//          overflow: hidden;
+//          &:hover{
+//            opacity: 1;
+//          }
+//          i{
+//            width: 18px;
+//            height: 18px;
+//            line-height: 18px;
+//            font-size: 18px;
+//            margin-top: -5px;
+//            margin-left: 0;
+//            color: $border17;
+//            cursor: pointer;
+//            display: inline-block;
+//            &:hover{
+//              color: $border9;
+//            }
+//          }
+//        }
+//      }
+//      .move {
+//        height: 100%;
+//        width: 9px;
+//        position: absolute;
+//        right: -5px;
+//        top: 0;
+//        cursor: col-resize;
+//        z-index: 1;
+//      }
+//    }
+//    .group-table {
+//      border-bottom: 0 none;
+//      td {
+//        border-bottom: 0 none;
+//      }
+//    }
+//  }
+//  .grid-cont {
+//    margin-left: -1px;
+//    .grid-warn {
+//      text-align: center;
+//      height: 64px;
+//      line-height: 64px;
+//      position: absolute;
+//      width: 100%;
+//      left: 0;
+//      i {
+//        @include mix-jinggao;
+//      }
+//      span {
+//        padding-left: 8px;
+//        padding-bottom: 3px;
+//        font-size: 14px;
+//        color: $color9;
+//        vertical-align: middle;
+//      }
+//    }
+//    &:hover+.grid-hover {
+//      display: block;
+//    }
+//    .top, .table, .checkbox, .radio, .order {
+//      border-top: 0 none;
+//    }
+//    tr {
+//      &:hover {
+//        background-color: $bg5;
+//      }
+//      &:first-of-type{
+//        td{
+//          border-top: 0 none;
+//        }
+//      }
+//    }
+//    .odd {
+//      background-color: $bg25;
+//    }
+//    .text {
+//      width: 100%;
+//      height: 100%;
+//      line-height: inherit;
+//      text-indent: 14px;
+//      @extend %ellipsis-basic;
+//      a {
+//        padding-right: 8px;
+//        color: $color4;
+//        &:hover {
+//          text-decoration: underline;
+//        }
+//      }
+//      &.center {
+//        text-indent: 0;
+//        text-align: center;
+//      }
+//      &.right {
+//        text-indent: 0;
+//        padding-right: 14px;
+//        text-align: right;
+//      }
+//      .child-radio, .child-checkbox{
+//        padding-right: 8px;
+//        &:last-of-type{
+//          padding-right: 0;
+//        }
+//        input {
+//          display: none;
+//        }
+//        span{
+//          display: inline-block;
+//          padding-left: 3px;
+//          text-indent: 0;
+//          margin-top: -8px;
+//        }
+//      }
+//      .child-radio{
+//        input:checked+.child-icon-radio {
+//          @include mix-grid-radio-checked;
+//        }
+//        .child-icon-radio {
+//          @include mix-grid-radio;
+//          margin-top: -7px;
+//        }
+//      }
+//      .child-checkbox{
+//        input:checked+.child-icon-checkbox {
+//          @include mix-grid-checkbox-checked;
+//        }
+//        .child-icon-checkbox {
+//          @include mix-grid-checkbox;
+//          margin-top: -7px;
+//        }
+//      }
+//    }
+//    .drop-down {
+//      text-indent: 0;
+//      width: 100%;
+//      line-height: 0;
+//      //height: 30px;
+//      &.center {
+//        .select-group {
+//          margin: 0 auto;
+//        }
+//      }
+//      &.right {
+//        @extend %clearfix;
+//        .select-group {
+//          float: right;
+//          margin-right: 14px;
+//        }
+//      }
+//    }
+//    .u-input {
+//      margin-top: -5px;
+//      width: 70%;
+//      max-width: 240px;
+//      height: 30px;
+//      line-height: 28px;
+//      text-indent: 5px;
+//      font-size: $fs14;
+//      color: $color2;
+//      border: 1px solid $border3;
+//      @include box-sizing;
+//    }
+//    .u-date {
+//      background: image-url("icons/date") 95% no-repeat $bg1;
+//    }
+//    .select-group {
+//      margin-left: 14px;
+//      width: 70%; //79
+//      max-width: 240px;
+//      height: 30px;
+//      .select {
+//        width: 100%;
+//      }
+//      .icon {
+//        top: 15px;
+//        right: 10px;
+//      }
+//      .items {
+//        top: 30px;
+//        left: 0;
+//      }
+//    }
+//  }
+//  .grid-page {
+//    @extend .m-grid-page;
+//  }
+//  .grid-bottom-scroll {
+//    @extend .m-bottom-scroll;
+//  }
+//  .grid-right-scroll {
+//    @extend .m-right-scroll;
+//  }
+//}

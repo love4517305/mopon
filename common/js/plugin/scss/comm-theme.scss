@@ -1,0 +1,921 @@
+@charset "UTF-8";
+$header_height: 53px;
+
+body.cloud-let, body.cloud-freely, body.cloud-hq, body.cloud-my{
+  .mg-header {
+    background: $bg29;
+    $header_height: 53px;
+    $setting_width: 300px;
+    height: $header_height;
+    padding: 0 ($setting_width + 20px) 0 201px;
+    .nav-box{
+      .opera{
+        background: $bg29;
+      }
+    }
+    .logo {
+      width: 201px;
+      background: $bg28;
+      text-align: center;
+      i{
+        @include mix-cloudlet-frame-logo;
+        margin: 0;
+        @include scale(0.8);
+      }
+    }
+    .setting-cinema {
+      left: 80px;
+      text-align: left;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 112px;
+      top: 30px;
+    }
+    .opera {
+      height: $header_height;
+      line-height: $header_height;
+      >a {
+        padding: 0 12px;
+        font-size: 14px;
+        height: $header_height;
+        &:hover {
+          background-color: $cloudlet_bg_frame_topNav_hover;
+        }
+        &.selected {
+          background-color: $cloudlet_bg_frame_topNav_hover;
+        }
+      }
+      [class^=icon-] {
+        margin: -4px 12px 0 0;
+      }
+    }
+    .welcome {
+      margin-right: 50px;
+      margin-left: 10px;
+      font-size: 14px;
+      &:before {
+        right: -18px;
+        top: 26px;
+      }
+    }
+
+    .setLeft {
+      left: -204px;
+    }
+    .set-items {
+      padding: 10px;
+      top: 56px;
+      &:before {
+        top: -16px;
+      }
+      &.config {
+        width: 100px;
+        &:before {
+          left: 43px;
+        }
+      }
+      .header {
+        padding-bottom: 4px;
+        height: 30px;
+        line-height: 30px;
+      }
+      .no-msg{
+        padding: 30px 0;
+        height: 40px;
+        line-height: 40px;
+      }
+      &.saves {
+        width: 320px;
+        left: -160px;
+        &:before {
+          left: 172px;
+        }
+
+        .msg-items{
+          .item {
+            .limit {
+              width: 265px;
+            }
+          }
+        }
+      }
+      &.msgs{
+        width: 350px;
+        left: -240px;
+        max-height: 410px;
+        &:before {
+          left: 250px;
+        }
+        .msg-items{
+          .item {
+            p{
+              width: 180px;
+            }
+          }
+        }
+      }
+      li {
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        &:hover {
+          color: $color14;
+        }
+      }
+      .fu {
+        width: 35px;
+        height: 30px;
+      }
+    }
+    .setting {
+      width: $setting_width;
+      line-height: $header_height;
+    }
+    .msg {
+      padding: 0 10px;
+    }
+  }
+  .mg-more-menu {
+    background: $bg29;
+    >a {
+      &:hover {
+        background-color: $cloudlet_bg_frame_topNav_hover;
+      }
+    }
+  }
+
+  .mg-main {
+    top: 53px;
+    padding-left: 213px;
+    .layout-nav {
+      width: 201px;
+      background-color: $bg30;
+      border: 0 none;
+    }
+    .layout-content {
+      margin-top: 10px;
+    }
+  }
+
+  .mg-left-nav {
+    a {
+      height: 36px;
+      line-height: 36px;
+      padding-right: 10px;
+      font-size: 13px;
+      color: $color13;
+      &:hover {
+        background-color: $bg31;
+        color: $color1;
+      }
+    }
+    .menu-item {
+      border-bottom: 0 none;
+      background-color: $bg30;
+      &.parent-selected {
+        background-color: $bg31 !important;
+        .title{
+          .icon-arrow{
+            @include rotate(0deg);
+          }
+        }
+      }
+    }
+    .title {
+      position: relative;
+      height: 46px;
+      line-height: 46px;
+      font-size: 14px;
+      .icon-add {
+        margin-right: 14px;
+        margin-left: 15px;
+      }
+      &:hover{
+        .iconfont {
+          color: $color1;
+        }
+      }
+      .iconfont {
+        margin-right: 14px;
+        margin-left: 15px;
+      }
+      .icon-arrow{
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        right: 12px;
+        top: 19px;
+        @include mix-menu-direct;
+        @include rotate(90deg);
+        @include transition(all 0.3s ease-in);
+      }
+    }
+    .link {
+      text-indent: 16px;
+    }
+    .first-uri {
+      text-indent: 34px;
+    }
+    .leaf {
+      padding-left: 66px;
+    }
+    .icon-add {
+      margin-top: -2px;
+      margin-right: 9px;
+    }
+    .sub-title {
+      padding-left: 32px;
+      .icon-add {
+        width: 12px;
+        height: 12px;
+        @include mix-menu-direct;
+        @include rotate(-90deg);
+        &.add-select {
+          @include rotate(0deg);
+        }
+      }
+    }
+    .subx-title{
+      padding-left: 60px;
+    }
+    .link.selected {
+      background-color: $bg32;
+      color: $color1;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 9px solid transparent;
+        border-right-color: $bg4;
+        top: 9px;
+        right: 0;
+      }
+    }
+    .iconfont {
+      width: 20px;
+      height: 20px;
+      background: none;
+      font-size: 18px;
+      color: $color13;
+      line-height: 24px;
+    }
+    .icon-tousujianyi,.icon-ziyoudianshang,.icon-kapingtaiguanli,.icon-kaikachongzhidingdan{
+      font-size: 17px;
+    }
+    .icon-xitongyewujiankong,.icon-jiankong,.icon-ruanjianguanl,.icon-yonghuxiaofeijilu,.icon-yanzhenghexiao,.icon-dingdanguanli,.icon-xitongshezhi{
+      font-size: 19px;
+    }
+    .icon-taijiuyingjiantoufangfenxi{
+      font-size: 22px;
+      margin-right: 18px !important;
+      margin-left: 19px !important;
+    }
+    .icon-huoguijiguanli{
+      font-size: 16px;
+    }
+  }
+
+  .mg-tab {
+    .tab-items {
+      .item {
+        &.checked {
+          color: $color14;
+        }
+      }
+    }
+    .check-line {
+      background-color: $bg29;
+    }
+    .full-screen {
+      @include mix-cloudlet-full-screen;
+      &.restore {
+        @include mix-cloudlet-reset-screen;
+      }
+    }
+  }
+
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-let-dialog-suc;
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg28;
+      }
+    }
+  }
+}
+
+body.cloud-ng{
+  .mg-main {
+    top: 0;
+    padding-left: 210px;
+    .layout-nav {
+      width: 200px;
+      background-color: $bg1;
+      border: 0 none;
+      overflow-x: hidden;
+      border-right: 1px solid $border3;
+      margin-top: 43px;
+      height: calc(100% - 43px);
+    }
+    .layout-content {
+      margin-top: 0;
+      .mg-tab{
+        margin: -2px 0 0 -11px;
+        width: auto;
+      }
+    }
+  }
+
+  .mg-left-nav {
+    width: 146px;
+    margin-left: 54px;
+    .icon-add{
+      display: none;
+    }
+    a {
+      color: $color18;
+      padding-right: 0;
+      &:hover {
+        background-color: $bg42;
+      }
+    }
+    .menu-item {
+      border-bottom: 0 none;
+      background-color: $bg1;
+      &.parent-selected {
+        background-color: $bg42 !important;
+        .title{
+          .icon-arrow{
+            @include rotate(180deg);
+          }
+        }
+      }
+    }
+    &.scroll{
+      .title {
+        .icon-arrow{
+          right: 27px;
+        }
+      }
+    }
+    .title {
+      text-indent: 12px;
+      position: relative;
+      height: 46px;
+      line-height: 46px;
+      font-size: $fs14;
+      &.link.selected {
+        margin-left: 2px;
+        text-indent: 0;
+        span{
+          margin-left: 0;
+        }
+      }
+      .icon-arrow{
+        position: absolute;
+        display: block;
+        width: 12px;
+        height: 12px;
+        right: 10px;
+        top: 20px;
+        @include mix-ng-direct;
+        @include transition(all 0.3s ease-in);
+      }
+    }
+    .sub-title,.subx-title {
+      padding-left: 26px;
+      line-height: 38px;
+      height: 38px;
+      text-indent: 0;
+      box-sizing: border-box;
+      font-size: $fs12;
+    }
+    .subx-title{
+      padding-left: 36px;
+    }
+    .link:hover{
+      color: $color14;
+    }
+    .link.selected {
+      background-color: $bg42;
+      color: $color14;
+      position: relative;
+      span{
+        margin-left: -10px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        background-color: rgba($color14, 0.2);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .mg-tab {
+    .tab-items {
+      .item {
+        &.checked {
+          color: $color14;
+        }
+      }
+    }
+    .check-line {
+      background-color: $bg29;
+    }
+    .full-screen {
+      @include mix-cloudlet-full-screen;
+      &.restore {
+        @include mix-cloudlet-reset-screen;
+      }
+    }
+  }
+
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-let-dialog-suc;
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg28;
+      }
+    }
+  }
+}
+
+body.cloud-xflh {
+  .mg-header {
+    $setting_width: 300px;
+    padding-left: 251px;
+    .logo {
+      width: 251px;
+      text-align: center;
+      i {
+        @include mix-xflh-logo;
+        margin: 4px 0 0 -87px;
+        @include scale(0.5);
+      }
+    }
+  }
+}
+
+body.cloud-zy {
+  .mg-form {
+    .logo {
+      @include mix-zy-login-logo;
+    }
+  }
+  .mg-header {
+    .logo {
+      i {
+        @include mix-zy-frame-logo;
+      }
+    }
+  }
+}
+
+body.cloud-freely {
+  .mg-header {
+    background: $bg47;
+    .nav-box{
+      .opera{
+        background: $bg47;
+      }
+    }
+    .logo {
+      background: $bg47;
+      text-align: center;
+      i{
+        @include mix-freely-logo;
+        margin: 0;
+        @include scale(0.6);
+      }
+    }
+    .setting-cinema{
+      font-size: 12px;
+      left: 90px;
+      top: 33px;
+    }
+    .opera {
+      >a {
+        &:hover {
+          background-color: $bg48;
+        }
+        &.selected {
+          background-color: $bg48;
+        }
+      }
+    }
+  }
+
+  .mg-more-menu {
+    background: $bg47;
+    >a {
+      &:hover {
+        background-color: $bg47;
+      }
+    }
+  }
+
+  .mg-main {
+    .layout-nav {
+      background-color: $bg1;
+    }
+  }
+
+  .mg-left-nav {
+    a {
+      color: $color3;
+      &:hover {
+        background-color: $border5;
+        color: $color4;
+        .iconfont {
+          color: $color4;
+        }
+      }
+    }
+    .menu-item {
+      background-color: $bg1;
+      &.parent-selected {
+        background-color: $bg16 !important;
+      }
+    }
+    .title {
+      &:hover{
+        .iconfont {
+          color: $color1;
+        }
+      }
+    }
+    .link.selected {
+      background-color: $border5;
+      color: $color4;
+      &:before{
+        border-right-color: transparent;
+      }
+    }
+    .sub-title {
+      .icon-add {
+        @include mix-nav-plus;
+        @include rotate(-90deg);
+        &.add-select {
+          @include rotate(-45deg);
+        }
+      }
+    }
+    .menu-item {
+      .icon-arrow{
+        display: none;
+      }
+    }
+    .iconfont {
+      color: $color22;
+    }
+  }
+
+  .mg-tab {
+    .tab-items {
+      .item {
+        &.checked {
+          color: $color7;
+        }
+      }
+    }
+    .check-line {
+      background-color: $bg8;
+    }
+    .full-screen {
+      @include mix-full-screen;
+      &.restore {
+        @include mix-reset-screen;
+      }
+    }
+  }
+
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-dialog-suc;
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg8;
+      }
+    }
+  }
+}
+
+body.cloud-hq {
+  .mg-header {
+    background: #0e0927;
+    background-image: linear-gradient(
+                    #0e0927,
+                    #0e0927),
+    linear-gradient(
+                    #6777fc,
+                    #6777fc);
+    background-blend-mode: normal,
+    normal;
+    .logo {
+      background: #508aff;
+      background-image: linear-gradient(45deg,
+              #508aff 0%,
+              #39c5ff 100%),
+      linear-gradient(
+                      #1c4fe0,
+                      #1c4fe0);
+      text-align: center;
+      i{
+        @include mix-hq-logo;
+        margin: 0;
+        @include scale(1);
+      }
+    }
+    .setting-cinema{
+      opacity: 0;
+    }
+    .nav-box {
+      .opera {
+        background: none;
+        @include gradient-vertical(rgba(0,0,0,0) 53px, rgba(#0e0927,1) 53px, #0e0927 100%)
+      }
+    }
+    .opera {
+      >a {
+        position: relative;
+        &:hover,&.selected {
+          background: none;
+          color: #78eaff;
+          &:before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid #39c5ff;
+            border-bottom: 0 none;
+            box-shadow: inset 0 -20px 80px rgba(#39c5ff, 0.3), inset 20px 0 80px rgba(#39c5ff, 0.3);
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+
+  .mg-more-menu {
+    background: #2e5eff;
+    background-image: linear-gradient(-90deg,
+            #2e5eff 0%,
+            #14a8fe 20%,
+            #2e5eff 57%,
+            #14a8fe 87%,
+            #2e5eff 100%),
+    linear-gradient(
+                    #6777fc,
+                    #6777fc);
+    >a {
+      &:hover {
+        background-color: #2d31c3;
+        background-image: linear-gradient(
+                        #2d31c3,
+                        #2d31c3),
+        linear-gradient(
+                        #6152e6,
+                        #6152e6);
+      }
+    }
+  }
+
+  .mg-main {
+    .layout-nav {
+      background-color: $bg49;
+    }
+  }
+
+  .mg-left-nav {
+    a {
+      color: #b6c3e0;
+      &:hover {
+        background-image: linear-gradient(-24deg,
+                #39c5ff 0%,
+                #508aff 100%),
+        linear-gradient(
+                        #465677,
+                        #465677);
+        color: $color1;
+        background-blend-mode: normal, normal;
+        .iconfont {
+          color: $color1;
+        }
+      }
+    }
+    .menu-item {
+      background-color: $bg49;
+      &.parent-selected {
+        background-color: $bg49 !important;
+      }
+    }
+    .title {
+      &:hover{
+        .iconfont {
+          color: $color1;
+        }
+      }
+    }
+    .link.selected {
+      background-image: linear-gradient(-24deg,
+              #39c5ff 0%,
+              #508aff 100%),
+      linear-gradient(
+                      #465677,
+                      #465677);
+      background-blend-mode: normal, normal;
+      color: $color1;
+    }
+    .iconfont {
+      color: #b6c3e0;
+    }
+  }
+
+  .mg-tab {
+    .tab-items {
+      .item {
+        &.checked {
+          color: $color7;
+        }
+      }
+    }
+    .check-line {
+      background-color: $bg8;
+    }
+    .full-screen {
+      @include mix-full-screen;
+      &.restore {
+        @include mix-reset-screen;
+      }
+    }
+  }
+
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-dialog-suc;
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg8;
+      }
+    }
+  }
+}
+
+body.cloud-my {
+  .mg-header {
+    background: $bg1;
+    .logo {
+      background: #322c2d;
+      text-align: center;
+      i{
+        @include mix-cloudmy-frame-logo;
+        margin: 13px 0 0 0;
+        @include scale(1);
+      }
+    }
+    .setting-cinema{
+      opacity: 0;
+    }
+    .setting {
+      color: $c8;
+    }
+    .set-items {
+      li {
+        &:hover {
+          color: $color8;
+        }
+      }
+    }
+    .welcome-wrap {
+      &:before{
+        border-top-color: $c8;
+      }
+    }
+    .icon-more-menu,.icon-message,.icon-saves,.icon-setting {
+      color: $c8;
+    }
+
+    .nav-box {
+      .opera {
+        background: $bg1;
+      }
+    }
+    .opera {
+      >a {
+        position: relative;
+        color: $c8;
+        &:hover,&.selected {
+          background: $c7;
+          color: $color1;
+          .iconfont{
+            color: $color1;
+          }
+        }
+        .iconfont{
+          color: $c8;
+        }
+      }
+    }
+  }
+
+  .mg-main {
+    .layout-nav {
+      background-color: #322c2d;
+    }
+  }
+
+  .mg-left-nav {
+    a {
+      color: $color1;
+      &:hover {
+        background: $c7;
+        color: $color1;
+        .iconfont {
+          color: $color1;
+        }
+      }
+    }
+    .menu-item {
+      background-color: #322c2d;
+      &.parent-selected {
+        background-color: #211c1d !important;
+      }
+    }
+    .title {
+      &:hover{
+        .iconfont {
+          color: $color1;
+        }
+      }
+    }
+    .link.selected {
+      background: $c7;
+      color: $color1;
+    }
+    .iconfont {
+      color: $color1;
+    }
+  }
+  .mg-tab {
+    .tab-items {
+      .item {
+        &.checked {
+          color: $c7;
+          .close{
+            @include mix-red-tab-del;
+          }
+        }
+      }
+    }
+    .check-line {
+      background-color: $c7;
+    }
+    .full-screen {
+      @include mix-red-full-screen;
+      &.restore {
+        @include mix-red-reset-screen;
+      }
+    }
+  }
+
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-dialog-suc;
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $c7;
+      }
+    }
+  }
+}
+

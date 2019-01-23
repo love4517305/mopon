@@ -1,0 +1,252 @@
+%cloud-let-theme{
+    &:hover,&:active,&.hover {
+        background: $bg29;
+        border-color: $border18;
+        color: $color1;
+    }
+}
+
+%cloud-my-theme{
+    &:hover,&:active,&.hover {
+        background: $color8;
+        border-color: $color8;
+        color: $color1;
+    }
+}
+
+
+body.cloud-let, body.cloud-ng{
+    .m-search-btn, .m-blue-bg-button, .m-blue-btn {
+        background: $bg28;
+        border-color: $border18;
+    }
+}
+
+body.cloud-my{
+    .m-search-btn, .m-blue-bg-button, .m-blue-btn {
+        background: $color8;
+        border-color: $color8;
+    }
+}
+
+
+%common-btn {
+    @include box-sizing;
+    display: inline-block;
+    border: 1px solid $border3;
+    border-radius: 3px;
+    height: 38px;
+    line-height: 36px;
+    font-size: $fs14;
+    text-align: center;
+    padding: 0 25px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    span {
+        float: left;
+    }
+    @extend %clearfix;
+    body.cloud-ng &{
+        height: 32px;
+        line-height: 30px;
+        padding: 0 18px;
+        .icon{
+            margin-top: 7px;
+        }
+        @extend %cloud-let-theme;
+    }
+    body.cloud-let &{
+        @extend %cloud-let-theme;
+    }
+    body.cloud-my &{
+        @extend %cloud-my-theme;
+    }
+}
+
+%white-bg-btn {
+    @extend %common-btn;
+    color: $color2;
+    background: $bg1;
+    .icon {
+        //vertical-align: baseline;
+        margin-top: 10px;
+    }
+    span {
+        float: left;
+        //vertical-align: top;
+        //height: 36px;
+        //line-height: 36px;
+    }
+    &:hover {
+        color: $color7;
+        border-color: $border8;
+    }
+    &:active {
+        background: $bg8;
+        border-color: $border8;
+        color: $color1;
+    }
+    &.gray {
+        cursor: default;
+        &:hover {
+            color: $color2;
+            border-color: $border3;
+        }
+        &:active {
+            background: $bg1;
+            border-color: $border3;
+            color: $color2;
+        }
+    }
+}
+
+
+/* 默认按钮，蓝色白字 */
+
+.m-blue-bg-button, .m-blue-btn {
+    @extend %common-btn;
+    color: $color1;
+    background: $bg8;
+    border-color: $border8;
+    &:hover {
+        background: $bg11;
+    }
+    &:active {
+        background: $bg8;
+    }
+    &.gray {
+        cursor: default;
+        &:hover {
+            color: $color2;
+            border-color: $border3;
+        }
+        &:active {
+            background: $bg1;
+            border-color: $border3;
+            color: $color2;
+        }
+    }
+}
+
+/* 白底 */
+.m-white-bg-button, .m-white-btn {
+    @extend %common-btn;
+    color: $color2;
+    background: $bg1;
+    &:hover {
+        color: $color7;
+        border-color: $border8;
+    }
+    &:active {
+        background: $bg1;
+        border-color: $border3;
+        color: $color2;
+    }
+}
+
+
+.m-reset-btn {
+    @extend %common-btn;
+    color: $color2;
+    background: $bg1;
+    &:hover {
+        color: $color7;
+        border-color: $border8;
+    }
+    &:active {
+        background: $bg1;
+        border-color: $border3;
+        color: $color2;
+    }
+}
+
+.m-search-btn {
+    @extend %common-btn;
+    color: $color1;
+    background: $bg8;
+    border-color: $border8;
+    &:hover {
+        background: $bg11;
+    }
+    &:active {
+        background: $bg8;
+    }
+}
+
+body.cloud-ng {
+    .m-search-btn, .m-reset-btn{
+        height: 38px;
+        line-height: 36px;
+        padding: 0 25px;
+    }
+}
+
+$iconNameItems: barrier batch-upload cancel-check check config copy refresh print legend copy-add create del edit export install-deploy look allot2 install2 polling2 relate2 searchwork2 sendout2 warning2 out polling print-repair putaway radio relate transfer pastDue pay sendDown refund resetBtn issued change query get-on pause;
+$iconItems: $barrier $batch-upload $cancel-check $check $config $copy $refresh $print $legend $copy-add $create $del $edit $export $install-deploy $look $m-allot $m-install $m-polling $m-relate $m-searchwork $m-sendout $m-warning $out $polling $print-repair $putaway $radio $relate $transfer $pastDue $pay $sendDown $refund $resetBtn $issued $change $query $get-on $pause;
+$iconHoverItems: $barrier-hover $batch-upload-hover $cancel-check-hover $check-hover $config-hover $copy-select $refresh-select $print-select $legend-select $copy-add-hover $create-hover $del-hover $edit-hover $export-hover $install-deploy-hover $look-hover $m-allot-hover $m-install-hover $m-polling-hover $m-relate-hover $m-searchwork-hover $m-sendout-hover $m-warning-hover $out-hover $polling-hover $print-repair-hover $putaway-hover $radio-hover $relate-hover $transfer-hover $pastDue-hover $pay-hover $sendDown-hover $refund-hover $resetBtn-hover $issued-hover $change-hover $query-hover $get-on-hover $pause-hover;
+$iconSelectItems: $barrier-select $batch-upload-select $cancel-check-select $check-select $config-select $copy-select $refresh-select $print-select $legend-select $copy-add-select $create-select $del-select $edit-select $export-select $install-deploy-select $look-select $m-allot-select $m-install-select $m-polling-select $m-relate-select $m-searchwork-select $m-sendout-select $m-warning-select $out-select $polling-select $print-repair-select $putaway-select $radio-select $relate-select $transfer-select $pastDue-select $pay-select $sendDown-select $refund-select $resetBtn-select $issued-select $change-select $query-select $get-on-select $pause-select;
+$iconIndex: 1;
+@each $icon in $iconNameItems {
+    $btn_name: ".m-#{$icon}-btn";
+    @if $icon == "create" {
+        $btn_name: ".m-create-btn, .m-add-btn";
+    }@else if $icon == "look" {
+        $btn_name: ".m-look-btn, .m-view-details-btn";
+    }@else if $icon == "del" {
+        $btn_name: ".m-del-btn, .m-delete-btn";
+    }@else if $icon == "out" {
+        $btn_name: ".m-out-btn, .m-down-arrow-btn";
+    }@else if $icon == "putaway" {
+        $btn_name: ".m-putaway-btn, .m-up-arrow-btn";
+    }
+
+    #{unquote($btn_name)} {
+        @extend %white-bg-btn;
+        .icon {
+            margin-right: 5px;
+            @include sprite(nth($iconItems, $iconIndex));
+        }
+        &:hover {
+            .icon {
+                @include sprite(nth($iconHoverItems, $iconIndex));
+            }
+        }
+        &:active {
+            .icon {
+                @include sprite(nth($iconSelectItems, $iconIndex));
+            }
+        }
+        &.gray {
+            background-color: $bg2 !important;
+            span {
+                color: $color6 !important;
+            }
+            cursor: default;
+            .icon {
+                @include sprite(nth($iconItems, $iconIndex));
+            }
+            &:hover {
+                .icon {
+                    @include sprite(nth($iconItems, $iconIndex));
+                }
+            }
+            &:active {
+                .icon {
+                    @include sprite(nth($iconItems, $iconIndex));
+                }
+            }
+        }
+    }
+    body.cloud-let, body.cloud-ng, body.cloud-my{
+         #{unquote($btn_name)} {
+             &:hover {
+                 .icon {
+                     @include sprite(nth($iconSelectItems, $iconIndex));
+                 }
+             }
+         }
+     }
+    $iconIndex: $iconIndex + 1;
+}

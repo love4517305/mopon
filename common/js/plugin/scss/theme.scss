@@ -1,0 +1,994 @@
+@charset "UTF-8";
+$header_height: 53px;
+
+body.cloud-let{
+  .msg-detail-dialog {
+    padding: 40px 60px;
+    width: 580px;
+    max-height: 380px;
+    .title {
+      text-align: center;
+      font-size: $fs18;
+      padding: 10px 0;
+    }
+    .sub-title {
+      font-size: $fs14;
+      overflow: hidden;
+      zoom: 1;
+      text-align: center;
+
+      span{
+        padding: 0 40px;
+        color: $color9;
+      }
+    }
+    .content {
+      clear: both;
+      padding: 20px 0;
+      text-indent: 28px;
+      font-size: $fs14;
+      line-height: 1.8;
+    }
+  }
+
+  //通用搜索盒子
+  .m-search-wrap {
+    .search-items {
+      .icon-hover {
+        &:hover {
+          .icon {
+            @include mix-let-help-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .m-tab-title {
+    &:before {
+      background-color: $bg28;
+    }
+  }
+
+  //表格
+  .m-grid-page {
+    .first, .prev, .next, .last, .goTo,.auto-width {
+      &:hover {
+        border: 1px solid $border18;
+        color: $color14;
+      }
+      &.gray {
+        cursor: default;
+        &:hover {
+          color: $color2;
+          border: 1px solid $border3;
+        }
+      }
+    }
+    .first {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-first-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-first-page-hover;
+        }
+      }
+    }
+    .prev {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-prev;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-prev-hover;
+        }
+      }
+    }
+    .next {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-next;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-next-hover;
+        }
+      }
+    }
+    .last {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-last-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-last-page-hover;
+        }
+      }
+    }
+    .goTo {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-goto;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-goto-hover;
+        }
+      }
+    }
+    .page {
+      input {
+        &:focus {
+          border: 1px solid $color14;
+        }
+      }
+    }
+    .change {
+      color: $color14;
+    }
+  }
+  .m-fixed-grid{
+    .table {
+      .table-items {
+        &:hover {
+          background-color: $bg33 !important;
+        }
+      }
+    }
+  }
+  .m-grid {
+    .grid-time {
+      .but-group {
+        span {
+          &:hover {
+            color: $color14;
+            border-color: $border18;
+          }
+          &:active {
+            background: $bg28;
+            border-color: $border18;
+            color: $color1;
+          }
+        }
+      }
+    }
+    .table {
+      .checkbox {
+        input:checked+.icon-checkbox {
+          @include mix-let-grid-checkbox-checked;
+        }
+      }
+      .radio {
+        input:checked+.icon-checkbox {
+          @include mix-let-grid-radio-checked;
+        }
+      }
+      .hover {
+        background-color: $bg33 !important;
+      }
+      .selected{
+        background-color: rgba($bg29, 0.8) !important;
+        .text{
+          color: $color1 !important;
+        }
+      }
+    }
+    .grid-title {
+      .text{
+        .display{
+          color: $color2;
+        }
+      }
+      .grid-header {
+        .checkbox,
+        .radio {
+          .label-checked {
+            .icon-checkbox {
+              @include mix-let-grid-checkbox-checked;
+            }
+          }
+          input:checked+.icon-checkbox {
+            @include mix-let-grid-checkbox-checked;
+          }
+        }
+
+        .asc {
+          &.checked{
+            border-bottom-color: $border18;
+          }
+        }
+        .desc {
+          &.checked{
+            border-top-color: $border18;
+          }
+        }
+        .tips {
+          &:hover {
+            .hover-tips {
+              color: $border18;
+            }
+          }
+        }
+        .calculate{
+          i{
+            &:hover{
+              color: $border18;
+            }
+          }
+        }
+      }
+    }
+    .grid-cont {
+      tr {
+        &:hover {
+          background-color: $bg33;
+        }
+      }
+      .text {
+        color: $color3;
+        a {
+          color: $color14;
+        }
+        .child-radio{
+          input:checked+.child-icon-radio {
+            @include mix-let-grid-radio-checked;
+          }
+        }
+        .child-checkbox{
+          input:checked+.child-icon-checkbox {
+            @include mix-let-grid-checkbox-checked;
+          }
+        }
+      }
+    }
+    .grid-page {
+      @extend .m-grid-page;
+    }
+  }
+
+  .m-tree-box {
+    .checkbox{
+      >input:checked+.icon-checkbox{
+        @include mix-let-grid-checkbox-checked;
+      }
+      >.incomplete:checked+.icon-checkbox,>.incomplete+.icon-checkbox{
+        @include mix-let-grid-checkbox-incomplete;
+      }
+    }
+    .radio{
+      >input:checked+.icon-radio{
+        @include mix-let-grid-radio-checked;
+      }
+    }
+  }
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-let-dialog-suc;
+    }
+  }
+
+  .mg-default-page{
+    position: absolute;
+    background: url("/common/images/cloudlet-moren.png") left no-repeat;
+    height: 75px;
+    width: 400px;
+    top: 40%;
+    left: 50%;
+    margin: -37px 0 0 -200px;
+    font-size: $fs20;
+    color: $color14;
+    text-indent: 90px;
+    line-height: 18px;
+  }
+
+  .m-subStep-menu {
+    li {
+      a {
+        &.checked {
+          background: $bg28;
+          &:before {
+            background: $bg28;
+          }
+        }
+      }
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg28;
+      }
+    }
+  }
+}
+
+body.cloud-ng{
+  //通用搜索盒子
+  .m-search-wrap {
+    .search-items {
+      .icon-hover {
+        &:hover {
+          .icon {
+            @include mix-let-help-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .m-tab-title {
+    &:before {
+      background-color: $bg28;
+    }
+  }
+
+  //表格
+  .m-grid-page {
+    .first, .prev, .next, .last, .goTo,.auto-width {
+      &:hover {
+        border: 1px solid $border18;
+        color: $color14;
+      }
+      &.gray {
+        cursor: default;
+        &:hover {
+          color: $color2;
+          border: 1px solid $border3;
+        }
+      }
+    }
+    .first {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-first-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-first-page-hover;
+        }
+      }
+    }
+    .prev {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-prev;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-prev-hover;
+        }
+      }
+    }
+    .next {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-next;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-next-hover;
+        }
+      }
+    }
+    .last {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-last-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-last-page-hover;
+        }
+      }
+    }
+    .goTo {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-goto;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-let-goto-hover;
+        }
+      }
+    }
+    .page {
+      input {
+        &:focus {
+          border: 1px solid $color14;
+        }
+      }
+    }
+    .change {
+      color: $color14;
+    }
+  }
+  .m-fixed-grid{
+    .table {
+      .table-items {
+        &:hover {
+          background-color: $bg33 !important;
+        }
+      }
+    }
+  }
+  .m-grid {
+    .grid-time {
+      .but-group {
+        span {
+          &:hover {
+            color: $color14;
+            border-color: $border18;
+          }
+          &:active {
+            background: $bg28;
+            border-color: $border18;
+            color: $color1;
+          }
+        }
+      }
+    }
+    .table {
+      .checkbox {
+        input:checked+.icon-checkbox {
+          @include mix-let-grid-checkbox-checked;
+        }
+      }
+      .radio {
+        input:checked+.icon-checkbox {
+          @include mix-let-grid-radio-checked;
+        }
+      }
+      .hover {
+        background-color: $bg33 !important;
+      }
+      .selected{
+        background-color: rgba($bg29, 0.8) !important;
+        .text{
+          color: $color1 !important;
+        }
+      }
+    }
+    .grid-title {
+      .grid-header {
+        .checkbox,
+        .radio {
+          .label-checked {
+            .icon-checkbox {
+              @include mix-let-grid-checkbox-checked;
+            }
+          }
+          input:checked+.icon-checkbox {
+            @include mix-let-grid-checkbox-checked;
+          }
+        }
+
+        .asc {
+          &.checked{
+            border-bottom-color: $border18;
+          }
+        }
+        .desc {
+          &.checked{
+            border-top-color: $border18;
+          }
+        }
+        .tips {
+          &:hover {
+            .hover-tips {
+              color: $border18;
+            }
+          }
+        }
+        .calculate{
+          i{
+            &:hover{
+              color: $border18;
+            }
+          }
+        }
+      }
+    }
+    .grid-cont {
+      tr {
+        &:hover {
+          background-color: $bg33;
+        }
+      }
+      .odd {
+        background-color: $bg44;
+      }
+      .text {
+        a {
+          color: $color14;
+        }
+        .child-radio{
+          input:checked+.child-icon-radio {
+            @include mix-let-grid-radio-checked;
+          }
+        }
+        .child-checkbox{
+          input:checked+.child-icon-checkbox {
+            @include mix-let-grid-checkbox-checked;
+          }
+        }
+      }
+    }
+    .grid-page {
+      @extend .m-grid-page;
+    }
+  }
+
+  .m-tree-box {
+    .checkbox{
+      >input:checked+.icon-checkbox{
+        @include mix-let-grid-checkbox-checked;
+      }
+      >.incomplete:checked+.icon-checkbox,>.incomplete+.icon-checkbox{
+        @include mix-let-grid-checkbox-incomplete;
+      }
+    }
+    .radio{
+      >input:checked+.icon-radio{
+        @include mix-let-grid-radio-checked;
+      }
+    }
+  }
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-let-dialog-suc;
+    }
+  }
+
+  .mg-default-page{
+    position: absolute;
+    background: url("/common/images/cloudng-moren.png") left no-repeat;
+    height: 75px;
+    width: 400px;
+    top: 40%;
+    left: 50%;
+    margin: -37px 0 0 -200px;
+    font-size: $fs20;
+    color: $color14;
+    text-indent: 90px;
+    line-height: 18px;
+  }
+
+  .m-subStep-menu {
+    li {
+      a {
+        &.checked {
+          background: $bg28;
+          &:before {
+            background: $bg28;
+          }
+        }
+      }
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $bg28;
+      }
+    }
+  }
+}
+
+body.cloud-xflh {
+  .mg-default-page{
+    background: url("/common/images/xflh-moren.png") left no-repeat !important;
+    height: 90px !important;
+    width: 360px !important;
+    margin: -45px 0 0 -180px !important;
+    text-indent: 120px !important;
+    line-height: 44px !important;
+  }
+}
+
+body.default {
+  .mg-default-page{
+    background: url("/common/images/moren.png") left no-repeat !important;
+    text-indent: 90px;
+    line-height: 30px;
+    height: 79px;
+    width: 401px;
+    margin: -40px 0 0 -200px;
+  }
+}
+
+
+body.cloud-hq {
+  .mg-default-page{
+    background: url("/common/images/cloudhq/default.png") top no-repeat !important;
+    line-height: 1320px;
+    text-align: center;
+    margin-left: -705px;
+    width: 1409px;
+    height: 700px;
+    top: 0;
+    background-size: 1409px 700px;
+    color: #284fe0;
+    font-size: 36px;
+    text-indent: 0;
+  }
+}
+
+body.cloud-zy {
+  .mg-default-page{
+    background: url("/common/images/zy-moren.png") left no-repeat !important;
+    height: 90px !important;
+    width: 337px !important;
+    margin: -45px 0 0 -170px !important;
+    text-indent: 96px !important;
+    line-height: 44px !important;
+  }
+}
+
+body.cloud-freely {
+  .mg-default-page{
+    background: url("/common/images/freely-moren.png") left no-repeat !important;
+    height: 90px !important;
+    width: 337px !important;
+    margin: -45px 0 0 -170px !important;
+    text-indent: 96px !important;
+    line-height: 44px !important;
+  }
+}
+
+body.cloud-my {
+  //通用搜索盒子
+  .m-search-wrap {
+    .search-items {
+      .icon-hover {
+        &:hover {
+          .icon {
+            @include mix-red-help-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .v-step-items{
+    .item{
+      color: $color9 !important;
+      &:before,  &:after{
+        background-color: $bg34 !important;
+      }
+    }
+    .selected{
+      color: $color8 !important;
+      &:before,  &:after{
+        background-color: $color8 !important;
+      }
+    }
+    .checked~li{
+      @extend .item;
+    }
+    li {
+      color: $color8 !important;
+      &:before{
+        background-color: $color8 !important;
+      }
+      &:after{
+        background-color: $color8 !important;
+      }
+      @extend .selected;
+    }
+  }
+
+  .m-tab-title {
+    &:before {
+      background-color: $color8;
+    }
+  }
+
+  //表格
+  .m-grid-page {
+    .first, .prev, .next, .last, .goTo,.auto-width {
+      &:hover {
+        border: 1px solid $color8;
+        color: $color8;
+      }
+      &.gray {
+        cursor: default;
+        &:hover {
+          color: $color2;
+          border: 1px solid $border3;
+        }
+      }
+    }
+    .first {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-first-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-red-first-page-hover;
+        }
+      }
+    }
+    .prev {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-prev;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-red-prev-hover;
+        }
+      }
+    }
+    .next {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-next;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-red-next-hover;
+        }
+      }
+    }
+    .last {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-last-page;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-red-last-page-hover;
+        }
+      }
+    }
+    .goTo {
+      &.gray {
+        &:hover {
+          i {
+            @include mix-goto;
+          }
+        }
+      }
+      &:hover {
+        i {
+          @include mix-red-goto-hover;
+        }
+      }
+    }
+    .page {
+      input {
+        &:focus {
+          border: 1px solid $color14;
+        }
+      }
+    }
+    .change {
+      color: $color14;
+    }
+  }
+  .m-fixed-grid{
+    .table {
+      .table-items {
+        &:hover {
+          background-color: #ffe5e7 !important;
+        }
+      }
+    }
+  }
+  .m-grid {
+    .grid-time {
+      .but-group {
+        span {
+          &:hover {
+            color: $color14;
+            border-color: $border18;
+          }
+          &:active {
+            background: $color8;
+            border-color: $border18;
+            color: $color1;
+          }
+        }
+      }
+    }
+    .table {
+      .checkbox {
+        input:checked+.icon-checkbox {
+          @include mix-red-grid-checkbox-checked;
+        }
+      }
+      .radio {
+        input:checked+.icon-checkbox {
+          @include mix-red-grid-radio-checked;
+        }
+      }
+      .hover {
+        background-color: #ffe5e7 !important;
+      }
+      .selected{
+        background-color: rgba($color8, 0.8) !important;
+        .text{
+          color: $color1 !important;
+        }
+      }
+    }
+    .grid-title {
+      .text{
+        .display{
+          color: $color2;
+        }
+      }
+      .grid-header {
+        .checkbox,
+        .radio {
+          .label-checked {
+            .icon-checkbox {
+              @include mix-red-grid-checkbox-checked;
+            }
+          }
+          input:checked+.icon-checkbox {
+            @include mix-red-grid-checkbox-checked;
+          }
+        }
+
+        .asc {
+          &.checked{
+            border-bottom-color: $border5;
+          }
+        }
+        .desc {
+          &.checked{
+            border-top-color: $border5;
+          }
+        }
+        .tips {
+          &:hover {
+            .hover-tips {
+              color: $border5;
+            }
+          }
+        }
+        .calculate{
+          i{
+            &:hover{
+              color: $border5;
+            }
+          }
+        }
+      }
+    }
+    .grid-cont {
+      tr {
+        &:hover {
+          background-color: #ffe5e7;
+        }
+      }
+      .text {
+        color: $color3;
+        a {
+          color: $color14;
+        }
+        .child-radio{
+          input:checked+.child-icon-radio {
+            @include mix-let-grid-radio-checked;
+          }
+        }
+        .child-checkbox{
+          input:checked+.child-icon-checkbox {
+            @include mix-let-grid-checkbox-checked;
+          }
+        }
+      }
+    }
+    .grid-page {
+      @extend .m-grid-page;
+    }
+  }
+
+  .m-tree-box {
+    .checkbox{
+      >input:checked+.icon-checkbox{
+        @include mix-red-grid-checkbox-checked;
+      }
+      >.incomplete:checked+.icon-checkbox,>.incomplete+.icon-checkbox{
+        @include mix-red-grid-checkbox-incomplete;
+      }
+    }
+    .radio{
+      >input:checked+.icon-radio{
+        @include mix-red-grid-radio-checked;
+      }
+    }
+  }
+  .m-dialog-alert {
+    .icon-suc {
+      @include mix-red-dialog-suc;
+    }
+  }
+
+  .mg-default-page{
+    position: absolute;
+    background: url("/common/images/cloudmy/my-moren.png") left no-repeat;
+    height: 84px;
+    width: 400px;
+    top: 40%;
+    left: 50%;
+    margin: -42px 0 0 -165px;
+    font-size: $fs28;
+    color: $color23;
+    text-indent: 0;
+    line-height: 200px;
+  }
+
+  .m-subStep-menu {
+    li {
+      a {
+        &.checked {
+          background: $color8;
+          &:before {
+            background: $color8;
+          }
+        }
+      }
+    }
+  }
+
+  .m-loading{
+    .loading{
+      span{
+        background: $color8;
+      }
+    }
+  }
+}
+

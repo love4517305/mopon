@@ -1,0 +1,14 @@
+<div class="m-dialog-common">
+    <div node-name="header" class="header">
+        <h3 node-name="title"><%=title%></h3>
+        <a href="javascript:void(0);" node-name="close" class="close" title="关闭"></a>
+    </div>
+    <div node-name="box" class="box" style="width: <%=width%>; height: <%=height%>"></div>
+    <%if(btn && btn.length > 0){%>
+    <div node-name="footer" class="footer">
+        <%btn.forEach(function(item){%>
+        <a href="javascript:void(0)" class="m-<%if(item.blue){%>blue<%}else{%>white<%}%>-bg-button" data-button="<%=item.name%>" node-name="<%=item.name%>"><%=item.text%></a>
+        <%})%>
+    </div>
+    <%}%>
+</div>

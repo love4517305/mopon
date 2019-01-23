@@ -1,0 +1,54 @@
+<section class="m-search-wrap" id="m-search">
+    <ul class="search-items" node-name="items">
+        <li class="item add">
+			<span class="m-search-condition">
+				<span class="label">日期对比:</span><span class="condition-container">
+					<span class="condition-content">
+						<input type="text" data-validate="required=true&amp;select=true&amp;nullText=日期" name="visitDates0" node-name="calendar" readonly="readonly">
+						<i class="icon-date"></i>
+					</span>
+				</span>
+			</span>
+			<span node-name="add" class="m-add-btn">
+				<span class="icon"></span>
+			</span>
+			<span node-name="del" class="m-delete-btn gray">
+				<span class="icon"></span>
+			</span>
+        </li>
+        <li class="item">
+			<span class="m-search-condition" node-name="select" data-key="categoryId">
+				<span class="label">设备类别</span><span class="m-select condition-content"><i class="icon down" node-name="arrowIcon"></i>
+				<span class="selected-item border-box" node-name="selectedItem">--请选择--</span>
+				<select class="hide" name="categoryId" data-validate="nullText=设备类别" node-name="realSelect"><option value=""></option></select></span>
+			</span>
+        </li>
+        <li class="item">
+			<span class="m-search-condition">
+				<span class="label">型号</span><span class="condition-content"><input name="type" data-validate="nullText=型号" type="text"/></span>
+				<span class="icon-hover" data-title="这是一个美好的愿望这是一个美好的愿望这是一个美好的愿望"><i class="icon"></i></span>
+			</span>
+        </li>
+        <li class="item">
+			<span class="m-search-condition">
+				<span class="label">创建时间</span><span class="condition-container">
+				<span class="condition-content">
+				<input readonly="readonly" node-name="calendar" type="text" name="startTime" data-validate="select=true&nullText=起始时间"/>
+				<i class="icon-date"></i>
+				</span>
+				</span><span>到</span><span class="condition-container">
+				<span class="condition-content">
+				<input readonly="readonly" node-name="calendar" type="text" name="endTime" data-validate="select=true&nullText=结束时间"/>
+				<i class="icon-date"></i>
+				</span>
+				</span>
+			</span>
+        </li>
+    </ul>
+    <div class="search-but" node-name="searchBut">
+		<span class="m-more-condition-btn hide" node-name="moreBtn">
+			<span>更多</span><span class="more" node-name="more" data-type="hide"><span class="icon-more"></span></span>
+		</span>
+        <span class="m-search-btn" node-name="search">搜索</span>
+    </div>
+</section>

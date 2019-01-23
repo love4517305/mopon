@@ -1,0 +1,6 @@
+<% if(showPromptText){ %>
+	<option value="">--请选择--</option>
+<% } %>
+<% for (var i = 0; i < selectItems.length; i++) { %>
+	<option value="<%= selectItems[i].key %>"><%= selectItems[i].val %></option>
+<% } %>

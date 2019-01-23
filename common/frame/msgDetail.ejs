@@ -1,0 +1,18 @@
+<article node-name="cont" class="m-cont" style="width: 1100px; height: 600px; padding:0 20px;">
+    <div id="m-msg-detail" class="msg-detail-dialog msg-detail-personal">      
+        <h2 class="title"><%= data.title %></h2>
+        <p class="sub-title">
+            <span>发布时间：<%= data.oldTime %></span>
+            <span>发件人：<%= data.fromUserName %></span>
+        </p>
+        <% if(typeof data.content == "object") {%>
+            <p class="content"><%= data.content.msgMainContent%></p>
+        <%}else{%>
+            <p class="content"><%= data.content %></p>
+           <%}%>
+    </div>
+    <div class="isGhq" node-name="isGhq">
+        <span class="icon"></span><span class="short-goots"><span>缺货商品清单&nbsp:</span></span>
+        <section class="m-grid" node-name="grid"></section>    
+    </div>
+</article>

@@ -1,0 +1,19 @@
+<div class="m-dialog-common">
+    <% if (header) { %>
+    <div node-name="header" class="header">
+        <h3 node-name="title"></h3>
+        <% if (close) { %>
+        <a href="javascript:void(0);" node-name="close" class="close" title="关闭"></a>
+        <% } %>
+    </div>
+    <% } %>
+    <div node-name="box" class="box" style="height: <%=height %>;"><%-html%></div>
+    <% if (footer) { %>
+    <div node-name="footer" class="footer">
+        <% buttons.forEach(function(button) { %>
+            <a href="javascript:void(0)" class="<%= button.type == 'blue' ? 'm-blue-bg-button' : 'm-white-bg-button' %>" <%if(button.node){%>node-name="<%=button.node%>"<%}%> data-button="<%=button.id%>"><%=button.text%></a>
+        <% }) %>
+
+    </div>
+    <% } %>
+</div>

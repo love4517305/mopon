@@ -1,0 +1,21 @@
+<div id="m-create" class="m-dialogRows-form mg-updatePwd-dialog" node-name="dialogForm" style="padding: 10px 0 0;">
+    <span class="tip"><%=isDefaultPwd? '您的当前登录密码为默认密码，为保护您的账号安全，请修改密码': ''%></span>
+    <div class="item-box">
+        <span class="name"><em>*</em>旧密码</span>
+        <span class="inputBox"><input class="u-input"  data-validate="required=true&nullText=旧密码" name="old_pwd" type="password"/></span>
+    </div>
+    <div class="item-box">
+        <span class="name"><em>*</em>新密码</span>
+        <span class="inputBox"><input class="u-input" data-validate="required=true&nullText=新密码" name="new_pwd" type="password"/></span>
+    </div>
+    <div class="item-box">
+        <span class="name"><em>*</em>确认密码</span>
+        <span class="inputBox"><input class="u-input" data-validate="required=true&nullText=确认密码" name="ok_pwd" type="password"/></span>
+    </div>
+    <div class="item-box" node-name="errBox" style="height: 36px; line-height: 36px;">
+        <span class="name"></span>
+        <span class="inputBox"><span class="message" node-name="message">
+            <!--<span></span>请输入正确的密码-->
+        </span></span>
+    </div>
+</div>

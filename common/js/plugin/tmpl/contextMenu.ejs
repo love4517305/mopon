@@ -1,0 +1,34 @@
+<ul class="mg-right-menu">
+    <%
+        var createMenuHTML = function(item){
+            if(item.type == "line"){%>
+    <li class="line"></li>
+            <%}else{%>
+    <li data-action="item" data-id="<%=item.id%>" class="menu-item<%if(item.type == 'disabled'){%> menu-disabled<%}if(item.child){%> child<%}%>">
+        <em class="icon<%if(item.icon){%> menu-icon-<%=item.icon%><%}%>"></em>
+        <label class="text"><%=item.text%></label>
+        <%if(Object.prototype.toString.call(item.child) == "[object Array]"){%>
+        <ul class="menu-child">
+            <%item.child.forEach(function(obj){
+                createMenuHTML(obj);
+            })%>
+        </ul>
+        <%}else if(Object.prototype.toString.call(item.child) == "[object Object]"){%>
+        <ul class="menu-child">
+            <%
+            createMenuHTML(item.child);
+            %>
+        </ul>
+        <%}%>
+    </li>
+            <%}
+        };
+        if(Object.prototype.toString.call(items) == "[object Array]"){
+        items.forEach(function(item){
+            createMenuHTML(item);
+        });
+        }else if(Object.prototype.toString.call(items) == "[object Object]"){
+            createMenuHTML(items);
+        }
+    %>
+</ul>
