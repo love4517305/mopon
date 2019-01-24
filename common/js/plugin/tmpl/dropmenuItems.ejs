@@ -1,6 +1,0 @@
-<% if(showPromptText){ %>
-	<li data-action="select-item" data-key="">--请选择--</li>
-<% } %>
-<% for (var i = 0; i < selectItems.length; i++) { %>
-	<li data-action="select-item" data-key="<%= selectItems[i].key %>" title="<%= selectItems[i].val %>"><%= selectItems[i].val %></li>
-<% } %>

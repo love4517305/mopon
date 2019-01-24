@@ -1,7 +1,0 @@
-[
-  {"elementId":57,"orientation":0,"fontType":"1","code":"manualText","fontSizeRate":12.0,"barcodeHeight":0,"content":"券流水号","elementName":"自由写入","seatX":2.0,"isEdit":"0","fontId":1,"seatY":16.0,"width":100.0,"fontSize":4,"id":265,"font":"英文","height":100.0},
-  {"elementId":49,"orientation":0,"fontType":"1","code":"couponNo","fontSizeRate":12.0,"barcodeHeight":0,"content":"test12004","elementName":"券流水号","seatX":22.0,"isEdit":"1","fontId":1,"seatY":16.0,"width":100.0,"fontSize":4,"id":266,"font":"英文","height":100.0},
-  {"elementId":57,"orientation":0,"fontType":"1","code":"manualText","fontSizeRate":12.0,"barcodeHeight":0,"content":"券验证码","elementName":"自由写入","seatX":2.0,"isEdit":"0","fontId":1,"seatY":28.0,"width":100.0,"fontSize":4,"id":267,"font":"英文","height":100.0},
-  {"elementId":57,"orientation":0,"fontType":"1","code":"manualText","fontSizeRate":12.0,"barcodeHeight":0,"content":"有效期","elementName":"自由写入","seatX":15.0,"isEdit":"0","fontId":1,"seatY":59.0,"width":100.0,"fontSize":4,"id":269,"font":"英文","height":100.0},
-  {"elementId":51,"orientation":0,"fontType":"1","code":"couponEndDate","fontSizeRate":12.0,"barcodeHeight":0,"content":"2017-09-05","elementName":"有效期","seatX":35.0,"isEdit":"1","fontId":1,"seatY":59.0,"width":100.0,"fontSize":4,"id":270,"font":"英文","height":100.0},
-  {"elementId":50,"orientation":0,"fontType":"2","code":"identifyCode","fontSizeRate":9.0,"barcodeHeight":0,"content":"券验证码","elementName":"券验证二维码","seatX":2.0,"isEdit":"1","fontId":3,"seatY":34.0,"width":1.0,"fontSize":3,"id":268,"font":"QR","height":1.0}]
